@@ -52,27 +52,26 @@ p {
 }
 
 ul {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
   list-style: inside;
-  list-style-position: inside;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   font-size: 1.8rem;
 }
 
 ol {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    list-style: inside;
-    list-style-position: inside;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  list-style: inside;
 }
 
 a {
-  color: rgb(204, 0, 255);
+  color: rgb(0, 195, 255);
   font-size: 1.8rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  
 }
