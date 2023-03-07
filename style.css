@@ -102,4 +102,15 @@ body {
     transition-duration: 0.3s;
     opacity: 50%;
 }
->>>>>>> d2e37adb4406670e01786cf0d97388560693b722
+
+.page-accueil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.dern-annonce {
+    
+}
