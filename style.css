@@ -66,6 +66,9 @@ body {
     background-color: #0E8388;  
     padding: 1em;
     margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 3px solid #2E4F4F;
 }
 
 .bandeau a {
