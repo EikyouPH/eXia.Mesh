@@ -1,6 +1,7 @@
 body {
     padding: 2%;
     font-family: 'Arial', sans-serif;
+    background-color: #CBE4DE;
 }
 
 
@@ -42,4 +43,11 @@ body {
     padding-left: 3px;
     font-weight: bold;
     width: 9em;
+    }
+
+    .p-conf {
+        margin-top: 10%;
+        text-align: center;
+        font-size: 4em;
+        color: #0E8388;
     }
