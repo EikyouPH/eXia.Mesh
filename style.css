@@ -1,13 +1,45 @@
 body {
-    margin: 5%;
+    padding: 2%;
     font-family: 'Arial', sans-serif;
 }
+
 
 .logo-connexion {
     width: 10%;
 }
 
-
 #img-acceuil {
     width: 5%;
 }
+
+.connexion {
+    text-align: center                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+}
+
+
+#conteneur {
+    text-align: center;
+    width: 100%;
+    }
+    
+    #center .submit {
+    margin-top : 10px;
+    margin-left: 6.5em;
+    padding-left: 0;
+    width: 8em;
+    }
+    
+    #center label
+    {
+    width: 6em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block
+    }
+    
+    #center input {
+    padding-left: 3px;
+    font-weight: bold;
+    width: 9em;
+    }

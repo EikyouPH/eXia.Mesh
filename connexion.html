@@ -7,35 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
-    <table class="table-connexion">
-        <thead>
-            <div class="img-principale">
-                <img src="/img/logo-ph.svg" alt="Logo Place Holder" class="logo-connexion">
-
+    <div class="connexion">
+        <div>
+            <img src="/img/logo-ph.svg" alt="Logo Place Holder" class="logo-connexion">
+        </div>
+        <div>
+            <h2>Connectez-vous</h2>
+        </div>
+        <tr>
+            <div id="conteneur">
+                <form method="post" action="index.php?page=login&amp;a=connect">
+                    <p><label for="pseudo">Identifiant</label> <input name="pseudo" placeholder="ludovic.kientz@viacesi.fr" id="pseudo" type="email"></p>
+                    <p><label for="pass">Mot de passe</label> <input name="pass" placeholder="⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅" id="pass" type="password"></p>
+                    <p>
+                    </p>
+                    <p><input name="submit" class="submit" value="Connexion" type="submit"></p>
+                </form>
             </div>
-        </thead>
-        <tbody>
-            <tr>
-                <div class="box-connexion">
-                    <h2>Connectez-vous</h2>
-                </div>
-            </tr>
-            <tr>
-                <div class="form-connexion">
-                    <form action="">
-                        <td><label for="identifiant">Identifiant</label></td>
-                        <td><input type="text" id="identifiant"></td>
-                    </form>
-                </div>
-            </tr>
-
-        </tbody>
-
-    </table>
-
+        </tr>
+        </table>
+    </div>
 </body>
 
 </html>
