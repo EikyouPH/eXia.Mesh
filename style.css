@@ -1,5 +1,4 @@
 body {
-    padding: 2%;
     font-family: 'Arial', sans-serif;
     background-color: #CBE4DE;
 }
@@ -51,3 +50,26 @@ body {
         font-size: 4em;
         color: #0E8388;
     }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.bandeau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E8388;  
+    padding: 1em;
+    margin-top: 1%;
+}
+
+.bandeau a {
+    color: white;
+    text-decoration: none;
+}
+
