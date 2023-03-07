@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #CBE4DE;
 }
 
@@ -61,6 +61,11 @@ body {
 .header h1 {
     font-size: 2em;
     color: #09494b;
+}
+
+.header h2 {
+    color: #09494b;
+    font-weight: 600;
 }
 
 .titre-page {
