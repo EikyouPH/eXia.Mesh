@@ -1,4 +1,4 @@
-\body {
+body {
     margin: 5%;
     font-family: 'Arial', sans-serif;
 }
@@ -7,16 +7,6 @@
     width: 10%;
 }
 
-.img-principale {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-}
-
-.box-connexion {
-    display: flex;
-    justify-content: center;
-}
 
 #img-acceuil {
     width: 5%;
