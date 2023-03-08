@@ -157,3 +157,18 @@ body {
 .page-accueil td:hover {
     transform: scale(1.025)
 }
+
+footer {
+    
+    padding: 1em;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #5eb8bb58;
+    border-radius: 1em;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
