@@ -52,7 +52,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -89,8 +89,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 
 .bandeau a:hover {
     color: black;
@@ -104,13 +102,58 @@ body {
 }
 
 .page-accueil {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2%;
-    margin-right: 2%;
+    text-align: justify;
+    margin: 1em;
+    border-spacing: 2em;
 }
 
-.dern-annonce {
-    
+.page-accueil a {
+    color: #0E8388;
+    text-decoration: none;
+}
+
+
+#dern-annonce {
+    width: 60em;
+    padding: 1em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+#res-notif {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+#jsp {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+.bouton-accueil td {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    border: 2px solid #0E8388;
+}
+
+.bouton-accueil td {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    border: 2px solid #0E8388;
+    padding: 2em;
+}
+
+.page-accueil td:hover {
+    box-shadow: #2E4F4F 5px 5px 10px;
+    transition-duration: 0.3s;
+}
+
+.page-accueil td:hover {
+    transform: scale(1.025)
 }
