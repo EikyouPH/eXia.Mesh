@@ -150,7 +150,7 @@ body {
 }
 
 .page-accueil td:hover {
-    box-shadow: #2E4F4F 5px 5px 10px;
+    box-shadow: #5b838382 3px 3px 10px;
     transition-duration: 0.3s;
 }
 
