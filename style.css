@@ -29,6 +29,11 @@ body {
 
 .connexion {
     text-align: center;
+    margin-bottom: 10%;
+}
+
+.connexion h1{
+    color: #0E8388;
 }
 
 
