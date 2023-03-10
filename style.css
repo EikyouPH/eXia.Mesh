@@ -1,6 +1,20 @@
+@media screen and (max-width: 700px) {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #CBE4DE;
+        min-width: 700px;
+    }
+    
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #CBE4DE;
+    
 }
 
 
@@ -173,17 +187,52 @@ footer p {
     justify-content: center;
 }
 
+
 .page-profil {
     display: flex;
+    width: 80%;
     align-items: center;
     text-align: justify;
-    margin: 5em 10em 5em 10em;
+    margin: 5em 10% 5em 10%;
     border-spacing: 2em;
     border: 2px solid #0E8388;
     border-radius: 10px;
 }
 
+
+
 .page-profil td {
     width: 30em;
-    padding: 1em;
+    align-items: center;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+} 
+
+
+.reseaux {
+    font-size: 0.7em;
+    border-spacing: none;
+    padding: none;
+}
+
+.reseaux img {
+    width: 3em;
+}
+
+.reseaux a {
+    text-decoration: none;
+}
+
+.reseaux .icone {
+    width: 0;
+}
+
+.page-profil .personne{
+    justify-content: center;
+    width: 30%;
+    min-width: 5em;
+}
+
+.personne img {
+    width: 100%;
 }
