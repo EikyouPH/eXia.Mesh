@@ -44,7 +44,7 @@ champLinkedin.innerHTML = "<a id=\"linkedin\" href=\"" + linkedin + ".fr\"> Link
 
 let champIndeed = document.getElementById("indeed");
 console.log(champIndeed.innerHTML);
-champIndeed.innerHTML = "<a id=\"indeed\" href=\"" + indeeed + ".fr\"> Indeed</a>";
+champIndeed.innerHTML = "<a id=\"indeed\" href=\"" + indeed + ".fr\"> Indeed</a>";
 
 let champFacebook = document.getElementById("facebook");
 console.log(champFacebook.innerHTML);
