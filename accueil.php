@@ -1,21 +1,6 @@
-<?php
-session_start();
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-  header("Location: index.php");
-  exit;
-}
+<?php include('verif-session.php'); ?>
 
-   // Connect to the database
-   $conn = mysqli_connect('main.leskientz.ovh', 'api', 'Ludovic03', 'projet_web');
-   // Check connection
-   if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-   }
-   
-
-mysqli_close($conn);
-?>
-
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -28,7 +13,7 @@ mysqli_close($conn);
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-<?php include 'header.html'; ?>
+<?php include('header.html'); ?>
 
 <body>
   <table class="page-accueil">
@@ -114,6 +99,6 @@ mysqli_close($conn);
     </tbody>
   </table>
 </body>
-<?php include 'footer.html'; ?>
+<?php include('footer.html'); ?>
 
 </html>

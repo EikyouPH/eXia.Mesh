@@ -6,20 +6,21 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 }
 $sql = "SELECT * FROM utilisateurs WHERE ";
             $result = mysqli_query($conn, $sql);
-            if ($result && mysqli_num_rows($result) > 0) {
-                $row = mysqli_fetch_assoc($result);
-                $AI = $row['AI'];
-                $Id = $row['Id'];
-                $password = $row['password'];
-                $username = $row['username'];
-                $promo = $row['promo'];
-                $perm = $row['permission'];
-                echo "AI : $AI<br>";
-                echo "Nom : $username<br>";
-                echo "ID : $Id<br>";
-                echo "Password : $password<br>";
-                echo "promo : $promo<br>";
-                echo "permission : $perm<br>";
+if ($result && mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    $AI = $row['AI'];
+    $Id = $row['Id'];
+    $password = $row['password'];
+    $username = $row['username'];
+    $promo = $row['promo'];
+    $perm = $row['permission'];
+    echo "AI : $AI<br>";
+    echo "Nom : $username<br>";
+    echo "ID : $Id<br>";
+    echo "Password : $password<br>";
+    echo "promo : $promo<br>";
+    echo "permission : $perm<br>";
+}
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +35,7 @@ $sql = "SELECT * FROM utilisateurs WHERE ";
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-<?php include 'header.html'; ?>
+<?php include('header.html'); ?>
 
 <body>
     <table class="page-profil">
@@ -120,6 +121,6 @@ $sql = "SELECT * FROM utilisateurs WHERE ";
     </p>
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
-<?php include 'footer.html'; ?>
+<?php include('footer.html'); ?>
 
 </html>

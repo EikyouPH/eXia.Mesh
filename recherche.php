@@ -1,3 +1,5 @@
+<?php include('verif-session.php'); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,10 +11,10 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<?php include 'header.html'; ?>
+<?php include('header.html'); ?>
 
 <body>
 
 </body>
-<?php include 'footer.html'; ?>
+<?php include('footer.html'); ?>
 </html>

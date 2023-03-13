@@ -1,3 +1,5 @@
+<?php include('verif-session.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +10,11 @@
     <title id="titre">Mentions légales</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<?php include 'header.html'; ?>
+<?php include('header.html'); ?>
 
 <body>
     <h2>Mentions légales de : </h2>
 </body>
-<?php include 'footer.html'; ?>
+<?php include('footer.html'); ?>
 
 </html>
