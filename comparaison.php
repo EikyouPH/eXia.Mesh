@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include 'header.html'; ?>
-  
+
 <body>
 </body>
 <?php include 'footer.html'; ?>
+
 </html>
