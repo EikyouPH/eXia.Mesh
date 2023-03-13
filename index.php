@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_POST['submit'])) {
-   $username = $_POST['username'];
+   $mail = $_POST['mail'];
    $password = $_POST['password'];
    
 
@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
    }
 
    // Get the user from the database
-   $sql = "SELECT * FROM utilisateur WHERE mail = '$username' AND password = '$password'";
+   $sql = "SELECT * FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
    $result = mysqli_query($conn, $sql);
    $user = mysqli_fetch_assoc($result);
    $ID_utilisateur = mysqli_fetch_assoc($result);
@@ -52,7 +52,7 @@ if(isset($_POST['submit'])) {
 
    
       <label for="username">Identifiant:</label>
-      <input type="text" placeholder="Addresse mail" id="username" name="username" required><br><br>
+      <input type="text" placeholder="Addresse mail" id="mail" name="mail" required><br><br>
       <label for="password">Mot de passe:</label>
       <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
       <input type="submit" name="submit" value="Submit">
