@@ -42,17 +42,5 @@
 <body>
     <p class="p-conf">Pris en compte avec succès !</p>
 </body>
-<footer>
-  <table class="footer">
-    <tr>
-      <td>
-        <p>© 2023 On sait pas encore</p>
-      </td>
-    </tr>
-    <tr>
-      <td><a href="/metions-legales.html">Mentions légales</a>
-    </tr>
-    </td>
-    </tr>
-</footer>
+<?php include 'footer.php'; ?>
 </html>
