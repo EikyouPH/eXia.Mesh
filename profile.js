@@ -1,4 +1,4 @@
-const nvNom = document.getElementById("nom");
+let nvNom = document.getElementById("nom");
 
 let nom = nvNom.innerHTML;
 
