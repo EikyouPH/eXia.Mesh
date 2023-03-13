@@ -42,5 +42,5 @@
 <body>
     <p class="p-conf">Pris en compte avec succès !</p>
 </body>
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>
 </html>
