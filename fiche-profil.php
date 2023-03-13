@@ -47,7 +47,7 @@
                                 <tr>
                                     <td class="icone">
                                         <img src="/img/indeed.png" alt="">
-                                    </td> 
+                                    </td>
                                     <td>
                                         <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
                                     </td>
@@ -97,5 +97,6 @@
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
 <?php include 'footer.html'; ?>
-  <script type="text/javascript" src="profile.js"></script>
+<script type="text/javascript" src="profile.js"></script>
+
 </html>

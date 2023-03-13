@@ -115,4 +115,5 @@ mysqli_close($conn);
   </table>
 </body>
 <?php include 'footer.html'; ?>
+
 </html>

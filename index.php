@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
    $username = $_POST['username'];
    $password = $_POST['password'];
    
@@ -26,9 +26,9 @@ if(isset($_POST['submit'])) {
       $_SESSION['logged_in'] = true;
       header('Location: accueil.php?Id='$ID_utilisateur);
       exit;
-    } else {
+   } else {
       $error = "Incorrect username or password.";
-    }
+   }
 }
 mysqli_close($conn);
 ?>
@@ -37,36 +37,34 @@ mysqli_close($conn);
 <html>
 
 <head>
-    <title>Page de connexion</title>
-    <link rel="stylesheet" href="/style.css">
+   <title>Page de connexion</title>
+   <link rel="stylesheet" href="/style.css">
 </head>
 
 </video>
 
 <body>
-<div class="connexion">
-        <div>
-            <img src="/img/logo.svg" alt="Logo Place Holder" class="logo-connexion">
-        </div>
-<div id="conteneur">
-                <form method="post" action="index.php?page=login&amp;a=connect">
+   <div class="connexion">
+      <div>
+         <img src="/img/logo.svg" alt="Logo Place Holder" class="logo-connexion">
+      </div>
+      <div id="conteneur">
+         <form method="post" action="index.php?page=login&amp;a=connect">
 
-   
-      <label for="username">Identifiant:</label>
-      <input type="text" placeholder="Addresse mail" id="username" name="username" required><br><br>
-      <label for="password">Mot de passe:</label>
-      <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
-      <input type="submit" name="submit" value="Submit">
-   </form>
-</div>
-   <?php if(isset($error)) {
-      echo "<p style='color:red'>$error</p>";
-   } ?>
-    </div>
-</div>
+
+            <label for="username">Identifiant:</label>
+            <input type="text" placeholder="Addresse mail" id="username" name="username" required><br><br>
+            <label for="password">Mot de passe:</label>
+            <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+      </div>
+      <?php if (isset($error)) {
+         echo "<p style='color:red'>$error</p>";
+      } ?>
+   </div>
+   </div>
 </body>
 
 
 </html>
-
-
