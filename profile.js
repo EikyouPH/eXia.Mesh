@@ -40,16 +40,16 @@ champEntreprise.innerHTML = "Entreprise : " + entreprise;
 
 let champLinkedin = document.getElementById("linkedin");
 console.log(champLinkedin.innerHTML);
-champLinkedin.innerHTML = linkedin;
+champLinkedin.innerHTML = "<a id=\"linkedin\" href=\"" + linkedin + ".fr\"> Linkedin</a>";
 
 let champIndeed = document.getElementById("indeed");
 console.log(champIndeed.innerHTML);
-champIndeed.innerHTML = indeed;
+champIndeed.innerHTML = "<a id=\"indeed\" href=\"" + indeeed + ".fr\"> Indeed</a>";
 
 let champFacebook = document.getElementById("facebook");
 console.log(champFacebook.innerHTML);
-champFacebook.innerHTML = facebook;
+champFacebook.innerHTML = "<a id=\"facebook\" href=\"" + facebook + ".fr\"> Facebook</a>";
 
 let champSite = document.getElementById("site-perso");
 console.log(champSite.innerHTML);
-champSite.innerHTML = site;
+champSite.innerHTML = "<a id=\"site-perso\" href=\"" + site + ".fr\"> Site personnel</a>";
