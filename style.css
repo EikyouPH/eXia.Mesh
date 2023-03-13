@@ -4,7 +4,7 @@
         background-color: #CBE4DE;
         min-width: 700px;
     }
-    
+
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #CBE4DE;
-    
+
 }
 
 
@@ -32,7 +32,7 @@ body {
     margin-bottom: 10%;
 }
 
-.connexion h1{
+.connexion h1 {
     color: #0E8388;
 }
 
@@ -228,7 +228,7 @@ footer {
 .page-profil td {
     width: 30em;
     align-items: center;
-} 
+}
 
 
 .reseaux {
@@ -249,7 +249,7 @@ footer {
     width: 0;
 }
 
-.page-profil .personne{
+.page-profil .personne {
     justify-content: center;
     width: 30%;
     min-width: 5em;
