@@ -34,7 +34,7 @@ $sql = "SELECT * FROM utilisateurs WHERE ";
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-<?php include 'header.html'; ?>
+<?php include('header.html'); ?>
 
 <body>
     <table class="page-profil">
@@ -120,6 +120,6 @@ $sql = "SELECT * FROM utilisateurs WHERE ";
     </p>
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
-<?php include 'footer.html'; ?>
+<?php include('footer.html'); ?>
 
 </html>

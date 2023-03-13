@@ -24,10 +24,10 @@
     </thead>
   </table>
 
-  <?php include 'header.html'; ?>
+  <?php include('header.html'); ?>
 
   <body>
   </body>
-  <?php include 'footer.html'; ?>
+  <?php include('footer.html'); ?>
 
 </html>
