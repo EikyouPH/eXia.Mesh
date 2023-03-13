@@ -18,19 +18,19 @@ if(isset($_POST['submit'])) {
    $result = mysqli_query($conn, $sql);
    $user = mysqli_fetch_assoc($result);
    $ID_utilisateur = mysqli_fetch_assoc($result);
-   $_SESSION['Id'] = $ID_utilisateur;
+   
 
 
    // Check if the user exists
    if ($user) {
       $_SESSION['logged_in'] = true;
-      header('Location: accueil.php');
+      header('Location: accueil.php?Id='$ID_utilisateur);
       exit;
     } else {
       $error = "Incorrect username or password.";
     }
 }
-
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
