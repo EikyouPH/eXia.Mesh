@@ -11,36 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
-<header>
-  <nav>
-    <div class="header">
-      <div><a href="accueil.html"><img src="/img/logo.svg" alt="retour accueil" id="img-acceuil"></a></div>
-      <div>
-        <h2 class="titre-page">Bienvenue !</h2>
-      </div>
-      <div>
-        <h1>Accueil</h1>
-      </div>
-    </div>
-  </nav>
-  <div>
-    <nav>
-      <div class="bandeau">
-        <div>
-          <a href="accueil.html">Accueil</a>
-        </div>
-        <div>
-          <a href="navigation.html">Navigation</a>
-        </div>
-        <div>
-          <a href="fiche-profil.html">Profil</a>
-        </div>
-        <div>
-          <a href="logout.php">Déconnexion</a>
-        </div>
-      </div>
-  </div>
-</header>
+<?php include 'header.html'; ?>
 
 <body>
   <table class="page-accueil">
