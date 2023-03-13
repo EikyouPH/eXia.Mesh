@@ -4,7 +4,7 @@ session_start();
 if(isset($_POST['submit'])) {
    $username = $_POST['username'];
    $password = $_POST['password'];
-   $_SESSION['Id'] = $username;
+   
 
    // Connect to the database
    $conn = mysqli_connect('main.leskientz.ovh', 'api', 'Ludovic03', 'projet_web');
@@ -17,11 +17,14 @@ if(isset($_POST['submit'])) {
    $sql = "SELECT * FROM utilisateur WHERE mail = '$username' AND password = '$password'";
    $result = mysqli_query($conn, $sql);
    $user = mysqli_fetch_assoc($result);
+   $ID_utilisateur = mysqli_fetch_assoc($result);
+   $_SESSION['Id'] = $ID_utilisateur;
+
 
    // Check if the user exists
    if ($user) {
       $_SESSION['logged_in'] = true;
-      header('Location: accueil.html');
+      header('Location: accueil.php');
       exit;
     } else {
       $error = "Incorrect username or password.";
