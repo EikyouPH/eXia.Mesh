@@ -14,7 +14,7 @@
     <nav></nav>
     <div class="header">
 
-        <div><a href="index.html"><img src="/img/logo.svg" alt="retour accueil" id="img-acceuil"></a></div>
+        <div><a href="accueil.html"><img src="/img/logo.svg" alt="retour accueil" id="img-acceuil"></a></div>
         <div>
             <h1>Profil</h1>
         </div>
@@ -24,7 +24,7 @@
         <nav>
             <div class="bandeau">
                 <div>
-                    <a href="index.html">Accueil</a>
+                    <a href="accueil.html">Accueil</a>
                 </div>
                 <div>
                     <a href="navigation.html">Navigation</a>
@@ -33,7 +33,7 @@
                     <a href="fiche-profil.html">Profil</a>
                 </div>
                 <div>
-                    <a href="connexion.html">Déconnexion</a>
+                    <a href="index.html">Déconnexion</a>
                 </div>
             </div>
     </div>
@@ -42,61 +42,98 @@
 <body>
     <table class="page-profil">
         <tr>
-            <td>
-                <img src="/img/personne.png" alt="Image du contact" width="200">
+            <td class="personne">
+                <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                <p>
-                    Nom : DOE<br>
-                    Prénom : JOHN<br>
-                    Date de naissance : 01/01/1990<br>
-                </p>
-                <p>
-                    Pilote : Amira
-                </p>
-                <p>
-                    Promotion : A2<br>
-                    Centre : Strasbourg<br>
-                </p>
-                <p>
-                    Entreprise : NAGARRO
-                </p>
-                </td>
+                Nom : DOE<br>
+                Prénom : JOHN<br>
+                Date de naissance : 01/01/1990<br>
+                Pilote : Amira
+                Promotion : A2<br>
+                Centre : Strasbourg<br>
+                Entreprise : NAGARRO
+            </td>
+            <td id="td-reseaux">
+                <table class="reseaux">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="icone">
+                                        <img src="/img/linkedin.png" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="icone">
+                                        <img src="/img/indeed.png" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="icone">
+                                        <img src="/img/facebook.png" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td class="icone">
+                                        <img src="/img/site.png" alt="">
+                                    </td>
+                                    <td>
+                                        <a href="bonjourjesuisunlien.site-personnel.fr"> Site personnel</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
         </tr>
+
+    </table>
+    </td>
+    </tr>
     </table>
 
     <p>
         Expériences passées
     </p>
-    <table>
-        <tr>
-            <th>
-                LinkedIn
-            </th>
-            <th>
-                Indeed
-            </th>
-            <th>
-                Facebook
-            </th>
-            <th>
-                Site personnel
-            </th>
-        </tr>
-        <tr>
-            bonjourjesuisunlien.linkedin.fr
-        </tr>
-        <tr>
-            bonjourjesuisunlien.indeed.fr
-        </tr>
-        <tr>
-            bonjourjesuisunlien.facebook.fr
-        </tr>
-        <tr>
-            bonjourjesuisunlien.monsite.fr
-        </tr>
-    </table>
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
-
+<footer>
+    <table class="footer">
+      <tr>
+        <td>
+          <p>© 2023 On sait pas encore</p>
+        </td>
+      </tr>
+      <tr>
+        <td><a href="/metions-legales.html">Mentions légales</a>
+      </tr>
+      </td>
+      </tr>
+  </footer>
 </html>
