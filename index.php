@@ -52,7 +52,7 @@ if(isset($_POST['submit'])) {
 
    
       <label for="username">Identifiant:</label>
-      <input type="text" placeholder="Addresse mail" id="mail" name="mail" required><br><br>
+      <input type="text" placeholder="Adresse mail" id="mail" name="mail" required><br><br>
       <label for="password">Mot de passe:</label>
       <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
       <input type="submit" name="submit" value="Submit">
