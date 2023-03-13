@@ -26,9 +26,9 @@
         <nav>
             <div class="bandeau">
                 <a href="confirmation.html">Confirmation</a>
-                <a href="connexion.html">Connexion</a>
+                <a href="index.php">Connexion</a>
                 <a href="contacts.html">Contacts</a>
-                <a href="index.html">Accueil</a>
+                <a href="accueil.html">Accueil</a>
                 <a href="creation-compte.html">Création de compte</a>
                 <a href="fiche-compte.html">Fiche compte</a>
                 <a href="fiche-entreprise.html">Fiche entreprise</a>
