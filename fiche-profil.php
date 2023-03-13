@@ -4,7 +4,22 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
   header("Location: index.php");
   exit;
 }
-
+$sql = "SELECT * FROM utilisateurs WHERE ";
+            $result = mysqli_query($conn, $sql);
+            if ($result && mysqli_num_rows($result) > 0) {
+                $row = mysqli_fetch_assoc($result);
+                $AI = $row['AI'];
+                $Id = $row['Id'];
+                $password = $row['password'];
+                $username = $row['username'];
+                $promo = $row['promo'];
+                $perm = $row['permission'];
+                echo "AI : $AI<br>";
+                echo "Nom : $username<br>";
+                echo "ID : $Id<br>";
+                echo "Password : $password<br>";
+                echo "promo : $promo<br>";
+                echo "permission : $perm<br>";
 ?>
 
 <!DOCTYPE html>
