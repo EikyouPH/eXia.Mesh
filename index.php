@@ -21,7 +21,7 @@ if(isset($_POST['submit'])) {
    // Check if the user exists
    if ($user) {
       $_SESSION['logged_in'] = true;
-      header('Location: acceuil.html');
+      header('Location: accueil.html');
       exit;
     } else {
       $error = "Incorrect username or password.";
