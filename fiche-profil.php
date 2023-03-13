@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+  header("Location: index.php");
+  exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -97,6 +106,5 @@
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
 <?php include 'footer.html'; ?>
-<script type="text/javascript" src="profile.js"></script>
 
 </html>
