@@ -1,3 +1,5 @@
+<?php include('verif.php'); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 

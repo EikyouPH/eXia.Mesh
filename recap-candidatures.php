@@ -1,3 +1,5 @@
+<?php include('verif-session.php'); ?>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
