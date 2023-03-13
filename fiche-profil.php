@@ -123,18 +123,6 @@
     </p>
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
-<footer>
-    <table class="footer">
-      <tr>
-        <td>
-          <p>© 2023 On sait pas encore</p>
-        </td>
-      </tr>
-      <tr>
-        <td><a href="/metions-legales.html">Mentions légales</a>
-      </tr>
-      </td>
-      </tr>
-  </footer>
+<?php include 'footer.php'; ?>
   <script type="text/javascript" src="profile.js"></script>
 </html>
