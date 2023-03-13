@@ -42,5 +42,5 @@
   
 <body>
 </body>
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>
 </html>

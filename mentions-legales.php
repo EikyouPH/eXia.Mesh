@@ -20,5 +20,5 @@
 <body>
     <h2>Mentions légales de : </h2>
 </body>
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>
 </html>

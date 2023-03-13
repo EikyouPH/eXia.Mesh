@@ -123,6 +123,6 @@
     </p>
     <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
-<?php include 'footer.php'; ?>
+<?php include 'footer.html'; ?>
   <script type="text/javascript" src="profile.js"></script>
 </html>
