@@ -3,6 +3,8 @@ let prenom = "Alanis";
 let dateNaissance = "18/06/2003";
 let pilote = "Amira";
 let promotion = "A2";
+let centre = "Strasbourg";
+let entreprise = "Nagarro";
 
 let champNom = document.getElementById("nom");
 console.log(champNom.innerHTML);
@@ -24,7 +26,17 @@ console.log(champPilote.innerHTML);
 
 champPilote.innerHTML = "Pilote : " + pilote;
 
-let champ = document.getElementById("pilote");
-console.log(champPilote.innerHTML);
+let champPromo = document.getElementById("promotion");
+console.log(champPromo.innerHTML);
 
-champPilote.innerHTML = "Pilote : " + pilote;
+champPromo.innerHTML = "Promotion : " + promotion;
+
+let champCentre = document.getElementById("centre");
+console.log(champCentre.innerHTML);
+
+champCentre.innerHTML = "Centre : " + centre;
+
+let champEntreprise = document.getElementById("entreprise");
+console.log(champEntreprise.innerHTML);
+
+champEntreprise.innerHTML = "Entreprise : " + entreprise;
