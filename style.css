@@ -23,8 +23,8 @@ body {
     margin-bottom: none;
 } 
 
-#img-acceuil {
-    width: 5em;
+#logo-accueil {
+    width: 20%;
 }
 
 .connexion {
@@ -45,6 +45,7 @@ body {
     border-radius: 10px;
 }
 
+/* pour la connexion */
 #conteneur {
     text-align: center;
     width: 100%;
@@ -124,7 +125,7 @@ body {
     transition-duration: 0.3s;
 }
 
-#img-acceuil:hover {
+#img-accueil:hover {
     transition-duration: 0.3s;
     opacity: 50%;
 }
@@ -257,4 +258,9 @@ footer {
 
 .personne img {
     width: 100%;
+}
+
+
+.icones img{
+    width: 20%;
 }
