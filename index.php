@@ -36,7 +36,8 @@ if(isset($_POST['submit'])) {
 
 <head>
     <title>Page de connexion</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style-connexion.css">
+    <link rel="stylesheet" href="style-footer.css">
 </head>
 
 </video>
@@ -63,7 +64,7 @@ if(isset($_POST['submit'])) {
     </div>
 </div>
 </body>
-
+<?php include 'footer.html'; ?>
 
 </html>
 

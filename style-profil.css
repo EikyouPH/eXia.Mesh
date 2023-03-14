@@ -1,0 +1,46 @@
+.page-profil {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    text-align: justify;
+    margin: 5em 10% 5em 10%;
+    border-spacing: 2em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+
+
+.page-profil td {
+    width: 30em;
+    align-items: center;
+}
+
+
+.reseaux {
+    font-size: 0.7em;
+    border-spacing: none;
+    padding: none;
+}
+
+.reseaux img {
+    width: 3em;
+}
+
+.reseaux a {
+    text-decoration: none;
+}
+
+.reseaux .icone {
+    width: 0;
+}
+
+.page-profil .personne {
+    justify-content: center;
+    width: 30%;
+    min-width: 5em;
+}
+
+.personne img {
+    width: 100%;
+}
