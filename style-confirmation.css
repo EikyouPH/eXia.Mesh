@@ -1,0 +1,8 @@
+.p-conf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    font-size: 300%;
+    color: #0E8388;
+}
