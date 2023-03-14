@@ -11,6 +11,20 @@ if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
 
+if (isset($_POST['submit'])) {
+  $id = mysqli_real_escape_string($conn, $_POST['id']);
+  $username = mysqli_real_escape_string($conn, $_POST['username']);
+  $password = mysqli_real_escape_string($conn, $_POST['password']);
+  $promo = mysqli_real_escape_string($conn, $_POST['promo']);
+
+  $sql = "UPDATE users SET username='$username', password='$password', promo='$promo' WHERE Id='$id'";
+  if (mysqli_query($conn, $sql)) {
+      header("Location:profilmod.php");
+  } else {
+      echo "Erreur lors de la mise à jour des informations: " . mysqli_error($conn);
+  }
+}
+
 $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, complement, rue, nom_ville, code_postal, region, nom_pays FROM utilisateur JOIN adresse ON utilisateur.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
         $result = mysqli_query($conn, $sql);
             $row = mysqli_fetch_assoc($result);
@@ -64,22 +78,18 @@ $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, 
 </head>
 
 <body>
-    <video id="background-video" autoplay loop muted>
-        <source src="/source/loginmatrix.mp4" type="video/mp4">
-    </video>
-
     <h1 class="bandeau">Modification de profil</h1>
     
     <form method="post">
-        <?php echo $AI ?>
-        <label for="id">ID de connexion:</label>
-        <input type="text" id="id" name="id" value="<?php echo $prenom ?>" required><br>
+        
+        <label for="id">Identifiant :</label>
+        <input type="text" id="prenom" name="prenom" value="<?php echo $nom_utilisateur ?>" required><br>
 
         <label for="username">Nom :</label>
-        <input type="text" id="username" name="username" value="<?php echo $nom_utilisateur ?>" required><br>
+        <input type="text" id="nom_utilisateur" name="nom_utilisateur" value="<?php echo $nom_utilisateur ?>" required><br>
 
-        <label for="password">Mot de passe:</label>
-        <input type="text" id="password" name="password" value="<?php echo $mail ?>" required><br>
+        <label for="password">Mot de passe :</label>
+        <input type="text" id="mail" name="mail" value="<?php echo $mail ?>" required><br>
 
         <label for="promo">Promotion d'étude :</label>
         <input type="text" id="promo" name="promo" value="<?php echo $promo ?>" required><br>
