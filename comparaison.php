@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titre">Comparaison</title>
 
-    <link rel="stylesheet" href="style-global.css">
-    <link rel="stylesheet" href="style-comparaison.css">
-    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="css/style-global.css">
+    <link rel="stylesheet" href="css/style-comparaison.css">
+    <link rel="stylesheet" href="css/style-footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include('header.html'); ?>

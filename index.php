@@ -36,8 +36,8 @@ if(isset($_POST['submit'])) {
 
 <head>
     <title>Page de connexion</title>
-    <link rel="stylesheet" href="style-connexion.css">
-    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="css/style-connexion.css">
+    <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
 </video>
