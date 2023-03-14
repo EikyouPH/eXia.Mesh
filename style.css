@@ -45,6 +45,7 @@ body {
     border-radius: 10px;
 }
 
+/* pour la connexion */
 #conteneur {
     text-align: center;
     width: 100%;
@@ -260,6 +261,9 @@ footer {
 }
 
 .icones img{
-    width: 10%;
+    width: 20%;
 }
 
+.icones{
+    align-items:;
+}
