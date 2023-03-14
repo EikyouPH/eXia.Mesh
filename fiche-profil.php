@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
   header("Location: index.php");
   exit;
@@ -16,16 +16,16 @@ $sql = "SELECT nom_utilisateur, prenom, PASSWORD, mail, date_naissance, numero, 
             $row = mysqli_fetch_assoc($result);
             $nom_utilisateur = $row['nom_utilisateur'];
             $prenom = $row['prenom'];
-            $password = $row['password'];
+            $password = $row['PASSWORD'];
             $mail = $row['mail'];
             $date_naissance = $row['date_naissance'];
             $numero = $row['numero'];
-            $complement = $rom['complement'];
-            $rue = $rom['rue'];
-            $ville = $rom['nom_ville'];
-            $code_postal = $rom['code_postal'];
-            $region = $rom['region'];
-            $pays = $rom['nom_pays'];
+            $complement = $row['complement'];
+            $rue = $row['rue'];
+            $ville = $row['nom_ville'];
+            $code_postal = $row['code_postal'];
+            $region = $row['region'];
+            $pays = $row['nom_pays'];
 ?>
 
 <!DOCTYPE html>
@@ -56,8 +56,8 @@ $sql = "SELECT nom_utilisateur, prenom, PASSWORD, mail, date_naissance, numero, 
             echo "Prenom : $prenom<br>";
                 echo "Adresse mail : $mail<br>";
                 echo "Password : $password<br>";
-                echo "date denaissance : $date_naissance<br>";
-                echo "Adresse : $pays<br>";
+                echo "Date de naissance : $date_naissance<br>";
+                echo "Adresse : $numero $complement $rue, $code_postal, $ville, $region, $pays<br>";
                 ?>
             </td>
             <td id="td-reseaux">
