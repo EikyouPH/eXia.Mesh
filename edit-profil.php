@@ -11,15 +11,21 @@ if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, ID_adresse FROM utilisateur WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-            $result = mysqli_query($conn, $sql);
-                $row = mysqli_fetch_assoc($result);
-                $nom_utilisateur = $row['nom_utilisateur'];
-                $prenom = $row['prenom'];
-                $password = $row['password'];
-                $mail = $row['mail'];
-                $date_naissance = $row['date_naissance'];
-                $perm = $row['ID_adresse'];
+$sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, complement, rue, nom_ville, code_postal, region, nom_pays FROM utilisateur JOIN adresse ON utilisateur.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+        $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($result);
+            $nom_utilisateur = $row['nom_utilisateur'];
+            $prenom = $row['prenom'];
+            $password = $row['password'];
+            $mail = $row['mail'];
+            $date_naissance = $row['date_naissance'];
+            $numero = $row['numero'];
+            $complement = $rom['complement'];
+            $rue = $rom['rue'];
+            $ville = $rom['nom_ville'];
+            $code_postal = $rom['code_postal'];
+            $region = $rom['region'];
+            $pays = $rom['nom_pays'];
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -67,24 +73,21 @@ $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, ID_adres
     <form method="post">
         <?php echo $AI ?>
         <label for="id">ID de connexion:</label>
-        <input type="text" id="id" name="id" value="<?php echo $Id ?>" required>
+        <input type="text" id="id" name="id" value="<?php echo $prenom ?>" required><br>
 
         <label for="username">Nom :</label>
-        <input type="text" id="username" name="username" value="<?php echo $username ?>" required>
+        <input type="text" id="username" name="username" value="<?php echo $nom_utilisateur ?>" required><br>
 
         <label for="password">Mot de passe:</label>
-        <input type="text" id="password" name="password" value="<?php echo $password ?>" required>
+        <input type="text" id="password" name="password" value="<?php echo $mail ?>" required><br>
 
         <label for="promo">Promotion d'étude :</label>
-        <input type="text" id="promo" name="promo" value="<?php echo $promo ?>" required>
-        <i style=font-size:20px>Si externe à CESI, remplir le formulaire en inscrivant "A0"</i>
+        <input type="text" id="promo" name="promo" value="<?php echo $promo ?>" required><br>
 
         <br><br>
         <input href=profilmod.php type="submit" name="submit" value="Enregistrer">
         <input type="button" class="a" value="Annuler" onclick="window.location.href='profilmod.php'" />
-        
-        
-        <input href=profilmod.php type="submit" name="delete" value="Supprimer" style='background-color: #ff0000'>
+
     </form>
 </body>
 
