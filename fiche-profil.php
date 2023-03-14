@@ -4,6 +4,22 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
   header("Location: index.php");
   exit;
 }
+// Connect to the database
+$conn = mysqli_connect('main.leskientz.ovh', 'api', 'Ludovic03', 'projet_web');
+// Check connection
+if (!$conn) {
+   die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, ID_adresse FROM utilisateur WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+            $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                $nom_utilisateur = $row['nom_utilisateur'];
+                $prenom = $row['prenom'];
+                $password = $row['password'];
+                $mail = $row['mail'];
+                $date_naissance = $row['date_naissance'];
+                $perm = $row['ID_adresse'];
 ?>
 
 <!DOCTYPE html>
@@ -27,13 +43,14 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                <div id="nom">Nom : DOE<br></div>
-                <div id="prenom">Prénom : JOHN<br></div>
-                <div id="date-naissance">Date de naissance : 01/01/1990<br></div>
-                <div id="pilote">Pilote : Amira</div>
-                <div id="promotion">Promotion : A2<br></div>
-                <div id="centre">Centre : Strasbourg<br></div>
-                <div id="entreprise">Entreprise : NAGARRO</div>
+                <?php
+            echo "Nom : $nom_utilisateur<br>";
+            echo "Prenom : $prenom<br>";
+                echo "Adresse mail : $mail<br>";
+                echo "Password : $password<br>";
+                echo "date denaissance : $date_naissance<br>";
+                echo "Adresse : $perm<br>";
+                ?>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -102,7 +119,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <p>
         Expériences passées
     </p>
-    <a href="edit-profil.html"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
+    <a href="edit-profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
 <?php include('footer.html'); ?>
 
