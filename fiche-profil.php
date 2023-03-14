@@ -15,7 +15,9 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titre">Profil</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-global.css">
+    <link rel="stylesheet" href="style-profil.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include('header.html'); ?>

@@ -1,0 +1,49 @@
+.page-accueil {
+    text-align: justify;
+    margin: 1em;
+    border-spacing: 2em;
+}
+
+.page-accueil a {
+    color: #0E8388;
+    text-decoration: none;
+    padding: 1em;
+}
+
+#dern-annonce {
+    width: 40em;
+    padding: 1em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+#res-notif {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+#jsp {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+.bouton-accueil td {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    border: 2px solid #0E8388;
+    padding: 2em;
+}
+
+.page-accueil td:hover {
+    box-shadow: #5b838382 3px 3px 10px;
+    transition-duration: 0.3s;
+}
+
+.page-accueil td:hover {
+    transform: scale(1.025)
+}
