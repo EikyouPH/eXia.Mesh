@@ -12,14 +12,15 @@ if (!$conn) {
 }
 
 if (isset($_POST['submit'])) {
-  $id = mysqli_real_escape_string($conn, $_POST['id']);
-  $username = mysqli_real_escape_string($conn, $_POST['username']);
+  $prenom = mysqli_real_escape_string($conn, $_POST['prenom']);
+  $nom_utilisateur = mysqli_real_escape_string($conn, $_POST['nom_utilisateur']);
+  $mail = mysqli_real_escape_string($conn, $_POST['mail']);
   $password = mysqli_real_escape_string($conn, $_POST['password']);
-  $promo = mysqli_real_escape_string($conn, $_POST['promo']);
+  //faire les requêtes chacales 
 
-  $sql = "UPDATE users SET username='$username', password='$password', promo='$promo' WHERE Id='$id'";
+  $sql = "UPDATE utilisateur SET prenom='$prenom',nom_utilisateur='$nom_utilisateur', password='$password', mail='$mail' WHERE ID_utilisateur='$_SESSION[ID_utilisateur]'";
   if (mysqli_query($conn, $sql)) {
-      header("Location:profilmod.php");
+      header("Location:fiche-profil.php");
   } else {
       echo "Erreur lors de la mise à jour des informations: " . mysqli_error($conn);
   }
@@ -34,12 +35,15 @@ $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, 
             $mail = $row['mail'];
             $date_naissance = $row['date_naissance'];
             $numero = $row['numero'];
-            $complement = $rom['complement'];
-            $rue = $rom['rue'];
-            $ville = $rom['nom_ville'];
-            $code_postal = $rom['code_postal'];
-            $region = $rom['region'];
-            $pays = $rom['nom_pays'];
+            $complement = $row['complement'];
+            $rue = $row['rue'];
+            $ville = $row['nom_ville'];
+            $code_postal = $row['code_postal'];
+            $region = $row['region'];
+            $pays = $row['nom_pays'];
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -82,21 +86,48 @@ $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, 
     
     <form method="post">
         
-        <label for="id">Identifiant :</label>
-        <input type="text" id="prenom" name="prenom" value="<?php echo $nom_utilisateur ?>" required><br>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom_utilisateur" value="<?php echo $nom_utilisateur?>" required><br>
 
-        <label for="username">Nom :</label>
-        <input type="text" id="nom_utilisateur" name="nom_utilisateur" value="<?php echo $nom_utilisateur ?>" required><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" value="<?php echo $prenom ?>" required><br>
 
-        <label for="password">Mot de passe :</label>
+        <label for="mail">Adresse mail :</label>
         <input type="text" id="mail" name="mail" value="<?php echo $mail ?>" required><br>
 
-        <label for="promo">Promotion d'étude :</label>
+        <label for="password">Mot de passe :</label>
+        <input type="text" id="password" name="password" value="<?php echo $password ?>" required><br>
+
+        <label for="promo">Promotion :</label>
         <input type="text" id="promo" name="promo" value="<?php echo $promo ?>" required><br>
+
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" value="<?php echo $date_naissance ?>" required><br>
+
+        <label for="numero">Numéro de rue :</label>
+        <input type="text" id="numero" name="numero" value="<?php echo $numero ?>" required><br>
+
+        <label for="complement">Complement d'adresse :</label>
+        <input type="text" id="complement" name="complement" value="<?php echo $complement ?>" required><br>
+
+        <label for="rue">Voie :</label>
+        <input type="text" id="rue" name="rue" value="<?php echo $rue ?>" required><br>
+
+        <label for="code_postal">Code postal :</label>
+        <input type="text" id="code_postal" name="code_postal" value="<?php echo $code_postal ?>" required><br>
+
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" value="<?php echo $ville ?>" required><br>
+
+        <label for="region">Région :</label>
+        <input type="text" id="region" name="region" value="<?php echo $region ?>" required><br>
+
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays" value="<?php echo $pays ?>" required><br>
 
         <br><br>
         <input href=profilmod.php type="submit" name="submit" value="Enregistrer">
-        <input type="button" class="a" value="Annuler" onclick="window.location.href='profilmod.php'" />
+        <input type="button" class="a" value="Annuler" onclick="window.location.href='fiche-profil.php'" />
 
     </form>
 </body>
