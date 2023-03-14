@@ -5,7 +5,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
   exit;
 }
 $sql = "SELECT * FROM utilisateurs WHERE ";
-            $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($conn, $sql);
 if ($result && mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
     $AI = $row['AI'];
