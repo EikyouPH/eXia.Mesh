@@ -8,9 +8,9 @@
   <title id="titre">Accueil</title>
 
 
-  <link rel="stylesheet" href="style-global.css">
-  <link rel="stylesheet" href="style-creation-profil.css">
-  <link rel="stylesheet" href="style-footer.css">
+  <link rel="stylesheet" href="css/style-global.css">
+  <link rel="stylesheet" href="css/style-creation-profil.css">
+  <link rel="stylesheet" href="css/style-footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include('header.html'); ?>

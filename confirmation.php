@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="titre">Confirmation</title>
 
-    <link rel="stylesheet" href="style-global.css">
-    <link rel="stylesheet" href="style-confirmation.css">
-    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="css/style-global.css">
+    <link rel="stylesheet" href="css/style-confirmation.css">
+    <link rel="stylesheet" href="css/style-footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include('header.html'); ?>
