@@ -23,7 +23,7 @@ body {
     margin-bottom: none;
 } 
 
-#img-acceuil {
+#img-accueil {
     width: 5em;
 }
 
@@ -124,7 +124,7 @@ body {
     transition-duration: 0.3s;
 }
 
-#img-acceuil:hover {
+#img-accueil:hover {
     transition-duration: 0.3s;
     opacity: 50%;
 }
