@@ -11,15 +11,21 @@ if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, ID_adresse FROM utilisateur WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-            $result = mysqli_query($conn, $sql);
-                $row = mysqli_fetch_assoc($result);
-                $nom_utilisateur = $row['nom_utilisateur'];
-                $prenom = $row['prenom'];
-                $password = $row['password'];
-                $mail = $row['mail'];
-                $date_naissance = $row['date_naissance'];
-                $perm = $row['ID_adresse'];
+$sql = "SELECT nom_utilisateur, prenom, PASSWORD, mail, date_naissance, numero, complement, rue, nom_ville, code_postal, region, nom_pays FROM utilisateur JOIN adresse ON utilisateur.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+    $nom_utilisateur = $row['nom_utilisateur'];
+    $prenom = $row['prenom'];
+    $password = $row['password'];
+    $mail = $row['mail'];
+    $date_naissance = $row['date_naissance'];
+    $numero = $row['numero'];
+    $complement = $rom['complement'];
+    $rue = $rom['rue'];
+    $ville = $rom['nom_ville'];
+    $code_postal = $rom['code_postal'];
+    $region = $rom['region'];
+    $pays = $rom['nom_pays'];
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +57,7 @@ $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, ID_adres
                 echo "Adresse mail : $mail<br>";
                 echo "Password : $password<br>";
                 echo "date denaissance : $date_naissance<br>";
-                echo "Adresse : $perm<br>";
+                echo "Adresse : $pays<br>";
                 ?>
             </td>
             <td id="td-reseaux">
