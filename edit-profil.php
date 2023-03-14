@@ -55,8 +55,9 @@ $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, 
   <title id="titre">Modification Compte</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="style-global.css">
-  <link rel="stylesheet" href="style-footer.css">
+  <link rel="stylesheet" href="css/style-global.css">
+  <link rel="stylesheet" href="css/style-edit.css">
+  <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
 <header>

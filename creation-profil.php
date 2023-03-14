@@ -9,7 +9,7 @@
 
 
   <link rel="stylesheet" href="css/style-global.css">
-  <link rel="stylesheet" href="css/style-creation-profil.css">
+  <link rel="stylesheet" href="css/style-creation.css">
   <link rel="stylesheet" href="css/style-footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
@@ -59,7 +59,6 @@
     </fieldset>
 
     <fieldset>
-
       <legend>Réseaux</legend>
       <label for="linkedin">LinkedIn</label>
       <input type="text" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/">
@@ -70,7 +69,7 @@
       <label for="site-perso">Site Perso</label>
       <input type="text" name="site-perso" id="site-perso" placeholder="https://www.site-perso.com/">
     </fieldset>
-    <div>
+    <div id="bouton">
       <button type="submit">Annuler</button>
       <button type="submit">Valider</button>
     </div>

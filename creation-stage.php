@@ -10,7 +10,7 @@
     <title id="titre">Création compte</title>
 
     <link rel="stylesheet" href="css/style-global.css">
-    <link rel="stylesheet" href="css/style-creation-stage.css">
+    <link rel="stylesheet" href="css/style-creation.css">
     <link rel="stylesheet" href="css/style-footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
@@ -57,10 +57,12 @@
                 <option value="euros">Euros</option>
                 <option value="euros-heure">Euros par heure</option>
             </select>
-            <div>
-                <button type="submit">Annuler</button>
-                <button type="submit">Valider</button>
-            </div>
+        </fieldset>
+    </div>
+    <div id="bouton">
+        <button type="submit">Annuler</button>
+        <button type="submit">Valider</button>
+    </div>
     </div>
 </body>
 <?php include('footer.html'); ?>
