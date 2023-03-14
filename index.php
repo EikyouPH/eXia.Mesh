@@ -14,16 +14,15 @@ if(isset($_POST['submit'])) {
    }
 
    // Get the user from the database
-   $sql = "SELECT * FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
+   $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
    $result = mysqli_query($conn, $sql);
    $user = mysqli_fetch_assoc($result);
-   $ID_utilisateur = mysqli_fetch_assoc($result);
-   $_SESSION['Id'] = $ID_utilisateur;
 
 
    // Check if the user exists
    if ($user) {
       $_SESSION['logged_in'] = true;
+      $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
       header('Location: accueil.php');
       exit;
     } else {
