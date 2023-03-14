@@ -17,7 +17,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 
     <link rel="stylesheet" href="style-global.css">
     <link rel="stylesheet" href="style-profil.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style-footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include('header.html'); ?>

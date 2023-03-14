@@ -44,6 +44,7 @@ body {
 }
 
 .bandeau a {
+    font-size: 100%;
     padding: 1em;
     color: white;
     text-decoration: none;
