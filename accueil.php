@@ -89,10 +89,10 @@
       </tr>
       <tr class="bouton-accueil">
         <td>
-          <a href="/wishlist.html">Voir wishlist</a>
+          <a href="/wishlist.php">Voir wishlist</a>
         </td>
         <td>
-          <a href="/recap-candidatures.html">Voir candidatures</a>
+          <a href="/recap-candidatures.php">Voir candidatures</a>
         </td>
       </tr>
       </tr>
