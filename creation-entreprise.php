@@ -50,6 +50,10 @@
       <label for="telephone">Téléphone</label>
       <input type="text" name="telephone" id="telephone" placeholder="04 78 78 78 78">
     </fieldset>
+    <div>
+      <button type="submit">Annuler</button>
+      <button type="submit">Valider</button>
+    </div>
   </div>
 </body>
 <?php include('footer.html'); ?>

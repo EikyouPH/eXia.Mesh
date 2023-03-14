@@ -57,6 +57,10 @@
                 <option value="euros">Euros</option>
                 <option value="euros-heure">Euros par heure</option>
             </select>
+            <div>
+                <button type="submit">Annuler</button>
+                <button type="submit">Valider</button>
+            </div>
     </div>
 </body>
 <?php include('footer.html'); ?>

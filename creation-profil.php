@@ -70,6 +70,10 @@
       <label for="site-perso">Site Perso</label>
       <input type="text" name="site-perso" id="site-perso" placeholder="https://www.site-perso.com/">
     </fieldset>
+    <div>
+      <button type="submit">Annuler</button>
+      <button type="submit">Valider</button>
+    </div>
   </div>
 
 </body>
