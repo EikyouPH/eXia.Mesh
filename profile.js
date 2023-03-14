@@ -54,7 +54,7 @@ champLinkedin.innerHTML = "<a id=\"linkedin\" href=\"" + linkedin + ".fr\"> Link
 // Changement du lien "linkedin" par la variable de l'utillisateur de la session
 
 let champIndeed = document.getElementById("indeed");
-champIndeed.innerHTML = "<a id=\"indeed\" href=\"" + indeed + ".fr\"> Indeed</a>";
+champIndeed.innerHTML = "<a id=\"indeed\" href=\"" + indeeed + ".fr\"> Indeed</a>";
 
 // Changement du lien "facebook" par la variable de l'utillisateur de la session
 

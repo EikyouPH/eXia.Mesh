@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <?php include('header.html'); ?>
-
 <body>
   <table class="page-accueil">
     <thead>
