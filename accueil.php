@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="titre">Accueil</title>
 
-
   <link rel="stylesheet" href="css/style-global.css">
   <link rel="stylesheet" href="css/style-accueil.css">
   <link rel="stylesheet" href="css/style-footer.css">

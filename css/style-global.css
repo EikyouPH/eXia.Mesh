@@ -27,10 +27,6 @@ body {
     opacity: 50%;
 }
 
-.icones {
-    width: 20%;
-}
-
 .bandeau {
     display: flex;
     justify-content: space-between;
