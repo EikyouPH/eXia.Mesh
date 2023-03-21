@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
    $mail = $_POST['mail'];
    $password = $_POST['password'];
-   
+
 
    // Connect to the database
    $conn = mysqli_connect('main.leskientz.ovh', 'api', 'Ludovic03', 'projet_web');
@@ -25,9 +25,9 @@ if(isset($_POST['submit'])) {
       $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
       header('Location: accueil.php');
       exit;
-    } else {
+   } else {
       $error = "Incorrect username or password.";
-    }
+   }
 }
 ?>
 
@@ -35,37 +35,35 @@ if(isset($_POST['submit'])) {
 <html>
 
 <head>
-    <title>Page de connexion</title>
-    <link rel="stylesheet" href="css/style-connexion.css">
-    <link rel="stylesheet" href="css/style-footer.css">
+   <title>Page de connexion</title>
+   <link rel="stylesheet" href="css/style-connexion.css">
+   <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
 </video>
 
 <body>
-<div class="connexion">
-        <div>
-            <img src="/img/logo.svg" alt="Logo Place Holder" class="logo-connexion">
-        </div>
-<div id="conteneur">
-                <form method="post" action="index.php?page=login&amp;a=connect">
+   <div class="connexion">
+      <div>
+         <img src="/img/logo.svg" alt="Logo Place Holder" class="logo-connexion">
+      </div>
+      <div id="conteneur">
+         <form method="post" action="index.php?page=login&amp;a=connect">
 
-   
-      <label for="username">Identifiant:</label>
-      <input type="text" placeholder="Adresse mail" id="mail" name="mail" required><br><br>
-      <label for="password">Mot de passe:</label>
-      <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
-      <input type="submit" name="submit" value="Submit">
-   </form>
-</div>
-   <?php if(isset($error)) {
-      echo "<p style='color:red'>$error</p>";
-   } ?>
-    </div>
-</div>
+
+            <label for="username">Identifiant:</label>
+            <input type="text" placeholder="Adresse mail" id="mail" name="mail" required><br><br>
+            <label for="password">Mot de passe:</label>
+            <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+      </div>
+      <?php if (isset($error)) {
+         echo "<p style='color:red'>$error</p>";
+      } ?>
+   </div>
+   </div>
 </body>
 <?php include 'footer.html'; ?>
 
 </html>
-
-
