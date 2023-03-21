@@ -33,7 +33,7 @@
           <a href="avis-entreprise.php">Avis entreprise</a>
         </div>
         <div>
-          <a href="logout.php">Déconnexion</a>
+          <a href="/php/logout.php">Déconnexion</a>
         </div>
       </div>
   </div>
