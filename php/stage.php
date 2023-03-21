@@ -4,11 +4,12 @@ require 'base.php';
 $idstage = 1;
 
 //Requête SQL
-$sql = "SELECT durée, remuneration, date_publication, date_debut, date_fin, nombre_places, detail, numero, complement, rue, nom_ville, code_postal, region, nom_pays, s.nom_secteur AS s1, s2.nom_secteur AS s2, nom_entreprise FROM stage JOIN entreprise ON stage.ID_entreprise = entreprise.ID_entreprise JOIN adresse ON entreprise.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays JOIN secteur_activite s ON stage.ID_activite = s.ID_activite JOIN secteur_activite s2 ON stage.ID_activite2 = s2.ID_activite WHERE ID_stage = $idstage";
+$sql = "SELECT nom_stage,durée, remuneration, date_publication, date_debut, date_fin, nombre_places, detail, numero, complement, rue, nom_ville, code_postal, region, nom_pays, s.nom_secteur AS s1, s2.nom_secteur AS s2, nom_entreprise FROM stage JOIN entreprise ON stage.ID_entreprise = entreprise.ID_entreprise JOIN adresse ON entreprise.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays JOIN secteur_activite s ON stage.ID_activite = s.ID_activite JOIN secteur_activite s2 ON stage.ID_activite2 = s2.ID_activite WHERE ID_stage = $idstage";
 $result = $conn->query($sql);
 
 // Assigner des variables
 foreach ($result as $row) {
+    $nom_stage = $row['nom_stage'];
     $duree = $row['durée'];
     $remuneration = $row['remuneration'];
     $date_publication = $row['date_publication'];
@@ -28,6 +29,7 @@ foreach ($result as $row) {
     $entreprise = $row['nom_entreprise'];
 }
 
+$smarty->assign('nom_stage', $nom_stage);
 $smarty->assign('duree', $duree);
 $smarty->assign('remuneration', $remuneration);
 $smarty->assign('date_publication', $date_publication);
