@@ -40,7 +40,6 @@ if (isset($_POST['submit'])) {
    <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
-</video>
 
 <body>
    <div class="connexion">
