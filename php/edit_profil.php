@@ -31,8 +31,8 @@ $smarty->assign('ville', $ville);
 $smarty->assign('code_postal', $code_postal);
 $smarty->assign('region', $region);
 $smarty->assign('pays', $pays);
-$smarty->assign('titre_onglet', 'Profil');
-$smarty->assign('titre_page', 'Profil');
+$smarty->assign('titre_onglet', 'Edition du profil');
+$smarty->assign('titre_page', 'Edition du profil');
 // Afficher les templates
 $smarty->display('header.tpl');
 $smarty->display('edit-profil.tpl');
