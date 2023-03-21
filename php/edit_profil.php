@@ -5,6 +5,8 @@ require 'base.php';
 $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, complement, rue, nom_ville, code_postal, region, nom_pays FROM utilisateur JOIN adresse ON utilisateur.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
 // Assigner des variables
+
+// Assigner les données SQL aux variables Smarty
 foreach ($result as $row) {
     $nom_utilisateur = $row['nom_utilisateur'];
     $prenom = $row['prenom'];
@@ -19,6 +21,8 @@ foreach ($result as $row) {
     $region = $row['region'];
     $pays = $row['nom_pays'];
 }
+
+// Assigner les variables Smarty au template
 $smarty->assign('nom_utilisateur', $nom_utilisateur);
 $smarty->assign('prenom', $prenom);
 $smarty->assign('password', $password);
