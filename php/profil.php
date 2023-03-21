@@ -1,5 +1,5 @@
 <?php
-require '/php/base.php';
+require 'base.php';
 
 // Requete SQL
 $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, complement, rue, nom_ville, code_postal, region, nom_pays FROM utilisateur JOIN adresse ON utilisateur.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
@@ -33,6 +33,7 @@ $smarty->assign('ville', $ville);
 $smarty->assign('code_postal', $code_postal);
 $smarty->assign('region', $region);
 $smarty->assign('pays', $pays);
+
 $smarty->assign('titre_onglet', 'Profil');
 $smarty->assign('titre_page', 'Profil');
 
