@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/css/style-stage.css">
 
 <body>
-    <table>
+    <table class="table_stage">
         <tr>
             <td>
                 Nom de stage
@@ -34,10 +34,10 @@
         </tr>
     </table>
 
-    <div>
+    <div id="description">
         <h2>Description du poste</h2>
         <p>{$detail}</p>
+        {$nombre_places} places restantes
     </div>
-    {$nombre_places} places restantes
-
+    
 </body>

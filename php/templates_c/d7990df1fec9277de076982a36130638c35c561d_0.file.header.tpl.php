@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 13:47:32
+/* Smarty version 4.3.0, created on 2023-03-21 22:04:35
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419a76481b7f1_17922992',
+  'unifunc' => 'content_641a1be32f3319_05909445',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7990df1fec9277de076982a36130638c35c561d' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679402798,
+      1 => 1679432216,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419a76481b7f1_17922992 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641a1be32f3319_05909445 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +58,7 @@ function content_6419a76481b7f1_17922992 (Smarty_Internal_Template $_smarty_tpl)
           <a href="avis-entreprise.php">Avis entreprise</a>
         </div>
         <div>
-          <a href="logout.php">Déconnexion</a>
+          <a href="/php/logout.php">Déconnexion</a>
         </div>
       </div>
   </div>
