@@ -19,7 +19,7 @@
       </div>
       <div>
         <a href="notifications.php"><img src="/img/notifications.png" alt="notifications"></a>
-        <a href="/fiche-profil.php"><img src="/img/profil.png" alt="options"></a>
+        <a href="/php/profil.php"><img src="/img/profil.png" alt="options"></a>
       </div>
     </div>
   </nav>

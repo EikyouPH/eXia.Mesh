@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
    if ($user) {
       $_SESSION['logged_in'] = true;
       $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
-      header('Location: php/accueil.php');
+      header('Location: /php/accueil.php');
       exit;
    } else {
       $error = "Incorrect username or password.";

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 11:55:20
+/* Smarty version 4.3.0, created on 2023-03-21 13:47:32
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64198d189a68e3_70044801',
+  'unifunc' => 'content_6419a76481b7f1_17922992',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7990df1fec9277de076982a36130638c35c561d' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679396076,
+      1 => 1679402798,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64198d189a68e3_70044801 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6419a76481b7f1_17922992 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +44,7 @@ function content_64198d189a68e3_70044801 (Smarty_Internal_Template $_smarty_tpl)
       </div>
       <div>
         <a href="notifications.php"><img src="/img/notifications.png" alt="notifications"></a>
-        <a href="/fiche-profil.php"><img src="/img/profil.png" alt="options"></a>
+        <a href="/php/profil.php"><img src="/img/profil.png" alt="options"></a>
       </div>
     </div>
   </nav>
