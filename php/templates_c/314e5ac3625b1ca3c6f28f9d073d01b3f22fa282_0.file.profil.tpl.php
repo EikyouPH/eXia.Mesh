@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 15:34:19
+/* Smarty version 4.3.0, created on 2023-03-21 16:55:20
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419c06b83af97_21816419',
+  'unifunc' => 'content_6419d368c9f369_83588905',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '314e5ac3625b1ca3c6f28f9d073d01b3f22fa282' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\profil.tpl',
-      1 => 1679405066,
+      1 => 1679412090,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419c06b83af97_21816419 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6419d368c9f369_83588905 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 <body>
     <table class="page-profil">

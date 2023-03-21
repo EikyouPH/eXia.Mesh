@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 15:40:20
+/* Smarty version 4.3.0, created on 2023-03-21 16:55:16
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\entreprise.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419c1d4403bf6_29881158',
+  'unifunc' => 'content_6419d364e420b0_34111921',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c1a4a7ac40153c6556c883febfdbe960ff6b65bf' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\entreprise.tpl',
-      1 => 1679409617,
+      1 => 1679413944,
       2 => 'file',
     ),
   ),
@@ -20,21 +20,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419c1d4403bf6_29881158 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6419d364e420b0_34111921 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-entreprise.css">
 
 <body>
-    <img src="/img/personne.png" alt="Image de l'entreprise">
     <div>
-    Nom : <?php echo $_smarty_tpl->tpl_vars['nom_entreprise']->value;?>
+        <table>
+            <tr>
+                <td>
+                    <img src="/img/personne.png" alt="Image de l'entreprise">
+                </td>
+                <td>
+                    Nom : <?php echo $_smarty_tpl->tpl_vars['nom_entreprise']->value;?>
 <br>
-    Site web : <?php echo $_smarty_tpl->tpl_vars['site_web']->value;?>
+                    Site web : <?php echo $_smarty_tpl->tpl_vars['site_web']->value;?>
 <br>
-    Adresse mail de contact : <?php echo $_smarty_tpl->tpl_vars['mail_contact']->value;?>
+                    Adresse mail de contact : <?php echo $_smarty_tpl->tpl_vars['mail_contact']->value;?>
 <br>
-    Numéro de téléphone : <?php echo $_smarty_tpl->tpl_vars['numero_tel']->value;?>
+                    Numéro de téléphone : <?php echo $_smarty_tpl->tpl_vars['numero_tel']->value;?>
 <br>
-    Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
+                    Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
  <?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
  <?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
@@ -42,11 +47,14 @@ function content_6419c1d4403bf6_29881158 (Smarty_Internal_Template $_smarty_tpl)
 , <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 <br>
+                </td>
+            </tr>
+        </table>
     </div>
     <div>
         <h2>Présentation générale</h2>
         <p> On ne gagne pas la LDC mais trkl on recrute
-        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias aperiam tempore, unde
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias aperiam tempore, unde
             recusandae similique earum nihil, nobis accusantium quis error soluta! Qui quis dolores est magnam officiis
             deserunt quod!
             Ipsam, voluptate cumque? Similique quos quisquam deserunt maiores dolorum et tenetur rem sunt architecto
@@ -74,7 +82,8 @@ function content_6419c1d4403bf6_29881158 (Smarty_Internal_Template $_smarty_tpl)
             quo fugit, ipsum maiores vel sed numquam consequuntur maxime, ullam dolore voluptate quae tempore.
             A beatae laborum non. Facilis, nemo, libero aperiam qui ex perferendis ipsa rem labore eveniet corporis
             voluptatum illum reiciendis dolore, minus fugit laborum repudiandae. Possimus veniam nulla quod velit
-            fugiat. </p>
+            fugiat.
+        </p>
     </div>
     <div>
         <h2>Informations de l'entreprise</h2>
@@ -140,6 +149,14 @@ function content_6419c1d4403bf6_29881158 (Smarty_Internal_Template $_smarty_tpl)
             voluptatum illum reiciendis dolore, minus fugit laborum repudiandae. Possimus veniam nulla quod velit
             fugiat. </p>
     </div>
+    <div>
+        <h2>Avis</h2>
+        <p>
+            Note : <?php echo $_smarty_tpl->tpl_vars['note']->value;?>
+ <br>
+            Commentaire : <?php echo $_smarty_tpl->tpl_vars['commentaire']->value;?>
 
+        </p>
+    </div>
 </body><?php }
 }

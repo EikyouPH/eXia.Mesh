@@ -1,18 +1,26 @@
 <link rel="stylesheet" href="/css/style-entreprise.css">
 
 <body>
-    <img src="/img/personne.png" alt="Image de l'entreprise">
     <div>
-    Nom : {$nom_entreprise}<br>
-    Site web : {$site_web}<br>
-    Adresse mail de contact : {$mail_contact}<br>
-    Numéro de téléphone : {$numero_tel}<br>
-    Adresse : {$numero} {$complement} {$rue}, {$code_postal}, {$ville}, {$region}, {$pays}<br>
+        <table>
+            <tr>
+                <td>
+                    <img src="/img/personne.png" alt="Image de l'entreprise">
+                </td>
+                <td>
+                    Nom : {$nom_entreprise}<br>
+                    Site web : {$site_web}<br>
+                    Adresse mail de contact : {$mail_contact}<br>
+                    Numéro de téléphone : {$numero_tel}<br>
+                    Adresse : {$numero} {$complement} {$rue}, {$code_postal}, {$ville}, {$region}, {$pays}<br>
+                </td>
+            </tr>
+        </table>
     </div>
     <div>
         <h2>Présentation générale</h2>
         <p> On ne gagne pas la LDC mais trkl on recrute
-        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias aperiam tempore, unde
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias aperiam tempore, unde
             recusandae similique earum nihil, nobis accusantium quis error soluta! Qui quis dolores est magnam officiis
             deserunt quod!
             Ipsam, voluptate cumque? Similique quos quisquam deserunt maiores dolorum et tenetur rem sunt architecto
@@ -40,7 +48,8 @@
             quo fugit, ipsum maiores vel sed numquam consequuntur maxime, ullam dolore voluptate quae tempore.
             A beatae laborum non. Facilis, nemo, libero aperiam qui ex perferendis ipsa rem labore eveniet corporis
             voluptatum illum reiciendis dolore, minus fugit laborum repudiandae. Possimus veniam nulla quod velit
-            fugiat. </p>
+            fugiat.
+        </p>
     </div>
     <div>
         <h2>Informations de l'entreprise</h2>
@@ -106,5 +115,11 @@
             voluptatum illum reiciendis dolore, minus fugit laborum repudiandae. Possimus veniam nulla quod velit
             fugiat. </p>
     </div>
-
+    <div>
+        <h2>Avis</h2>
+        <p>
+            Note : {$note} <br>
+            Commentaire : {$commentaire}
+        </p>
+    </div>
 </body>
