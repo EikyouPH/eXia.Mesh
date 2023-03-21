@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 11:55:20
+/* Smarty version 4.3.0, created on 2023-03-21 13:14:19
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64198d189c5633_48507634',
+  'unifunc' => 'content_64199f9bced0a2_30751133',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7be9d4e9a990792f04b12cb19ce77fe9912e0141' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\profil.tpl',
-      1 => 1679396119,
+      1 => 1679400831,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64198d189c5633_48507634 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64199f9bced0a2_30751133 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 <body>
     <table class="page-profil">
@@ -42,7 +42,7 @@ function content_64198d189c5633_48507634 (Smarty_Internal_Template $_smarty_tpl)
             Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
  <?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
  <?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
-, <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+,<br> <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>

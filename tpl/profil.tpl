@@ -11,7 +11,7 @@
             Adresse mail : {$mail}<br>
             Password : {$password}<br>
             Date de naissance : {$date_naissance}<br>
-            Adresse : {$numero} {$complement} {$rue}, {$code_postal}, {$ville}, {$region}, {$pays}<br>
+            Adresse : {$numero} {$complement} {$rue},<br> {$code_postal}, {$ville}, {$region}, {$pays}<br>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
