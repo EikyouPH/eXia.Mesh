@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 16:26:37
+/* Smarty version 4.3.0, created on 2023-03-21 20:12:08
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\stage.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419ccad4bab49_15294805',
+  'unifunc' => 'content_641a0188abc589_87553457',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78a17e5ef851a306e16093e81be9c5620b8148e3' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\stage.tpl',
-      1 => 1679412393,
+      1 => 1679425927,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419ccad4bab49_15294805 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641a0188abc589_87553457 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-stage.css">
 
 <body>
@@ -30,7 +30,16 @@ function content_6419ccad4bab49_15294805 (Smarty_Internal_Template $_smarty_tpl)
                 <h2>Nom de stage</h2>
             </td>
             <td rowspan="3">
-                Adresse <br> Durée <br> Salaire
+                <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+ <br> <?php echo $_smarty_tpl->tpl_vars['duree']->value;?>
+ <br> <?php echo $_smarty_tpl->tpl_vars['remuneration']->value;?>
+
             </td>
         </tr>
         <tr>

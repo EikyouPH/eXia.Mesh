@@ -7,7 +7,7 @@
                 <h2>Nom de stage</h2>
             </td>
             <td rowspan="3">
-                Adresse <br> Durée <br> Salaire
+                {$numero} {$complement} {$rue}, {$code_postal}, {$ville}, {$region}, {$pays} <br> {$duree} <br> {$remuneration}
             </td>
         </tr>
         <tr>

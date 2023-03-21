@@ -64,6 +64,6 @@ if (isset($_POST['submit'])) {
    </div>
    </div>
 </body>
-<?php include 'footer.html'; ?>
+<?php include './tpl/footer.tpl'; ?>
 
 </html>
