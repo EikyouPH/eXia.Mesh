@@ -6,24 +6,24 @@ if (isset($_POST['submit'])) {
    $password = $_POST['password'];
 
 
-   // Connect to the database
+   // Connexion à la base de données
    $conn = mysqli_connect('main.leskientz.ovh', 'api', 'Ludovic03', 'projet_web');
-   // Check connection
+   // Vérification de la connexion
    if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
    }
 
-   // Get the user from the database
+   // Récupération de l'utilisateur
    $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
    $result = mysqli_query($conn, $sql);
    $user = mysqli_fetch_assoc($result);
 
 
-   // Check if the user exists
+   // Vérification de l'existance de l'utilisateur
    if ($user) {
       $_SESSION['logged_in'] = true;
       $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
-      header('Location: accueil.php');
+      header('Location: php/accueil.php');
       exit;
    } else {
       $error = "Incorrect username or password.";
