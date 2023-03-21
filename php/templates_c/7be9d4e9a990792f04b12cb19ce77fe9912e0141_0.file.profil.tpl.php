@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 13:14:19
+/* Smarty version 4.3.0, created on 2023-03-21 14:21:59
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64199f9bced0a2_30751133',
+  'unifunc' => 'content_6419af77dac805_34297655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7be9d4e9a990792f04b12cb19ce77fe9912e0141' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\profil.tpl',
-      1 => 1679400831,
+      1 => 1679404907,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64199f9bced0a2_30751133 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6419af77dac805_34297655 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 <body>
     <table class="page-profil">
@@ -115,6 +115,6 @@ function content_64199f9bced0a2_30751133 (Smarty_Internal_Template $_smarty_tpl)
     <p>
         Expériences passées
     </p>
-    <a href="edit-profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
+    <a href="edit_profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body><?php }
 }

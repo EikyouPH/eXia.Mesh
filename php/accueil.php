@@ -1,4 +1,5 @@
 <?php
+require '/php/base.php';
 // On démarre Smarty AVANT d'écrire du code HTML	
 require '../vendor/autoload.php';
 // Creer un objet Smarty
