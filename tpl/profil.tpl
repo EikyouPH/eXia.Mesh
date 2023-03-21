@@ -80,5 +80,5 @@
     <p>
         Expériences passées
     </p>
-    <a href="edit-profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
+    <a href="edit_profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body>
