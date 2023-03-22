@@ -40,11 +40,11 @@ if (isset($_POST['submit'])) {
     }
 }
 // On démarre Smarty AVANT d'écrire du code HTML	
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 // Creer un objet Smarty
 $smarty = new Smarty();
 // Definir les chemins des templates
-$smarty->setTemplateDir('../tpl/');
+$smarty->setTemplateDir('tpl/');
 // Afficher les templates
 $smarty->display('index.tpl');
 $smarty->display('footer.tpl');
