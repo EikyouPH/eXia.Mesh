@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 23:16:18
+/* Smarty version 4.3.0, created on 2023-03-22 13:14:16
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641a2cb26eee28_12094004',
+  'unifunc' => 'content_641af1182905a9_39610154',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8b5b30591bbfa28afe78f0e71233c609f4c7465' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679432417,
+      1 => 1679481158,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641a2cb26eee28_12094004 (Smarty_Internal_Template $_smarty_tpl) {
-?><head>
+function content_641af1182905a9_39610154 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html lang="fr">
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
