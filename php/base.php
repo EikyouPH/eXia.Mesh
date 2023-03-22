@@ -1,5 +1,4 @@
 <?php
-
 // Connexion à la base de données
 $host = 'main.leskientz.ovh';
 $bdd = 'projet_web';
