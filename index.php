@@ -1,5 +1,5 @@
 <?php
-// session_start();
+session_start();
 
 if (isset($_POST['submit'])) {
     $mail = $_POST['mail'];
@@ -30,9 +30,9 @@ if (isset($_POST['submit'])) {
 
 
     // Vérification de l'existance de l'utilisateur
-    if ($user) {
+    if ($user !== false) {
         $_SESSION['logged_in'] = true;
-        $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
+        $_SESSION['ID_utilisateur'] = $user[0]['ID_utilisateur'];
         header('Location:/php/accueil.php');
         exit;
     } else {
