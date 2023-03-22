@@ -83,7 +83,7 @@
 
     <h2>4 - Liens externes</h2>
     <p>
-        Le Site peut contenir des liens hypertextes allant vers d'autres sites. La société Lidl ne peut être tenue
+        Le Site peut contenir des liens hypertextes allant vers d'autres sites. La société eXia.Mesh ne peut être tenue
         responsable du contenu, fonctionnement.
     </p>
 
