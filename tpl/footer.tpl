@@ -6,7 +6,7 @@
       </td>
     </tr>
     <tr>
-      <td><a href="php/mentions-legales.php">Mentions légales</a>
+      <td><a href="mentions-legales.php">Mentions légales</a>
     </tr>
     </td>
     </tr>

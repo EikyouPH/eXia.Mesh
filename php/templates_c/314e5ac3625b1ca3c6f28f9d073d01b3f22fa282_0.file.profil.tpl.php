@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 10:52:36
+/* Smarty version 4.3.0, created on 2023-03-22 15:21:43
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641acfe4817266_30392412',
+  'unifunc' => 'content_641b0ef7f1de55_53204990',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '314e5ac3625b1ca3c6f28f9d073d01b3f22fa282' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\profil.tpl',
-      1 => 1679478754,
+      1 => 1679478877,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641acfe4817266_30392412 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641b0ef7f1de55_53204990 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 
 <body>
@@ -30,7 +30,6 @@ function content_641acfe4817266_30392412 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-            <div>
                 Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 <br>
                 Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
@@ -49,7 +48,6 @@ function content_641acfe4817266_30392412 (Smarty_Internal_Template $_smarty_tpl)
 , <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 <br>
-            </div>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -96,12 +94,8 @@ function content_641acfe4817266_30392412 (Smarty_Internal_Template $_smarty_tpl)
                     </tr>
                 </table>
             </td>
-
-
         </tr>
-
     </table>
-
     <p>
         Expériences passées
     </p>
