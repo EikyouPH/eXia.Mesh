@@ -11,7 +11,7 @@
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
                         required><br>
-
+                    
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
                     <label for="mail">Adresse mail</label><br>
@@ -23,7 +23,7 @@
                     <label for="numero">N°</label><br>
                     <input type="text" name="numero" id="numero" value="{$numero}" required><br>
                     <label for="complement">Complément</label><br>
-                    <input type="text" name="complement" id="complement" value="{$complement}" required><br>
+                    <input type="text" name="complement" id="complement" value="{$complement}"><br>
                     <label for="rue">Rue</label><br>
                     <input type="text" name="rue" id="rue" value="{$rue}" required><br>
                     <label for="code_postal">Code postal</label><br>
