@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 14:47:33
+/* Smarty version 4.3.0, created on 2023-03-22 14:49:10
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641b06f54b4463_51822619',
+  'unifunc' => 'content_641b0756ae55f9_08688610',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b8c3b4fb325de443607a58d960a270728e360ee' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679492845,
+      1 => 1679492879,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641b06f54b4463_51822619 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641b0756ae55f9_08688610 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
 
 <body>
@@ -37,7 +37,7 @@ function content_641b06f54b4463_51822619 (Smarty_Internal_Template $_smarty_tpl)
                         required><br>
                     
                     <label for="prenom">Prénom</label><br>
-                    <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['_SESSION']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_ID_utilisateur']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_ID_utilisateur']->value['index'] : null)];?>
+                    <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 " required><br>
                     <label for="mail">Adresse mail</label><br>
                     <input type="text" name="mail" id="mail" value="<?php echo $_smarty_tpl->tpl_vars['mail']->value;?>

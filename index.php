@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
     // Récupération de l'utilisateur
     $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
     $result = $conn->query($sql);
-    $user = $result->fetchAll();
+    $user = $result->fetch();
 
 
     // Vérification de l'existance de l'utilisateur
