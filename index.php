@@ -24,22 +24,22 @@ if (isset($_POST['submit'])) {
     }
 
     // Récupération de l'utilisateur
-    $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
-    $result = $conn->query($sql);
-    $user = $result->fetch();
+$sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
+$result = $conn->query($sql);
+$user = $result->fetch();
 
-
-    // Vérification de l'existance de l'utilisateur
-    if ($user !== false) {
-        $_SESSION['logged_in'] = true;
-        $_SESSION['ID_utilisateur'] = $user[0]['ID_utilisateur'];
-        header('Location:/php/accueil.php');
-        exit;
-    } else {
-        $error = "Incorrect username or password.";
-    }
+// Vérification de l'existence de l'utilisateur
+if ($user !== false) {
+    $_SESSION['logged_in'] = true;
+    $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
+    
+    header('Location:/php/accueil.php');
+    exit;
+} else {
+    $error = "Incorrect username or password.";
 }
-// On démarre Smarty AVANT d'écrire du code HTML	
+}
+// On démarre Smarty AVANT d'écrire du code HTML    
 require 'vendor/autoload.php';
 // Creer un objet Smarty
 $smarty = new Smarty();
@@ -48,3 +48,4 @@ $smarty->setTemplateDir('tpl/');
 // Afficher les templates
 $smarty->display('index.tpl');
 $smarty->display('footer.tpl');
+?>
