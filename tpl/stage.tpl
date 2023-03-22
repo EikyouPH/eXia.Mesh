@@ -3,11 +3,13 @@
 <body>
     <table class="table_stage">
         <tr>
-            <td>
-                Nom de stage
+            <td colspan="3">
+                <h3>{$nom_stage}<h3>
             </td>
+        </tr>
+        <tr>    
             <td rowspan="3">
-                Lieu du stage : {$numero} {$complement} {$rue}, {$code_postal}, {$ville}, {$region}, {$pays} <br>
+                Lieu du stage : <br> {$numero} {$complement} {$rue}, <br> {$code_postal}, {$ville}, <br>{$region}, {$pays} <br><br>
                 Durée : {$duree} <br>
                 Rémunération : {$remuneration} €/h
             </td>
@@ -18,7 +20,7 @@
         </tr>
         <tr>
             <td>
-                {$entreprise} + note
+               Entreprise : {$entreprise} + note
             </td>
             <td>
             Date de fin : {$date_fin}
@@ -26,7 +28,7 @@
         </tr>
         <tr>
             <td>
-                Domaines : {$domaine1} {$domaine2}
+                Domaines : {$domaine1}, {$domaine2}
             </td>
             <td>
             Date de publication : {$date_publication}

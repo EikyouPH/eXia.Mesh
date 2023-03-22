@@ -1,68 +1,50 @@
 <?php
-session_start();
+// session_start();
 
 if (isset($_POST['submit'])) {
-   $mail = $_POST['mail'];
-   $password = $_POST['password'];
+    $mail = $_POST['mail'];
+    $password = $_POST['password'];
 
 
-   // Connexion à la base de données
-   $conn = mysqli_connect('main.leskientz.ovh', 'api', 'Ludovic03', 'projet_web');
-   // Vérification de la connexion
-   if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-   }
+    // Connexion à la base de données
+    $host = 'main.leskientz.ovh';
+    $bdd = 'projet_web';
+    $user = 'api';
+    $mdp = 'Ludovic03';
+    $attribute = PDO::ATTR_ERRMODE;
+    $value = PDO::ERRMODE_EXCEPTION;
 
-   // Récupération de l'utilisateur
-   $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
-   $result = mysqli_query($conn, $sql);
-   $user = mysqli_fetch_assoc($result);
+    // Vérification de la connexion
+    try {
+        $conn = new PDO("mysql:host=$host;dbname=$bdd", "$user", "$mdp");
+        $conn->setAttribute($attribute, $value);
+    } catch (PDOException $e) {
+        print "Erreur connexion !: " . $e->getMessage() . "<br/>";
+        die();
+    }
+
+    // Récupération de l'utilisateur
+    $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
+    $result = $conn->query($sql);
+    $user = $result->fetchAll();
 
 
-   // Vérification de l'existance de l'utilisateur
-   if ($user) {
-      $_SESSION['logged_in'] = true;
-      $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
-      header('Location: /php/accueil.php');
-      exit;
-   } else {
-      $error = "Incorrect username or password.";
-   }
+    // Vérification de l'existance de l'utilisateur
+    if ($user) {
+        $_SESSION['logged_in'] = true;
+        $_SESSION['ID_utilisateur'] = $user['ID_utilisateur'];
+        header('Location: /php/accueil.php');
+        exit;
+    } else {
+        $error = "Incorrect username or password.";
+    }
 }
-?>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-   <title>Page de connexion</title>
-   <link rel="stylesheet" href="css/style-connexion.css">
-   <link rel="stylesheet" href="css/style-footer.css">
-</head>
-
-
-<body>
-   <div class="connexion">
-      <div>
-         <img src="/img/logo.svg" alt="Logo Place Holder" class="logo-connexion">
-      </div>
-      <div id="conteneur">
-         <form method="post" action="index.php?page=login&amp;a=connect">
-
-
-            <label for="username">Identifiant:</label>
-            <input type="text" placeholder="Adresse mail" id="mail" name="mail" required><br><br>
-            <label for="password">Mot de passe:</label>
-            <input type="password" placeholder="Mot de passe" id="password" name="password" required><br><br>
-            <input type="submit" name="submit" value="Submit">
-         </form>
-      </div>
-      <?php if (isset($error)) {
-         echo "<p style='color:red'>$error</p>";
-      } ?>
-   </div>
-   </div>
-</body>
-<?php include './tpl/footer.tpl'; ?>
-
-</html>
+// On démarre Smarty AVANT d'écrire du code HTML	
+require '../vendor/autoload.php';
+// Creer un objet Smarty
+$smarty = new Smarty();
+// Definir les chemins des templates
+$smarty->setTemplateDir('../tpl/');
+// Afficher les templates
+$smarty->display('index.tpl');
+$smarty->display('footer.tpl');

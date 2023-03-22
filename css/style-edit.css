@@ -1,8 +1,66 @@
-h2 {
+.page-profil {
+    position: relative; /* Ajoutez ceci pour définir la position de référence */
     display: flex;
-    justify-content: center;
+    width: 80%;
     align-items: center;
-    font-size: 200%;
-    color: #0E8388;
+    text-align: justify;
+    margin: 5em 10% 5em 10%;
+    border-spacing: 2em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
 }
 
+
+
+.page-profil td {
+    width: 30em;
+    align-items: center;
+}
+
+
+.reseaux {
+    font-size: 0.7em;
+    border-spacing: none;
+    padding: none;
+}
+
+.reseaux img {
+    width: 3em;
+}
+
+.reseaux a {
+    text-decoration: none;
+}
+
+.reseaux .icone {
+    width: 0;
+}
+
+.page-profil .personne {
+    justify-content: center;
+    width: 30%;
+    min-width: 5em;
+}
+
+.personne img {
+    width: 100%;
+}
+
+.a {
+    position: absolute; /* Ajoutez ceci pour définir la position absolue */
+    bottom: 30px; /* Ajustez la valeur de 'bottom' pour définir la distance entre l'encadré et le bas de la page */
+    right: 40px; /* Ajustez la valeur de 'right' pour définir la distance entre l'encadré et le bord droit de la page */
+    transition-duration: 0.4s;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.a:hover {
+    transition-duration: 0.4s;
+    background-color: #555555;
+    color: #ffffff;
+}
