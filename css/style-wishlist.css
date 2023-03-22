@@ -1,0 +1,67 @@
+:root {
+    --tresclair: #CBE4DE;
+    --clair: #0E8388;
+    --fonce: #2E4F4F;
+    --tresfonce: #2C3333;
+}
+
+
+h2 {
+    color: var(--fonce);
+    margin: 2% 10% 0 5%;
+}
+
+#wishlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 10% 2% 5%;
+    background-color: #c7eeec;
+    border: solid 2px var(--fonce);
+    border-radius: 10px;
+}
+
+#wishlist a {
+    text-decoration: none;
+    color: black;
+}
+
+#wishlist hr {
+    width: 100%;
+    color: var(--fonce);
+}
+
+.offre-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 2% 1% 2%;
+}
+
+.offre-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 2% 2%;
+}
+
+.offre-contenu img {
+    width: 15%;
+    margin-left: 70%;
+}
+
+.offre-contenu img:hover {
+    scale: 1.1;
+    transition-duration: 0.3s;
+}
+
+.offre-titre {
+    color : var(--clair);
+    font-weight: bold;
+}
+
+.offre-entreprise {
+    font-weight: bold;
+    color: gray;
+}
