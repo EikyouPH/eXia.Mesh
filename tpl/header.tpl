@@ -34,6 +34,9 @@
           <a href="avis-entreprise.php">Avis entreprise</a>
         </div>
         <div>
+          <a href="navigation.php">Navigation</a>
+        </div>
+        <div>
           <a href="/php/logout.php">Déconnexion</a>
         </div>
       </div>

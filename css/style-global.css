@@ -1,3 +1,10 @@
+:root {
+    --tresclair: #CBE4DE;
+    --clair: #0E8388;
+    --fonce: #2E4F4F;
+    --tresfonce: #2C3333;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #CBE4DE;
