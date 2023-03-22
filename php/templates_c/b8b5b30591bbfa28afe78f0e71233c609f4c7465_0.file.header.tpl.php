@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 13:14:16
+/* Smarty version 4.3.0, created on 2023-03-22 15:49:27
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641af1182905a9_39610154',
+  'unifunc' => 'content_641b15771968a1_52217989',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8b5b30591bbfa28afe78f0e71233c609f4c7465' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679481158,
+      1 => 1679496565,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641af1182905a9_39610154 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641b15771968a1_52217989 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -57,6 +57,9 @@ function content_641af1182905a9_39610154 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         <div>
           <a href="avis-entreprise.php">Avis entreprise</a>
+        </div>
+        <div>
+          <a href="navigation.php">Navigation</a>
         </div>
         <div>
           <a href="/php/logout.php">Déconnexion</a>
