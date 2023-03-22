@@ -1,0 +1,49 @@
+:root {
+    --tresclair: #CBE4DE;
+    --clair: #0E8388;
+    --fonce: #2E4F4F;
+    --tresfonce: #2C3333;
+}
+
+
+.page-profil {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    text-align: justify;
+    margin: 5em 10% 5em 10%;
+    border-spacing: 2em;
+    border: 2px solid var(--clair);
+    border-radius: 10px;
+    position: relative;
+}
+
+.reseaux img {
+    width: 40%;
+}
+
+.reseaux a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 70%;
+    color: var(--tresfonce);
+}
+
+.page-profil .personne {
+    justify-content: center;
+    width: 30%;
+    min-width: 5em;
+}
+
+
+.personne img {
+    width: 100%;
+}
+
+#crayon {
+    width: 5%;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
