@@ -21,7 +21,27 @@ foreach ($result as $row) {
     $region = $row['region'];
     $pays = $row['nom_pays'];
 }
-
+if (isset($_POST['submit'])) {
+    $nom_utilisateur = $_POST['nom_utilisateur'];
+    $password = $_POST['password'];
+    $prenom = $_POST['prenom'];
+    $mail = $_POST['mail'];
+    $date_naissance = $_POST['date_naissance'];
+    $numero = $_POST['numero'];
+    $complement = $_POST['complement'];
+    $rue = $_POST['rue'];
+    $nom_ville = $_POST['ville'];
+    $code_postal = $_POST['code_postal'];
+    $region = $_POST['region'];
+    $nom_pays = $_POST['nom_pays'];
+    $id_utilisateur = $_SESSION['ID_utilisateur'];
+    
+    $sql = "UPDATE utilisateur SET nom_utilisateur=?, password=?, prenom=?,mail=?, date_naissance=? WHERE ID_utilisateur = ?";
+    $stmt= $conn->prepare($sql);
+    $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
+    header("Location: profil.php");
+exit();
+    }
 // Assigner les variables Smarty au template
 $smarty->assign('nom_utilisateur', $nom_utilisateur);
 $smarty->assign('prenom', $prenom);
@@ -44,13 +64,4 @@ $smarty->display('footer.tpl');
 
 
 
-if (isset($_POST['submit'])) {
-    $nom_utilisateur = $_POST['nom_utilisateur'];
-    $password = $_POST['password'];
-    $prenom = $_POST['prenom'];
-    $id_utilisateur = $_SESSION['ID_utilisateur'];
-    
-    $sql = "UPDATE utilisateur SET nom_utilisateur=?, password=?, prenom=? WHERE ID_utilisateur = ?";
-    $stmt= $conn->prepare($sql);
-    $stmt->execute([$nom_utilisateur, $password, $prenom, $id_utilisateur]);
-    }
+

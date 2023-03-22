@@ -1,5 +1,27 @@
-<link rel="stylesheet" href="/css/style-edit.css">
+<?php
+/* Smarty version 4.3.0, created on 2023-03-21 14:25:11
+  from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil.tpl' */
 
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_6419b037d541a2_07001598',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '64dc7513743dddd17d1351347ab8e7247cc9727c' => 
+    array (
+      0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil.tpl',
+      1 => 1679404897,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/style-profil.css">
 <body>
     <table class="page-profil">
         <tr>
@@ -7,33 +29,24 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                <form method="post">
-                    <label for="nom_utilisateur">Nom</label><br>
-                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
-                        required><br>
-
-                    <label for="prenom">Prénom</label><br>
-                    <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
-                    <label for="mail">Adresse mail</label><br>
-                    <input type="text" name="mail" id="mail" value="{$mail}" required><br>
-                    <label for="password">Mot de passe</label><br>
-                    <input type="text" name="password" id="password" value="{$password}" required><br>
-                    <label for="date_naissance">Date de naissance</label><br>
-                    <input type="text" name="date_naissance" id="date_naissance" value="{$date_naissance}" required><br>
-                    <label for="numero">N°</label><br>
-                    <input type="text" name="numero" id="numero" value="{$numero}" required><br>
-                    <label for="complement">Complément</label><br>
-                    <input type="text" name="complement" id="complement" value="{$complement}" required><br>
-                    <label for="rue">Rue</label><br>
-                    <input type="text" name="rue" id="rue" value="{$rue}" required><br>
-                    <label for="code_postal">Code postal</label><br>
-                    <input type="text" name="code_postal" id="code_postal" value="{$code_postal}" required><br>
-                    <label for="ville">Ville</label><br>
-                    <input type="text" name="ville" id="ville" value="{$ville}" required><br>
-                    <label for="region">Région</label><br>
-                    <input type="text" name="region" id="region" value="{$region}" required><br>
-                    <label for="nom_pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
+            Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
+<br>
+            Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
+<br>
+            Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
+<br>
+            Password : <?php echo $_smarty_tpl->tpl_vars['password']->value;?>
+<br>
+            Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
+<br>
+            Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
+,<br> <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+<br>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -83,17 +96,17 @@
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
-                                            personnel</a>
+                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site personnel</a>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit"class="a">Enregistrer</button>
             </td>
+
         </tr>
+
     </table>
     </td>
     </tr>
@@ -102,4 +115,6 @@
     <p>
         Expériences passées
     </p>
-</body>
+    <a href="edit_profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
+</body><?php }
+}
