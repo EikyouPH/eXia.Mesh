@@ -22,10 +22,6 @@ if (isset($_POST['submit'])) {
         print "Erreur connexion !: " . $e->getMessage() . "<br/>";
         die();
     }
-    // Vérification de la connexion
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
 
     // Récupération de l'utilisateur
     $sql = "SELECT ID_utilisateur FROM utilisateur WHERE mail = '$mail' AND password = '$password'";
