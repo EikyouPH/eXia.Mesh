@@ -40,7 +40,6 @@ if (isset($_POST['submit'])) {
    <link rel="stylesheet" href="css/style-footer.css">
 </head>
 
-</video>
 
 <body>
    <div class="connexion">
@@ -64,6 +63,6 @@ if (isset($_POST['submit'])) {
    </div>
    </div>
 </body>
-<?php include 'footer.html'; ?>
+<?php include './tpl/footer.tpl'; ?>
 
 </html>
