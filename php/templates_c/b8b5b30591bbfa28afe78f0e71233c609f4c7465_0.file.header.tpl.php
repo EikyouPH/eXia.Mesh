@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 14:23:40
+/* Smarty version 4.3.0, created on 2023-03-21 23:16:18
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419afdc92f3e2_14265360',
+  'unifunc' => 'content_641a2cb26eee28_12094004',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8b5b30591bbfa28afe78f0e71233c609f4c7465' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679403160,
+      1 => 1679432417,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419afdc92f3e2_14265360 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641a2cb26eee28_12094004 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +58,7 @@ function content_6419afdc92f3e2_14265360 (Smarty_Internal_Template $_smarty_tpl)
           <a href="avis-entreprise.php">Avis entreprise</a>
         </div>
         <div>
-          <a href="logout.php">Déconnexion</a>
+          <a href="/php/logout.php">Déconnexion</a>
         </div>
       </div>
   </div>
