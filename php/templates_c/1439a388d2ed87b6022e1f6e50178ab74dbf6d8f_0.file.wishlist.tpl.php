@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-23 10:43:40
+/* Smarty version 4.3.0, created on 2023-03-23 11:03:14
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\wishlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641c1f4c2e7ac6_10754564',
+  'unifunc' => 'content_641c23e224ba87_87883056',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1439a388d2ed87b6022e1f6e50178ab74dbf6d8f' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\wishlist.tpl',
-      1 => 1679564612,
+      1 => 1679565783,
       2 => 'file',
     ),
   ),
@@ -20,19 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641c1f4c2e7ac6_10754564 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641c23e224ba87_87883056 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-wishlist.css">
 <body>
 
     <h2> Votre Wishlist 1</h2>
-    <table id="wishlist">
+    <table class="offre">
     <a href="wishlist.php" target="_blank">
         <tr>
             <td>
                     <div class="">
                         <div class="offre-header">
                             <div class="offre-titre">Création d'application</div>
-                            <div class="offre-entreprise">Maison de l'innovation mais que sais-je</div>
+                            <div class="offre-entreprise">PSG</div>
                         </div>
                         <div class="offre-contenu">
                             <a href="wishlist.php" target="_blank">

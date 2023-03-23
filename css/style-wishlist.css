@@ -11,7 +11,7 @@ h2 {
     margin: 2% 10% 0 5%;
 }
 
-#wishlist {
+.offre {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,7 +22,7 @@ h2 {
     border-radius: 10px;
 }
 
-#wishlist a {
+.offre a {
     text-decoration: none;
     color: black;
 }
@@ -35,6 +35,8 @@ h2 {
 }
 
 .offre-entreprise {
+    margin-right: 5%;
+    text-align: right;
     font-weight: bold;
     color: gray;
 }
@@ -43,12 +45,14 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: justify;
+    width: 120%;
     padding: 0 2% 2% 2%;
 }
 
 .offre-contenu img {
     width: 15%;
-    margin-left: 70%;
+    margin-left: 8%;
 }
 
 .offre-contenu img:hover {
@@ -59,4 +63,5 @@ h2 {
 .offre-titre {
     color: var(--clair);
     font-weight: bold;
+    font-size: 130%;
 }
