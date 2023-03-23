@@ -10,7 +10,7 @@
 </head>
 <header>
   <nav>
-    <div class="header">
+    <div class="header-global">
       <div>
         <a href="accueil.php"><img src="/img/logo.svg" alt="retour accueil"></a>
       </div>

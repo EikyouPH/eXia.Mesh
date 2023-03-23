@@ -11,7 +11,7 @@ body {
     min-width: 700px;
 }
 
-.header {
+.header-global {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,16 +20,16 @@ body {
     padding-right: 2%;
 }
 
-.header h1 {
+.header-global h1 {
     font-size: 2em;
     color: #09494b;
 }
 
-.header img {
-    width: 75px;
+.header-global img {
+    width: 100px;
 }
 
-.header img:hover {
+.header-global img:hover {
     transition-duration: 0.3s;
     opacity: 50%;
 }

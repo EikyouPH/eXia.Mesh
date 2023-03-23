@@ -23,7 +23,10 @@
     <h4>--- Wishlist ---</h4>
     <a href="wishlist.php">Wishlist</a><br>
     <a href="wishlist-liste.php">Liste des Wishlists</a>
-
+    
+    <h4>--- Recap candidatures ---</h4>
+    <a href="recap-candidatures.php">Recap candidatures</a>
+    
     <h4>--- Autres pages ---</h4>
     <a href="notifications.php">Notifications</a>
     <a href="confirmation.php">Confirmation</a><br>
