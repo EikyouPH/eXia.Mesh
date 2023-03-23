@@ -1,4 +1,27 @@
-<link rel="stylesheet" href="/css/style-wishlist.css">
+<?php
+/* Smarty version 4.3.0, created on 2023-03-23 11:19:31
+  from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\wishlist.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_641c27b32114d2_25932678',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ab0f3e98edbce1d11767bb4efc79dfcd1dd5f394' => 
+    array (
+      0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\wishlist.tpl',
+      1 => 1679566717,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_641c27b32114d2_25932678 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/style-wishlist.css">
 
 <body>
 
@@ -35,4 +58,5 @@
             </tr>
         </a>
     </table>
-</body>
+</body><?php }
+}

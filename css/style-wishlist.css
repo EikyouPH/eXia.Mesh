@@ -11,7 +11,7 @@ h2 {
     margin: 2% 10% 0 5%;
 }
 
-.offre {
+.wishlist {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,26 +22,26 @@ h2 {
     border-radius: 10px;
 }
 
-.offre a {
+.wishlist a {
     text-decoration: none;
     color: black;
 }
 
-.offre-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2% 2% 1% 2%;
 }
 
-.offre-entreprise {
+.entreprise {
     margin-right: 5%;
     text-align: right;
     font-weight: bold;
     color: gray;
 }
 
-.offre-contenu {
+.contenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,17 +50,17 @@ h2 {
     padding: 0 2% 2% 2%;
 }
 
-.offre-contenu img {
+.contenu img {
     width: 15%;
     margin-left: 8%;
 }
 
-.offre-contenu img:hover {
+.contenu img:hover {
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
 
-.offre-titre {
+.titre {
     color: var(--clair);
     font-weight: bold;
     font-size: 130%;

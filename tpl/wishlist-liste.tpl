@@ -2,14 +2,14 @@
 
 <body>
 
-    <h2> Votre Wishlist 1</h2>
+    <h2> Vos Wishlists</h2>
     <table class="wishlist">
-        <a href="wishlist.php" target="_blank">
+        <a href="wishlist-liste.php" target="_blank">
             <tr>
                 <td>
                     <div class="header">
-                        <div class="titre">Création d'application</div>
-                        <div class="entreprise">PSG</div>
+                        <div class="titre">Wishlist 1</div>
+                        <div class="nombre">3</div>
                     </div>
                     <div class="contenu">
                         <a href="wishlist.php" target="_blank">
@@ -23,16 +23,13 @@
                                 nisl
                                 nisl
                                 sit
-                                amet nisl.
-                            </div>
+                                amet nisl.</div>
                             <div class="lien"><a href="#"><img src="/img/fleche-droite.svg"
                                         alt="Fleche vers la droite"></a>
                             </div>
                         </a>
                     </div>
-
                 </td>
             </tr>
-        </a>
     </table>
 </body>
