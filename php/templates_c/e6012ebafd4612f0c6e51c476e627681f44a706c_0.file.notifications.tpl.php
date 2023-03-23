@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 16:25:47
+/* Smarty version 4.3.0, created on 2023-03-22 16:58:00
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\notifications.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641b1dfb9a7a73_79169847',
+  'unifunc' => 'content_641b25887651f5_75599992',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e6012ebafd4612f0c6e51c476e627681f44a706c' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\notifications.tpl',
-      1 => 1679498742,
+      1 => 1679500674,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641b1dfb9a7a73_79169847 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641b25887651f5_75599992 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-notifications.css">
 
 <body>
 
     <h2> Dernières notifications </h2>
     <table id="notification">
-        <tr>
-            <td><a href="notifications.php" target="_blank">
+        <tr><a href="notifications.php" target="_blank">
+            <td>
                     <div class="notification">
                         <div class="notification-header">
                             <div class="notification-title">Notification 1</div>
