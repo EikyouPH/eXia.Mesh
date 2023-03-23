@@ -27,16 +27,16 @@ h2 {
     color: black;
 }
 
-#wishlist hr {
-    width: 100%;
-    color: var(--fonce);
-}
-
 .offre-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2% 2% 1% 2%;
+}
+
+.offre-entreprise {
+    font-weight: bold;
+    color: gray;
 }
 
 .offre-contenu {
@@ -52,16 +52,11 @@ h2 {
 }
 
 .offre-contenu img:hover {
-    scale: 1.1;
+    transform: scale(1.1);
     transition-duration: 0.3s;
 }
 
 .offre-titre {
-    color : var(--clair);
+    color: var(--clair);
     font-weight: bold;
-}
-
-.offre-entreprise {
-    font-weight: bold;
-    color: gray;
 }

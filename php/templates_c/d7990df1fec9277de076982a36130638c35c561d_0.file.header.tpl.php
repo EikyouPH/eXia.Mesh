@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 16:55:47
+/* Smarty version 4.3.0, created on 2023-03-23 10:39:09
   from 'D:\Documents\Site Projet Web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641b25033fb4f5_42812921',
+  'unifunc' => 'content_641c1e3dde40d8_87817724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7990df1fec9277de076982a36130638c35c561d' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679498815,
+      1 => 1679564336,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641b25033fb4f5_42812921 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641c1e3dde40d8_87817724 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -30,7 +30,6 @@ function content_641b25033fb4f5_42812921 (Smarty_Internal_Template $_smarty_tpl)
 </title>
 
   <link rel="stylesheet" href="/css/style-global.css">
-  <link rel="stylesheet" href="/css/style-footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <header>

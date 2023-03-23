@@ -9,7 +9,7 @@
                     <div class="">
                         <div class="offre-header">
                             <div class="offre-titre">Création d'application</div>
-                            <div class="offre-entreprise">PSG</div>
+                            <div class="offre-entreprise">Maison de l'innovation mais que sais-je</div>
                         </div>
                         <div class="offre-contenu">
                             <a href="wishlist.php" target="_blank">
