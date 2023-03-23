@@ -85,6 +85,42 @@ if ($row) {
     $stmt->execute([$id_adresse, $id_utilisateur]);
     
 }
+//------------------------------------------------------INFO TABLE VILLE-------------------------------------------------------------------
+$numero = $_POST['ville'];
+$complement = $_POST['code_postal'];
+
+$sql = "SELECT COUNT(*) FROM ville"; // Requête pour récupérer le nombre de lignes de la table
+$result = $conn->query($sql);// Exécution de la requête
+$count = $result->fetchColumn();// Récupération du résultat
+
+// Vérifier si la ville existe déjà dans la base de données
+$sql = "SELECT ID_ville FROM ville WHERE ville = ? AND code_postal = ?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$ville, $code_postal]);
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($row) {
+// La ville existe déjà dans la base de données, effectuer une mise à jour
+$id_ville = $row['ID_ville'];
+$sql = "UPDATE adresse SET ID_ville = ? WHERE ID_adresse = ?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$id_adresse, $id_adresse]);
+} else {
+// La ville n'existe pas encore dans la base de données, effectuer une insertion
+$sql = "INSERT INTO ville (ville, code_postal) VALUES (?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$ville, $code_postal]);
+
+$sql = "SELECT ID_ville FROM ville WHERE ville = ? AND code_postal = ?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$ville, $code_postal]);
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+$id_adresse = $row['ID_adresse'];
+$sql = "UPDATE adresse SET ID_ville = ? WHERE ID_adresse = ?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$id_ville, $id_adresse]);
+
+}
 
 
 
