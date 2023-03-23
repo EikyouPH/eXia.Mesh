@@ -6,12 +6,11 @@
   <title id="titre">{$titre_onglet}</title>
 
   <link rel="stylesheet" href="/css/style-global.css">
-  <link rel="stylesheet" href="/css/style-footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <header>
   <nav>
-    <div class="header">
+    <div class="header-global">
       <div>
         <a href="accueil.php"><img src="/img/logo.svg" alt="retour accueil"></a>
       </div>
