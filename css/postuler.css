@@ -1,4 +1,14 @@
+#postuler {
+    margin: 2% 5% 5% 5%;
+}
+
 #lettre-motivation {
-    resize: both;
-    overflow: auto;
+    width: 10ch;
+    /* Taille initiale du champ de formulaire */
+}
+
+#lettre-motivation:focus {
+    width: auto;
+    max-width: none;
+    /* Ajuste la taille du champ de formulaire en fonction de la saisie de l'utilisateur */
 }
