@@ -39,11 +39,11 @@
     padding: 2em;
 }
 
-.page-accueil td:hover {
+.bouton-accueil td:hover {
     box-shadow: #5b838382 3px 3px 10px;
     transition-duration: 0.3s;
 }
 
-.page-accueil td:hover {
+.bouton-accueil td:hover {
     transform: scale(1.025)
 }

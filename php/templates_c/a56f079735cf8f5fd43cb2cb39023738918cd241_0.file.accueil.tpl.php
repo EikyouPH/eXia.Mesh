@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 15:39:03
+/* Smarty version 4.3.0, created on 2023-03-24 12:05:16
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\accueil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419c187117d66_81694620',
+  'unifunc' => 'content_641d83eca83fd5_56408954',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a56f079735cf8f5fd43cb2cb39023738918cd241' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\accueil.tpl',
-      1 => 1679403160,
+      1 => 1679654120,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419c187117d66_81694620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d83eca83fd5_56408954 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-accueil.css" type="text/css" media="screen" />
 <body>
   <table class="page-accueil">
@@ -96,10 +96,10 @@ function content_6419c187117d66_81694620 (Smarty_Internal_Template $_smarty_tpl)
       </tr>
       <tr class="bouton-accueil">
         <td>
-          <a href="/wishlist.php">Voir wishlist</a>
+          <a href="/php/wishlist-liste.php">Voir wishlist</a>
         </td>
         <td>
-          <a href="/recap-candidatures.php">Voir candidatures</a>
+          <a href="/php/recap-candidatures.php">Voir candidatures</a>
         </td>
       </tr>
       </tr>

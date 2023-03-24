@@ -4,7 +4,7 @@
     <table class="table_stage">
         <tr>
             <td colspan="3">
-                <h3>{$nom_stage}<h3>
+                <h2>{$nom_stage}<h2>
             </td>
         </tr>
         <tr>    
@@ -41,5 +41,12 @@
         <p>{$detail}</p>
         {$nombre_places} places restantes
     </div>
+    <table class = bouton-postuler>
+        <tr>
+            <td>
+                <a target="_blank" href="./postuler.php">Postuler</a>
+            </td>
+        </tr>
+    </table>
     
 </body>

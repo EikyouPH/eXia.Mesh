@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 16:06:14
+/* Smarty version 4.3.0, created on 2023-03-24 15:15:50
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641b19664fda01_93203201',
+  'unifunc' => 'content_641db096a2c053_77360823',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5022c51114bd5d3e64b8294fa279cff9b591bf7b' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679494884,
+      1 => 1679662072,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641b19664fda01_93203201 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641db096a2c053_77360823 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
 
 <body>
@@ -35,7 +35,7 @@ function content_641b19664fda01_93203201 (Smarty_Internal_Template $_smarty_tpl)
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 "
                         required><br>
-                    
+
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 " required><br>
@@ -69,6 +69,7 @@ function content_641b19664fda01_93203201 (Smarty_Internal_Template $_smarty_tpl)
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 " required><br>
+                </form>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -126,7 +127,7 @@ function content_641b19664fda01_93203201 (Smarty_Internal_Template $_smarty_tpl)
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit"class="a">Enregistrer</button>
+                <button type="submit" name="submit" class="a">Enregistrer</button>
             </td>
         </tr>
     </table>

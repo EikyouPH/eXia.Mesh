@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 11:10:00
+/* Smarty version 4.3.0, created on 2023-03-24 13:43:31
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\stage.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641ad3f80f3e08_59798663',
+  'unifunc' => 'content_641d9af3221c85_72246145',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78a17e5ef851a306e16093e81be9c5620b8148e3' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\stage.tpl',
-      1 => 1679478896,
+      1 => 1679661801,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641ad3f80f3e08_59798663 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d9af3221c85_72246145 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-stage.css">
 
 <body>
     <table class="table_stage">
         <tr>
             <td colspan="3">
-                <h3><?php echo $_smarty_tpl->tpl_vars['nom_stage']->value;?>
-<h3>
+                <h2><?php echo $_smarty_tpl->tpl_vars['nom_stage']->value;?>
+<h2>
             </td>
         </tr>
         <tr>    
@@ -82,6 +82,13 @@ function content_641ad3f80f3e08_59798663 (Smarty_Internal_Template $_smarty_tpl)
         <?php echo $_smarty_tpl->tpl_vars['nombre_places']->value;?>
  places restantes
     </div>
+    <table class = bouton-postuler>
+        <tr>
+            <td>
+                <a target="_blank" href="./postuler.php">Postuler</a>
+            </td>
+        </tr>
+    </table>
     
 </body><?php }
 }

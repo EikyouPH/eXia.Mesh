@@ -11,7 +11,7 @@
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
                         required><br>
-                    
+
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
                     <label for="mail">Adresse mail</label><br>
@@ -34,6 +34,7 @@
                     <input type="text" name="region" id="region" value="{$region}" required><br>
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
+                </form>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -91,7 +92,7 @@
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit"class="a">Enregistrer</button>
+                <button type="submit" name="submit" class="a">Enregistrer</button>
             </td>
         </tr>
     </table>
