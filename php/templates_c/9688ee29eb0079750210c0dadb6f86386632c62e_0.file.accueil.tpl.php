@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 14:20:18
+/* Smarty version 4.3.0, created on 2023-03-24 15:41:29
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\accueil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419af12ae75d0_76109753',
+  'unifunc' => 'content_641db6994230c3_60736837',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9688ee29eb0079750210c0dadb6f86386632c62e' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\accueil.tpl',
-      1 => 1679404011,
+      1 => 1679662998,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419af12ae75d0_76109753 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641db6994230c3_60736837 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-accueil.css" type="text/css" media="screen" />
 <body>
   <table class="page-accueil">
@@ -96,10 +96,10 @@ function content_6419af12ae75d0_76109753 (Smarty_Internal_Template $_smarty_tpl)
       </tr>
       <tr class="bouton-accueil">
         <td>
-          <a href="/wishlist.php">Voir wishlist</a>
+          <a href="/php/wishlist-liste.php">Voir wishlist</a>
         </td>
         <td>
-          <a href="/recap-candidatures.php">Voir candidatures</a>
+          <a href="/php/recap-candidatures.php">Voir candidatures</a>
         </td>
       </tr>
       </tr>

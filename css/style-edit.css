@@ -22,10 +22,12 @@
     font-size: 0.7em;
     border-spacing: none;
     padding: none;
+    display: inline-block; /* Ajoutez cette ligne */
 }
 
 .reseaux img {
     width: 3em;
+    vertical-align: middle; /* Ajoutez cette ligne pour centrer les images */
 }
 
 .reseaux a {

@@ -46,11 +46,14 @@
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                        <label for="nom_pays">Lien Linkedin</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_linkedin}" required><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
                             <table>
                                 <tr>
@@ -58,7 +61,8 @@
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                        <label for="nom_pays">Lien Indeed</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_indeed}" required><br>
                                     </td>
                                 </tr>
                             </table>
@@ -72,11 +76,14 @@
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                        <label for="nom_pays">Lien Facebook</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_facebook}" required><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
                             <table>
                                 <tr>
@@ -84,8 +91,8 @@
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
-                                            personnel</a>
+                                        <label for="nom_pays">Lien Site Personnel</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_perso}" required><br>
                                     </td>
                                 </tr>
                             </table>
