@@ -10,7 +10,6 @@
                 Nom : {$nom_utilisateur}<br>
                 Prenom : {$prenom}<br>
                 Adresse mail : {$mail}<br>
-                Password : {$password}<br>
                 Date de naissance : {$date_naissance}<br>
                 Adresse : {$numero} {$complement} {$rue},<br>
                 {$code_postal}, {$ville}, {$region}, {$pays}<br>

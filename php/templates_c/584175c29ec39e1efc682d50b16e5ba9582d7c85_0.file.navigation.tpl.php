@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 16:13:56
+/* Smarty version 4.3.0, created on 2023-03-24 16:20:33
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dbe343de114_93420499',
+  'unifunc' => 'content_641dbfc1f32993_38036098',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '584175c29ec39e1efc682d50b16e5ba9582d7c85' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\navigation.tpl',
-      1 => 1679670833,
+      1 => 1679670975,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dbe343de114_93420499 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641dbfc1f32993_38036098 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-navigation.css">
 
 <body>
@@ -56,15 +56,12 @@ function content_641dbe343de114_93420499 (Smarty_Internal_Template $_smarty_tpl)
     <a href="notifications.php">Notifications</a><br>
     <a href="confirmation.php">Confirmation</a><br>
     <a href="mentions-legales.php">Mentions légales</a><br>
+</body>
 
-    <!--
+<!--
     Les créations (entreprise, profil, stage)
     Les éditions (entreprise, promo, stage)
     Options
-    Toutes les pages pour postuler (postuler, recap candidatures)
     La page de recherche
-    Les wishlists
-</body>
-
-</html><?php }
+--><?php }
 }

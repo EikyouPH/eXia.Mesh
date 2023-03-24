@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-23 11:55:32
+/* Smarty version 4.3.0, created on 2023-03-24 15:21:45
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\stage.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641c3024e07c07_87900535',
+  'unifunc' => 'content_641db1f9da19e5_29767236',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '872ee734d42fec32ab48661aa7b0529eafad2cc4' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\stage.tpl',
-      1 => 1679565918,
+      1 => 1679667703,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641c3024e07c07_87900535 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641db1f9da19e5_29767236 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-stage.css">
 
 <body>
     <table class="table_stage">
         <tr>
             <td colspan="3">
-                <h3><?php echo $_smarty_tpl->tpl_vars['nom_stage']->value;?>
-<h3>
+                <h2><?php echo $_smarty_tpl->tpl_vars['nom_stage']->value;?>
+<h2>
             </td>
         </tr>
         <tr>    
@@ -82,6 +82,13 @@ function content_641c3024e07c07_87900535 (Smarty_Internal_Template $_smarty_tpl)
         <?php echo $_smarty_tpl->tpl_vars['nombre_places']->value;?>
  places restantes
     </div>
+    <table class = bouton-postuler>
+        <tr>
+            <td>
+                <a target="_blank" href="./postuler.php">Postuler</a>
+            </td>
+        </tr>
+    </table>
     
 </body><?php }
 }

@@ -33,14 +33,11 @@
     <a href="notifications.php">Notifications</a><br>
     <a href="confirmation.php">Confirmation</a><br>
     <a href="mentions-legales.php">Mentions légales</a><br>
+</body>
 
-    <!--
+<!--
     Les créations (entreprise, profil, stage)
     Les éditions (entreprise, promo, stage)
     Options
-    Toutes les pages pour postuler (postuler, recap candidatures)
     La page de recherche
-    Les wishlists
-</body>
-
-</html>
+-->
