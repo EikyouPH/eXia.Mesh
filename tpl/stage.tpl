@@ -7,9 +7,10 @@
                 <h2>{$nom_stage}<h2>
             </td>
         </tr>
-        <tr>    
+        <tr>
             <td rowspan="3">
-                Lieu du stage : <br> {$numero} {$complement} {$rue}, <br> {$code_postal}, {$ville}, <br>{$region}, {$pays} <br><br>
+                Lieu du stage : <br> {$numero} {$complement} {$rue}, <br> {$code_postal}, {$ville}, <br>{$region},
+                {$pays} <br><br>
                 Durée : {$duree} <br>
                 Rémunération : {$remuneration} €/h
             </td>
@@ -20,10 +21,10 @@
         </tr>
         <tr>
             <td>
-               Entreprise : {$entreprise} + note
+                Entreprise : {$entreprise} + note
             </td>
             <td>
-            Date de fin : {$date_fin}
+                Date de fin : {$date_fin}
             </td>
         </tr>
         <tr>
@@ -31,7 +32,7 @@
                 Domaines : {$domaine1}, {$domaine2}
             </td>
             <td>
-            Date de publication : {$date_publication}
+                Date de publication : {$date_publication}
             </td>
         </tr>
     </table>
@@ -41,12 +42,12 @@
         <p>{$detail}</p>
         {$nombre_places} places restantes
     </div>
-    <table class = bouton-postuler>
+    <table class="lien">
         <tr>
             <td>
                 <a target="_blank" href="./postuler.php">Postuler</a>
             </td>
         </tr>
     </table>
-    
+
 </body>

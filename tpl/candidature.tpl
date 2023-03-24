@@ -59,26 +59,24 @@
             <tr>
                 <td>
                     <h4>Votre réponse</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed
-                        euismod,
-                        nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit
-                        amet
-                        nisl.
-                        Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam
-                        nisl
-                        nisl
-                        sit
-                        amet nisl.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sit amet ultricies
+                        lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl sit
+                        amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.
                     </p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div id="liens">
-                        <a href="/site2/CV/1">Votre CV</a>
-                        <a href="/site2/lettre/1">Votre lettre de motivation</a>
-                    </div>
+                    <table class="lien">
+                        <tr>
+                            <td>
+                                <a href="/site2/CV/1">Votre CV</a>
+                            </td>
+                            <td>
+                                <a href="/site2/lettre/1">Votre lettre de motivation</a>
+                            </td>
+                        </tr>
+                    </table>
         </table>
     </div>
 </body>
