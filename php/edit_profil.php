@@ -44,29 +44,30 @@ if (isset($_POST['submit'])) {
     $sql ="SELECT ID_pays FROM `pays` WHERE nom_pays = ?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$pays]);
-
+    $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
     
-if ($row) {
-    // Le pays existe déjà dans la base de données, effectuer une mise à jour
-    $ID_pays = $row['ID_pays'];
-} else {
-    // Le pays n'existe pas encore dans la base de données, effectuer une insertion
-    $sql = "INSERT INTO pays (nom_pays) VALUES (?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute([$pays]);
-    //Le pays vient s'être créé
-    $sql = "SELECT ID_pays FROM pays WHERE nom_pays = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute([$pays]);
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    $ID_pays = $row['ID_pays'];
-}
+    if ($row) {
+        // Le pays existe déjà dans la base de données, effectuer une mise à jour
+        $ID_pays = $row['ID_pays'];
+        } else {
+        // Le pays n'existe pas encore dans la base de données, effectuer une insertion
+        $sql = "INSERT INTO pays (nom_pays) VALUES (?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$pays]);
+        //Le pays vient s'être créé
+        $sql = "SELECT ID_pays FROM pays WHERE nom_pays = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$pays]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $ID_pays = $row['ID_pays'];
+        }
     //-------------------------------------------------INFO TABLE REGIONS---------------------------------------------------------------------
     $region = $_POST['region'];
 
     $sql ="SELECT ID_region FROM `region` WHERE region = ?";
     $stmt= $conn->prepare($sql);
     $stmt->execute([$region]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
 if ($row) {
     // La région existe déjà dans la base de données, effectuer une mise à jour
@@ -79,7 +80,7 @@ if ($row) {
      //La région vient s'être créé
      $sql = "SELECT ID_region FROM region WHERE region = ?";
      $stmt = $conn->prepare($sql);
-     $stmt->execute([$région]);
+     $stmt->execute([$region]);
      $row = $stmt->fetch(PDO::FETCH_ASSOC);
      $ID_region = $row['ID_region'];
 }
@@ -91,6 +92,7 @@ if ($row) {
     $sql ="SELECT * FROM `ville` WHERE nom_ville = ? AND code_postal = ?";
     $stmt= $conn->prepare($sql);
     $stmt->execute([$ville, $code_postal]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
 if ($row) {
     // La ville existe déjà dans la base de données, effectuer une mise à jour
@@ -117,6 +119,7 @@ $rue = $_POST['rue'];
 $sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
 $stmt = $conn->prepare($sql);
 $stmt->execute([$numero, $complement, $rue]);
+$row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
 if ($row) {
 // L'adresse existe déjà dans la base de données, effectuer une mise à jour
@@ -136,8 +139,21 @@ $id_adresse = $row['ID_adresse'];
 
 //-----------------------------------------------UPDATE ADRESSE----------------------------------------------------------------------------------
 
+$sql = "UPDATE region SET ID_pays = ? Where ID_region =?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$ID_pays, $ID_region]);
 
+$sql = "UPDATE ville SET ID_region = ? Where ID_ville =?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$ID_region, $ID_ville]);
 
+$sql = "UPDATE adresse SET ID_ville = ? Where ID_adresse =?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$ID_ville, $id_adresse]);
+
+$sql = "UPDATE utilisateur SET ID_adresse = ? Where ID_utilisateur =?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$id_adresse, $id_utilisateur]);
 
 
 
