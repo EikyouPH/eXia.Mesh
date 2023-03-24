@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 11:08:00
+/* Smarty version 4.3.0, created on 2023-03-24 15:26:45
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641d76801180d9_59392458',
+  'unifunc' => 'content_641db3253c0300_06426602',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a81c667bda3c203e7cfa2c8ea2f123d00ee754ed' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\profil.tpl',
-      1 => 1679652478,
+      1 => 1679667980,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641d76801180d9_59392458 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641db3253c0300_06426602 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 
 <body>
@@ -35,8 +35,6 @@ function content_641d76801180d9_59392458 (Smarty_Internal_Template $_smarty_tpl)
                 Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 <br>
                 Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
-<br>
-                Password : <?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 <br>
                 Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 <br>

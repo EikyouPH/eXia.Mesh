@@ -1,39 +1,5 @@
 <?php
 require 'base.php';
-//recherches liens des réseaux
-$sql = "SELECT lien_reseau, ID_reseau FROM reseaux WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Facebook'";
-$result = $conn->query($sql);
-foreach ($result as $row) {
-    $lien_facebook = $row['lien_reseau'];
-    $ID_reseau_facebook = $row['ID_reseau'];
-}
-$sql = "SELECT lien_reseau, ID_reseau FROM reseaux WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Linkedin'";
-$result = $conn->query($sql);
-foreach ($result as $row) {
-    $lien_linkedin = $row['lien_reseau'];
-    $ID_reseau_linkedin = $row['ID_reseau'];
-}
-$sql = "SELECT lien_reseau, ID_reseau FROM reseaux WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Indeed'";
-$result = $conn->query($sql);
-foreach ($result as $row) {
-    $lien_indeed = $row['lien_reseau'];
-    $ID_reseau_indeed = $row['ID_reseau'];
-}
-$sql = "SELECT lien_reseau, ID_reseau FROM reseaux WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Linkedin'";
-$result = $conn->query($sql);
-foreach ($result as $row) {
-    $lien_perso = $row['lien_reseau'];
-    $ID_reseau_perso = $row['ID_reseau'];
-}
-
-// Assigner les variables reseaux Smarty au template
-$smarty->assign('lien_facebook', $lien_facebook);
-$smarty->assign('lien_indeed', $lien_indeed);
-$smarty->assign('lien_linkedin', $lien_linkedin);
-$smarty->assign('lien_perso', $lien_perso);
-
-
-
 
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
 
@@ -209,7 +175,6 @@ $sql = "UPDATE utilisateur SET nom_utilisateur=?, password=?, prenom=?,mail=?, d
 $stmt= $conn->prepare($sql);
 $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
 
-    
     header("Location: profil.php");
 exit();
     }
@@ -218,7 +183,3 @@ exit();
 $smarty->display('header.tpl');
 $smarty->display('edit-profil.tpl');
 $smarty->display('footer.tpl');
-
-
-
-

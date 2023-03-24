@@ -15,11 +15,11 @@
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
                     <label for="mail">Adresse mail</label><br>
-                    <input type="text" name="mail" id="mail" value="{$mail}" required><br>
+                    <input type="mail" name="mail" id="mail" value="{$mail}" required><br>
                     <label for="password">Mot de passe</label><br>
-                    <input type="text" name="password" id="password" value="{$password}" required><br>
+                    <input type="password" name="password" id="password" value="{$password}" required><br>
                     <label for="date_naissance">Date de naissance</label><br>
-                    <input type="text" name="date_naissance" id="date_naissance" value="{$date_naissance}" required><br>
+                    <input type="date" name="date_naissance" id="date_naissance" value="{$date_naissance}" required><br>
                     <label for="numero">N°</label><br>
                     <input type="text" name="numero" id="numero" value="{$numero}" required><br>
                     <label for="complement">Complément</label><br>
@@ -27,13 +27,14 @@
                     <label for="rue">Rue</label><br>
                     <input type="text" name="rue" id="rue" value="{$rue}" required><br>
                     <label for="code_postal">Code postal</label><br>
-                    <input type="text" name="code_postal" id="code_postal" value="{$code_postal}" required><br>
+                    <input type="number" name="code_postal" id="code_postal" value="{$code_postal}" required><br>
                     <label for="ville">Ville</label><br>
                     <input type="text" name="ville" id="ville" value="{$ville}" required><br>
                     <label for="region">Région</label><br>
                     <input type="text" name="region" id="region" value="{$region}" required><br>
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
+                    <button href='profil.tpl'type="submit" name="submit" class="a">Enregistrer</button>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -47,7 +48,7 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Linkedin</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_linkedin}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_linkedin}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -62,7 +63,7 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Indeed</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_indeed}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_indeed}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -77,7 +78,7 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Facebook</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_facebook}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_facebook}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -92,14 +93,13 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Site Personnel</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_perso}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_perso}"><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit" class="a">Enregistrer</button>
             </td>
         </tr>
     </table>
