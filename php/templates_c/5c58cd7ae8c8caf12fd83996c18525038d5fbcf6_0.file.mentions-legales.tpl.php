@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 15:18:21
+/* Smarty version 4.3.0, created on 2023-03-23 14:38:29
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\mentions-legales.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641b0e2d956427_53246014',
+  'unifunc' => 'content_641c5655ec07b4_80288248',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c58cd7ae8c8caf12fd83996c18525038d5fbcf6' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\mentions-legales.tpl',
-      1 => 1679494699,
+      1 => 1679495025,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641b0e2d956427_53246014 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641c5655ec07b4_80288248 (Smarty_Internal_Template $_smarty_tpl) {
 ?><body>
     <h2>1 - Informations générales</h2>
     <h3>1.1 - Éditeur : Association CESI</h3>
@@ -106,7 +106,7 @@ function content_641b0e2d956427_53246014 (Smarty_Internal_Template $_smarty_tpl)
 
     <h2>4 - Liens externes</h2>
     <p>
-        Le Site peut contenir des liens hypertextes allant vers d'autres sites. La société Lidl ne peut être tenue
+        Le Site peut contenir des liens hypertextes allant vers d'autres sites. La société eXia.Mesh ne peut être tenue
         responsable du contenu, fonctionnement.
     </p>
 

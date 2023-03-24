@@ -73,10 +73,10 @@
       </tr>
       <tr class="bouton-accueil">
         <td>
-          <a href="/wishlist.php">Voir wishlist</a>
+          <a href="/php/wishlist-liste.php">Voir wishlist</a>
         </td>
         <td>
-          <a href="/recap-candidatures.php">Voir candidatures</a>
+          <a href="/php/recap-candidatures.php">Voir candidatures</a>
         </td>
       </tr>
       </tr>

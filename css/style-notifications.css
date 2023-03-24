@@ -16,7 +16,8 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 2% 10% 0 5%;
+    width: 80%;
+    margin: 2% auto 0 auto;
     background-color: #c7eeec;
     border: solid 2px var(--fonce);
     border-radius: 10px;
@@ -28,8 +29,8 @@ h2 {
 }
 
 #notification hr {
-    width: 100%;
-    color: var(--fonce);
+    width: 70%;
+    color: lightgrey;
 }
 
 .notification-header {

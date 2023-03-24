@@ -18,16 +18,24 @@
     position: relative;
 }
 
+.reseaux {
+    font-size: 0.7em;
+    border-spacing: none;
+    padding: none;
+    margin-left: 30%;
+    position: relative;
+}
+
 .reseaux img {
-    width: 40%;
+    width: 3em;
 }
 
 .reseaux a {
-    display: flex;
-    justify-content: center;
     text-decoration: none;
-    font-size: 70%;
-    color: var(--tresfonce);
+}
+
+.reseaux .icone {
+    width: 0;
 }
 
 .page-profil .personne {
@@ -42,7 +50,7 @@
 }
 
 #crayon {
-    width: 5%;
+    width: 3%;
     position: absolute;
     top: 4%;
     right: 2%;

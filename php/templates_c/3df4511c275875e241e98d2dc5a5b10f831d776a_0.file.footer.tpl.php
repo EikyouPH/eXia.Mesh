@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-22 15:21:59
+/* Smarty version 4.3.0, created on 2023-03-23 14:37:43
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641b0f0762e926_90111997',
+  'unifunc' => 'content_641c562729afa0_42534880',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3df4511c275875e241e98d2dc5a5b10f831d776a' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\footer.tpl',
-      1 => 1679494918,
+      1 => 1679565820,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641b0f0762e926_90111997 (Smarty_Internal_Template $_smarty_tpl) {
-?><footer>
+function content_641c562729afa0_42534880 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/style-footer.css">
+<footer>
   <table class="footer">
     <tr>
       <td>

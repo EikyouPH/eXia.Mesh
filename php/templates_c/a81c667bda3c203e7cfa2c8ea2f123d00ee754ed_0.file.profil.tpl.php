@@ -1,4 +1,27 @@
-<link rel="stylesheet" href="/css/style-profil.css">
+<?php
+/* Smarty version 4.3.0, created on 2023-03-24 11:08:00
+  from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\profil.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_641d76801180d9_59392458',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'a81c667bda3c203e7cfa2c8ea2f123d00ee754ed' => 
+    array (
+      0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\profil.tpl',
+      1 => 1679652478,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_641d76801180d9_59392458 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/style-profil.css">
 
 <body>
     <table class="page-profil">
@@ -7,13 +30,25 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                Nom : {$nom_utilisateur}<br>
-                Prenom : {$prenom}<br>
-                Adresse mail : {$mail}<br>
-                Password : {$password}<br>
-                Date de naissance : {$date_naissance}<br>
-                Adresse : {$numero} {$complement} {$rue},<br>
-                {$code_postal}, {$ville}, {$region}, {$pays}<br>
+                Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
+<br>
+                Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
+<br>
+                Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
+<br>
+                Password : <?php echo $_smarty_tpl->tpl_vars['password']->value;?>
+<br>
+                Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
+<br>
+                Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
+ <?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
+,<br>
+                <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
+, <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+<br>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -78,4 +113,5 @@
     <p>
         Expériences passées
     </p>
-</body>
+</body><?php }
+}

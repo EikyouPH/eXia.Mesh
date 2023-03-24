@@ -1,9 +1,10 @@
 .table_stage {
     display: flex;
-    width: 70%;
+    width: 50%;
     align-items: center;
+    justify-content: center;
     text-align: justify;
-    margin: 5em 10% 5em 10%;
+    margin: 5% auto 1% auto;
     border-spacing: 2em;
     border: 2px solid #0E8388;
     border-radius: 10px;
@@ -19,7 +20,7 @@
     width: 70%;
     align-items: center;
     text-align: justify;
-    margin: 5em 10% 5em 10%;
+    margin: 2% auto 5% auto;
     border-spacing: 2em;
     border: 2px solid #0E8388;
     border-radius: 10px;
