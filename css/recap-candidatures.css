@@ -16,7 +16,8 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 2% 10% 2% 5%;
+    width: 80%;
+    margin: 2% auto 2% auto;
     background-color: #c7eeec;
     border: solid 2px var(--fonce);
     border-radius: 10px;
