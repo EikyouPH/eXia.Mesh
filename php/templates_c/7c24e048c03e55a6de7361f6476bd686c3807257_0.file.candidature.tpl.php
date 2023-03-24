@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-23 14:20:24
+/* Smarty version 4.3.0, created on 2023-03-23 15:59:13
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\candidature.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641c52188561e1_01757930',
+  'unifunc' => 'content_641c69418ce380_55740230',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c24e048c03e55a6de7361f6476bd686c3807257' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\candidature.tpl',
-      1 => 1679577620,
+      1 => 1679577663,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641c52188561e1_01757930 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641c69418ce380_55740230 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/candidature.css">
 
 <body>
@@ -126,11 +126,11 @@ function content_641c52188561e1_01757930 (Smarty_Internal_Template $_smarty_tpl)
                 </td>
             </tr>
             <tr>
-            <td>
-            <div>
-            <a href="/site2/CV/1">Votre CV</a>
-            <a href="/site2/lettre/1">Votre lettre de motivation</a>
-            </div>
+                <td>
+                    <div id="liens">
+                        <a href="/site2/CV/1">Votre CV</a>
+                        <a href="/site2/lettre/1">Votre lettre de motivation</a>
+                    </div>
         </table>
     </div>
 </body><?php }

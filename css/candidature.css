@@ -24,3 +24,16 @@
     border: 2px solid #0E8388;
     border-radius: 10px;
 }
+
+#liens {
+    display: flex;
+    margin-left: 70%;
+    width: 25%;
+    justify-content: space-between;
+    text-align: right;
+}
+
+#liens a {
+    color: #0E8388;
+    text-decoration: none;
+}

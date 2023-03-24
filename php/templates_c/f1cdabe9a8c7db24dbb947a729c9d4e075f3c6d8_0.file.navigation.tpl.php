@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-23 11:49:25
+/* Smarty version 4.3.0, created on 2023-03-23 16:10:14
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641c2eb518cb21_52529047',
+  'unifunc' => 'content_641c6bd60f9ba2_06179850',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f1cdabe9a8c7db24dbb947a729c9d4e075f3c6d8' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\navigation.tpl',
-      1 => 1679568564,
+      1 => 1679584212,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641c2eb518cb21_52529047 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641c6bd60f9ba2_06179850 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-navigation.css">
 
 <body>
@@ -48,7 +48,8 @@ function content_641c2eb518cb21_52529047 (Smarty_Internal_Template $_smarty_tpl)
     <a href="wishlist-liste.php">Liste des Wishlists</a>
     
     <h4>--- Recap candidatures ---</h4>
-    <a href="recap-candidatures.php">Recap candidatures</a>
+    <a href="recap-candidatures.php">Recap candidatures</a><br>
+    <a href="candidatures.php">Candidatures</a>
     
     <h4>--- Autres pages ---</h4>
     <a href="notifications.php">Notifications</a>
