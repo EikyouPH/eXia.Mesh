@@ -81,3 +81,14 @@ a {
     color: #0E8388;
     text-decoration: none;
 }
+
+.cadre {
+    display: border-box;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    border-spacing: 2em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}

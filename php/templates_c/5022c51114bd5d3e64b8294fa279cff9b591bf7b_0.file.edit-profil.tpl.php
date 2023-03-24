@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 15:34:26
+/* Smarty version 4.3.0, created on 2023-03-24 16:22:16
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641db4f28c2425_58736897',
+  'unifunc' => 'content_641dc02893b9b4_92637071',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5022c51114bd5d3e64b8294fa279cff9b591bf7b' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679667879,
+      1 => 1679671286,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641db4f28c2425_58736897 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641dc02893b9b4_92637071 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
 
 <body>
@@ -81,11 +81,15 @@ function content_641db4f28c2425_58736897 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                        <label for="nom_pays">Lien Linkedin</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
+" required><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
                             <table>
                                 <tr>
@@ -93,7 +97,9 @@ function content_641db4f28c2425_58736897 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                        <label for="nom_pays">Lien Indeed</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
+" required><br>
                                     </td>
                                 </tr>
                             </table>
@@ -107,11 +113,15 @@ function content_641db4f28c2425_58736897 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                        <label for="nom_pays">Lien Facebook</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
+" required><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
+                    </tr>
+                    <tr>
                         <td>
                             <table>
                                 <tr>
@@ -119,8 +129,9 @@ function content_641db4f28c2425_58736897 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
-                                            personnel</a>
+                                        <label for="nom_pays">Lien Site Personnel</label><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_perso']->value;?>
+" required><br>
                                     </td>
                                 </tr>
                             </table>
