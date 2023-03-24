@@ -12,5 +12,18 @@
         <label for="date_naissance">Date de naissance</label><br>
         <input type="text" name="date_naissance" id="date_naissance" value="{$date_naissance}" required><br>
         <label for="lettre-motivation">Lettre de motivation</label><br>
-        <input type="text" name="lettre-motivation" id="lettre-motivation" value="{$lettre_motivation}" required><br>
-</form>
+        <textarea class="redimensionnable type=" text" name="lettre-motivation" id="lettre-motivation"
+            value="{$lettre_motivation}" required>{$lettre_motivation}</textarea><br>
+    </form>
+
+    <table class="lien">
+        <tr>
+            <td>
+                <a target="_blank" href="./postuler.php">Envoyer</a>
+            </td>
+            <td>
+                <a target="_blank" href="./postuler.php">Annuler</a>
+            </td>
+        </tr>
+    </table>
+</body>
