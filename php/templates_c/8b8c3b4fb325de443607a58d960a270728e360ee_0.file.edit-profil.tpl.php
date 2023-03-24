@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 16:17:21
+/* Smarty version 4.3.0, created on 2023-03-24 16:37:23
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dbf017d2670_31673633',
+  'unifunc' => 'content_641dc3b339d479_13268076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b8c3b4fb325de443607a58d960a270728e360ee' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679671039,
+      1 => 1679672242,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dbf017d2670_31673633 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641dc3b339d479_13268076 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
 
 <body>
@@ -69,6 +69,7 @@ function content_641dbf017d2670_31673633 (Smarty_Internal_Template $_smarty_tpl)
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 " required><br>
+                    <button href='profil.tpl'type="submit" name="submit" class="a">Enregistrer</button>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -83,7 +84,7 @@ function content_641dbf017d2670_31673633 (Smarty_Internal_Template $_smarty_tpl)
                                     <td>
                                         <label for="nom_pays">Lien Linkedin</label><br>
                                         <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
-" required><br>
+"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -99,7 +100,7 @@ function content_641dbf017d2670_31673633 (Smarty_Internal_Template $_smarty_tpl)
                                     <td>
                                         <label for="nom_pays">Lien Indeed</label><br>
                                         <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
-" required><br>
+"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -115,7 +116,7 @@ function content_641dbf017d2670_31673633 (Smarty_Internal_Template $_smarty_tpl)
                                     <td>
                                         <label for="nom_pays">Lien Facebook</label><br>
                                         <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
-" required><br>
+"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -131,14 +132,13 @@ function content_641dbf017d2670_31673633 (Smarty_Internal_Template $_smarty_tpl)
                                     <td>
                                         <label for="nom_pays">Lien Site Personnel</label><br>
                                         <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['lien_perso']->value;?>
-" required><br>
+"><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit" class="a">Enregistrer</button>
             </td>
         </tr>
     </table>

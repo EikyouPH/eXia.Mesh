@@ -34,6 +34,7 @@
                     <input type="text" name="region" id="region" value="{$region}" required><br>
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
+                    <button href='profil.tpl'type="submit" name="submit" class="a">Enregistrer</button>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -47,7 +48,7 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Linkedin</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_linkedin}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_linkedin}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -62,7 +63,7 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Indeed</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_indeed}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_indeed}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -77,7 +78,7 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Facebook</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_facebook}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_facebook}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -92,14 +93,13 @@
                                     </td>
                                     <td>
                                         <label for="nom_pays">Lien Site Personnel</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_perso}" required><br>
+                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_perso}"><br>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit" class="a">Enregistrer</button>
             </td>
         </tr>
     </table>

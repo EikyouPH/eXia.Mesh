@@ -26,7 +26,7 @@
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                        <a id="linkedin" href="{$lien_linkedin}"> LinkedIn</a>
                                     </td>
                                 </tr>
                             </table>
@@ -38,7 +38,7 @@
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                        <a id="indeed" href="{$lien_indeed}"> Indeed</a>
                                     </td>
                                 </tr>
                             </table>
@@ -52,7 +52,7 @@
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                        <a id="facebook" href="{$lien_facebook}"> Facebook</a>
                                     </td>
                                 </tr>
                             </table>
@@ -64,7 +64,7 @@
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
+                                        <a id="site-perso" href="{$lien_perso}"> Site
                                             personnel</a>
                                     </td>
                                 </tr>
