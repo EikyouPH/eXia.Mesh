@@ -1,20 +1,17 @@
-<?php include('verif-session.php'); ?>
+<?php
+// Chargement de prérequis
+require 'base.php';
 
-<!DOCTYPE html>
-<html lang="fr">
+// Assigner les variables Smarty au template
+$smarty->assign('titre_onglet', 'Edition du profil');
+$smarty->assign('titre_page', 'Edition du profil');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="titre">Recherche</title>
+// Assigner des variables
+$smarty->assign('titre_onglet', 'Recherche');
+$smarty->assign('titre_page', 'Recherche');
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<?php include('header.html'); ?>
-
-<body>
-
-</body>
-<?php include('footer.html'); ?>
-</html>
+// Afficher les templates
+$smarty->display('header.tpl');
+$smarty->display('recherche.tpl');
+$smarty->display('footer.tpl');
+?>
