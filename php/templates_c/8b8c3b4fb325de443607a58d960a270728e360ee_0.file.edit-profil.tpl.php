@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 16:37:23
+/* Smarty version 4.3.0, created on 2023-03-25 09:55:46
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dc3b339d479_13268076',
+  'unifunc' => 'content_641eb7120f2710_72615537',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b8c3b4fb325de443607a58d960a270728e360ee' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679672242,
+      1 => 1679673247,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dc3b339d479_13268076 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641eb7120f2710_72615537 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
 
 <body>
@@ -40,13 +40,13 @@ function content_641dc3b339d479_13268076 (Smarty_Internal_Template $_smarty_tpl)
                     <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 " required><br>
                     <label for="mail">Adresse mail</label><br>
-                    <input type="text" name="mail" id="mail" value="<?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
+                    <input type="mail" name="mail" id="mail" value="<?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
 " required><br>
                     <label for="password">Mot de passe</label><br>
-                    <input type="text" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
+                    <input type="password" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 " required><br>
                     <label for="date_naissance">Date de naissance</label><br>
-                    <input type="text" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
+                    <input type="date" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 " required><br>
                     <label for="numero">N°</label><br>
                     <input type="text" name="numero" id="numero" value="<?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
@@ -58,7 +58,7 @@ function content_641dc3b339d479_13268076 (Smarty_Internal_Template $_smarty_tpl)
                     <input type="text" name="rue" id="rue" value="<?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
 " required><br>
                     <label for="code_postal">Code postal</label><br>
-                    <input type="text" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+                    <input type="number" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
 " required><br>
                     <label for="ville">Ville</label><br>
                     <input type="text" name="ville" id="ville" value="<?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
