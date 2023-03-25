@@ -3,51 +3,12 @@ require 'base.php';
 
 //---------------------------------------------------------------RESEAUX-------------------------------------------------------------------------------------------------------
 //recherches du liens facebook
-$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Facebook'";
+$sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Facebook'";
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
-$ID_reseau = $row['ID_reseau'];
-$lien_faceebook = $row['lien_reseau'];
-$smarty->assign('lien_facebook', $lien_faceebook);
-
-//recherches du liens Linkedin
-$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Linkedin'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-$ID_reseau = $row['ID_reseau'];
-$lien_linkedin = $row['lien_reseau'];
-$smarty->assign('lien_linkedin', $lien_linkedin);
-
-//recherches du liens Indeed
-$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Indeed'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-$ID_reseau = $row['ID_reseau'];
-$lien_indeed = $row['lien_reseau'];
-$smarty->assign('lien_indeed', $lien_indeed);
-
-//recherches du liens perso
-$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Autres Sites'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-$ID_reseau = $row['ID_reseau'];
-$lien_perso = $row['lien_reseau'];
-$smarty->assign('lien_perso', $lien_perso);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$ID_reseau_facebook = $row['ID_reseau'];
+$lien_facebook = $row['lien_reseau'];
+$smarty->assign('lien_facebook', $lien_facebook);
 
 
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
@@ -211,7 +172,20 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$id_adresse, $id_utilisateur]);
 
+    //---------------------------------------------UPDATE RESEAUX -----------------------------------------------------------
+    $lien_linkedin = $_POST['lien_linkedin'];
+    $lien_facebook = $_POST['lien_facebook'];
+    $lien_indeed = $_POST['lien_indeed'];
+    $lien_perso = $_POST['lien_perso'];
 
+    $sql = "UPDATE reseaux SET lien_reseau = ? WHERE ID_reseau = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$lien_facebook, $ID_reseau_facebook]);
+    $stmt->execute([$lien_indeed, $ID_reseau_indeed]); 
+    $stmt->execute([$lien_linkedin, $ID_reseau_linkedin]); 
+    $stmt->execute([$lien_perso, $ID_reseau_perso]); 
+
+    
 
     //------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
     $nom_utilisateur = $_POST['nom_utilisateur'];
