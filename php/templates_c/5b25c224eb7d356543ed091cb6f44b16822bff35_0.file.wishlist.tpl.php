@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 14:38:58
+/* Smarty version 4.3.0, created on 2023-03-25 15:06:46
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\wishlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641ef972934160_97098232',
+  'unifunc' => 'content_641efff6d71b73_85630015',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5b25c224eb7d356543ed091cb6f44b16822bff35' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\wishlist.tpl',
-      1 => 1679750878,
+      1 => 1679751784,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641ef972934160_97098232 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641efff6d71b73_85630015 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-wishlist.css">
 
 <body>
