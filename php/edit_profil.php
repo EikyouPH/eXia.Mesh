@@ -185,14 +185,12 @@ if (isset($_POST['submit'])) {
     $lien_indeed = $_POST['lien_indeed'];
     $lien_perso = $_POST['lien_perso'];
 
-    $sql = "UPDATE reseaux SET lien_reseau = ? WHERE ID_reseau = ?";
+    $sql = "UPDATE reseaux SET lien_facebook = ?, lien_indeed = ?, lien_linkedin = ?, lien_perso = ? WHERE ID_reseau = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$lien_facebook, $ID_reseau_facebook]);
-    $stmt->execute([$lien_indeed, $ID_reseau_indeed]); 
-    $stmt->execute([$lien_linkedin, $ID_reseau_linkedin]); 
-    $stmt->execute([$lien_perso, $ID_reseau_perso]); 
+    $stmt->execute([$lien_facebook, $lien_indeed, $lien_linkedin, $lien_perso, $ID_reseau]);
 
-    
+
+
 
     //------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
     $nom_utilisateur = $_POST['nom_utilisateur'];
@@ -210,6 +208,14 @@ if (isset($_POST['submit'])) {
 }
 
 // Afficher les templates
-$smarty->display('header.tpl');
-$smarty->display('edit-profil.tpl');
+$smarty->display('header.tpl'); //affiche le Header
+
+$sql = "SELECT ID_admin FROM `admin` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('edit-profil-admin.tpl');
+}
+
+
 $smarty->display('footer.tpl');
