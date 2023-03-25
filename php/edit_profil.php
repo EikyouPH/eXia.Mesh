@@ -17,7 +17,6 @@ $smarty->assign('lien_indeed', $lien_indeed);
 $smarty->assign('lien_linkedin', $lien_linkedin);
 $smarty->assign('lien_perso', $lien_perso);
 
-
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
 
 //recherches des infos utilisateur
@@ -55,7 +54,7 @@ $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Edition du profil');
 $smarty->assign('titre_page', 'Edition du profil');
 
-
+$role = $_SESSION['role'];
 
 
 
@@ -203,45 +202,31 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
 
-    header("Location: profil.php");
+
+    if ($role == 'admin') {
+        header("Location: profil-admin.php");
+    } else if ($role == 'pilote') {
+        header("Location: profil-pilote.php");
+    } else if ($role == 'etudiant') {
+        header("Location: profil-etudiant.php");
+    } else if ($role == 'recruteur') {
+        header("Location: profil-recruteur.php");
+    }
     exit();
 }
 
 // Afficher les templates
 $smarty->display('header.tpl'); //affiche le Header
 
-//On cherche QUI est QUOI 
-//Admin ?
-$sql = "SELECT ID_admin FROM `admin` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-if ($row) {
-$smarty->display('edit-profil-admin.tpl');
-}
 
-//Etudiant ?
-$sql = "SELECT ID_etudiant FROM `etudiant` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-if ($row) {
-$smarty->display('edit-profil-etudiant.tpl');
+if ($role == 'admin') {
+    $smarty->display('edit-profil-admin.tpl');
+} else if ($role == 'pilote') {
+    $smarty->display('edit-profil-pilote.tpl');
+} else if ($role == 'etudiant') {
+    $smarty->display('edit-profil-etudiant.tpl');
+} else if ($role == 'recruteur') {
+    $smarty->display('edit-profil-recruteur.tpl');
 }
-
-//Pilote ?
-$sql = "SELECT ID_pilote FROM `pilote` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-if ($row) {
-$smarty->display('edit-profil-pilote.tpl');
-}
-
-//Recruteur ?
-$sql = "SELECT ID_recruteur FROM `recruteur` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
-if ($row) {
-$smarty->display('edit-profil-recruteur.tpl');
-}
-
 
 $smarty->display('footer.tpl');
