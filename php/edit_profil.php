@@ -228,5 +228,8 @@ if ($role == 'admin') {
 } else if ($role == 'recruteur') {
     $smarty->display('edit-profil-recruteur.tpl');
 }
+else {
+    $smarty->display('edit-profil.tpl');
+}
 
 $smarty->display('footer.tpl');
