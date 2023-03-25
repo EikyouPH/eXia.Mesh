@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 13:31:51
+/* Smarty version 4.3.0, created on 2023-03-25 14:00:31
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641ee9b71b9465_02513296',
+  'unifunc' => 'content_641ef06fed2bf1_23519277',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b8c3b4fb325de443607a58d960a270728e360ee' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679747506,
+      1 => 1679749219,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641ee9b71b9465_02513296 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-edit.css">
+function content_641ef06fed2bf1_23519277 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/edit.css">
 
 <body>
     <table class="page-profil">
@@ -69,7 +69,17 @@ function content_641ee9b71b9465_02513296 (Smarty_Internal_Template $_smarty_tpl)
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 " required><br>
-                    <button href='profil.tpl'type="submit" name="submit" class="a">Enregistrer</button>
+                    <div class="boutons">
+                        <button href='profil.tpl' type="submit" name="submit"
+                            class="a">Enregistrer</button>
+                        <table class="lien">
+                            <tr>
+                                <td>
+                                    <a target="_blank" href="./profil.php">Annuler</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -141,9 +151,6 @@ function content_641ee9b71b9465_02513296 (Smarty_Internal_Template $_smarty_tpl)
                 </table>
             </td>
         </tr>
-    </table>
-    </td>
-    </tr>
     </table>
 
     <p>

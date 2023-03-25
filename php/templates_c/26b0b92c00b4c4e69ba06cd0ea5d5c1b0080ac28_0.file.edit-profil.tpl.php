@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 11:58:21
+/* Smarty version 4.3.0, created on 2023-03-25 14:05:31
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641ed3cdc2c003_77981505',
+  'unifunc' => 'content_641ef19b1bcd32_61955956',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '26b0b92c00b4c4e69ba06cd0ea5d5c1b0080ac28' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\edit-profil.tpl',
-      1 => 1679741849,
+      1 => 1679749498,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641ed3cdc2c003_77981505 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641ef19b1bcd32_61955956 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
-
+<link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
     <table class="page-profil">
         <tr>
@@ -30,7 +30,7 @@ function content_641ed3cdc2c003_77981505 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                <form method="post">
+                <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 "
@@ -65,11 +65,13 @@ function content_641ed3cdc2c003_77981505 (Smarty_Internal_Template $_smarty_tpl)
 " required><br>
                     <label for="region">Région</label><br>
                     <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
-" required><br>
-                    <label for="nom_pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
-" required><br>
-                    <button href='profil.tpl'type="submit" name="submit" class="a">Enregistrer</button>
+" required><br>'
+                    <label for="pays">Pays</label><br>
+                    <div>
+                        <input type="text" id="pays" placeholder="Votre pays">
+                    </div>
+                    <ul class="list"></ul>
+                <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -142,12 +144,13 @@ function content_641ed3cdc2c003_77981505 (Smarty_Internal_Template $_smarty_tpl)
             </td>
         </tr>
     </table>
-    </td>
-    </tr>
-    </table>
 
     <p>
         Expériences passées
     </p>
+    <!-- Script -->
+    <?php echo '<script'; ?>
+ src="/scripts/liste-pays.js"><?php echo '</script'; ?>
+>
 </body><?php }
 }

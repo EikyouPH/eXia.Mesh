@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/css/edit.css">
-
+<link rel="stylesheet" href="/css/style-edit.css">
+<link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
     <table class="page-profil">
         <tr>
@@ -7,7 +7,7 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                <form method="post">
+                <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
                         required><br>
@@ -31,21 +31,13 @@
                     <label for="ville">Ville</label><br>
                     <input type="text" name="ville" id="ville" value="{$ville}" required><br>
                     <label for="region">Région</label><br>
-                    <input type="text" name="region" id="region" value="{$region}" required><br>
-                    <label for="nom_pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
-                    <div class="boutons">
-                        <button href='profil.tpl' type="submit" name="submit"
-                            class="a">Enregistrer</button>
-                        <table class="lien">
-                            <tr>
-                                <td>
-                                    <a target="_blank" href="./profil.php">Annuler</a>
-                                </td>
-                            </tr>
-                        </table>
+                    <input type="text" name="region" id="region" value="{$region}" required><br>'
+                    <label for="pays">Pays</label><br>
+                    <input type="text" name="nom_pays" id="nom_pays" value="{$pays}"><br>
+                    <div>
+                        <input type="text" id="pays" placeholder="Votre pays">
                     </div>
-                </form>
+                    <ul class="list"></ul>
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
@@ -57,8 +49,8 @@
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="nom_pays">Lien Linkedin</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_linkedin}"><br>
+                                        <label for="Linkedin">Lien Linkedin</label><br>
+                                        <input type="text" name="lien_linkedin" id="lien_linkedin" value="{$lien_linkedin}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -72,8 +64,8 @@
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="nom_pays">Lien Indeed</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_indeed}"><br>
+                                        <label for="Indeed">Lien Indeed</label><br>
+                                        <input type="text" name="lien_indeed" id="lien_indeed" value="{$lien_indeed}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -87,8 +79,8 @@
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="nom_pays">Lien Facebook</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_facebook}"><br>
+                                        <label for="Facebook">Lien Facebook</label><br>
+                                        <input type="text" name="lien_facebook" id="lien_facebook" value="{$lien_facebook}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -102,8 +94,8 @@
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="nom_pays">Lien Site Personnel</label><br>
-                                        <input type="text" name="nom_pays" id="nom_pays" value="{$lien_perso}"><br>
+                                        <label for="perso">Lien Site Personnel</label><br>
+                                        <input type="text" name="lien_perso" id="lien_perso" value="{$lien_perso}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -111,10 +103,14 @@
                     </tr>
                 </table>
             </td>
+            <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
+                </form>
         </tr>
     </table>
 
     <p>
         Expériences passées
     </p>
+    <!-- Script -->
+    <script src="/scripts/liste-pays.js"></script>
 </body>

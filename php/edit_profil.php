@@ -3,12 +3,19 @@ require 'base.php';
 
 //---------------------------------------------------------------RESEAUX-------------------------------------------------------------------------------------------------------
 //recherches du liens facebook
-$sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Facebook'";
+$sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
-$ID_reseau_facebook = $row['ID_reseau'];
-$lien_facebook = $row['lien_reseau'];
+$ID_reseau = $row['ID_reseau'];
+$lien_facebook = $row['lien_facebook'];
+$lien_indeed = $row['lien_indeed'];
+$lien_linkedin = $row['lien_linkedin'];
+$lien_perso = $row['lien_perso'];
+
 $smarty->assign('lien_facebook', $lien_facebook);
+$smarty->assign('lien_indeed', $lien_indeed);
+$smarty->assign('lien_linkedin', $lien_linkedin);
+$smarty->assign('lien_perso', $lien_perso);
 
 
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
