@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/css/edit.css">
-
+<link rel="stylesheet" href="/css/style-edit.css">
+<link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
     <table class="page-profil">
         <tr>
@@ -7,7 +7,7 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-                <form method="post">
+                <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
                         required><br>
@@ -31,20 +31,13 @@
                     <label for="ville">Ville</label><br>
                     <input type="text" name="ville" id="ville" value="{$ville}" required><br>
                     <label for="region">Région</label><br>
-                    <input type="text" name="region" id="region" value="{$region}" required><br>
-                    <label for="nom_pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
-                    <div class="boutons">
-                        <button href='profil.tpl' type="submit" name="submit"
-                            class="a">Enregistrer</button>
-                        <table class="lien">
-                            <tr>
-                                <td>
-                                    <a target="_blank" href="./profil.php">Annuler</a>
-                                </td>
-                            </tr>
-                        </table>
+                    <input type="text" name="region" id="region" value="{$region}" required><br>'
+                    <label for="pays">Pays</label><br>
+                    <div>
+                        <input type="text" id="pays" placeholder="Votre pays">
                     </div>
+                    <ul class="list"></ul>
+                <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -117,4 +110,6 @@
     <p>
         Expériences passées
     </p>
+    <!-- Script -->
+    <script src="/scripts/liste-pays.js"></script>
 </body>
