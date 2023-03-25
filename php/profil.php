@@ -57,5 +57,36 @@ $smarty->assign('titre_page', 'Profil');
 
 // Afficher les templates
 $smarty->display('header.tpl');
-$smarty->display('profil.tpl');
+//On cherche QUI est QUOI 
+//Admin ?
+$sql = "SELECT ID_admin FROM `admin` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('profil-admin.tpl');
+}
+
+//Etudiant ?
+$sql = "SELECT ID_etudiant FROM `etudiant` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('profil-etudiant.tpl');
+}
+
+//Pilote ?
+$sql = "SELECT ID_pilote FROM `pilote` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('profil-pilote.tpl');
+}
+
+//Recruteur ?
+$sql = "SELECT ID_recruteur FROM `recruteur` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('profil-recruteur.tpl');
+}
 $smarty->display('footer.tpl');

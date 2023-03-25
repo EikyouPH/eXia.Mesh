@@ -210,11 +210,37 @@ if (isset($_POST['submit'])) {
 // Afficher les templates
 $smarty->display('header.tpl'); //affiche le Header
 
+//On cherche QUI est QUOI 
+//Admin ?
 $sql = "SELECT ID_admin FROM `admin` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
 $smarty->display('edit-profil-admin.tpl');
+}
+
+//Etudiant ?
+$sql = "SELECT ID_etudiant FROM `etudiant` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('edit-profil-etudiant.tpl');
+}
+
+//Pilote ?
+$sql = "SELECT ID_pilote FROM `pilote` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('edit-profil-pilote.tpl');
+}
+
+//Recruteur ?
+$sql = "SELECT ID_recruteur FROM `recruteur` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+if ($row) {
+$smarty->display('edit-profil-recruteur.tpl');
 }
 
 
