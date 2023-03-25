@@ -7,6 +7,7 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
+                Vous êtes Recruteur<br><br>
                 Nom : {$nom_utilisateur}<br>
                 Prenom : {$prenom}<br>
                 Adresse mail : {$mail}<br>
