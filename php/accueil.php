@@ -10,7 +10,8 @@ $sql = "SELECT ID_admin FROM `admin` WHERE ID_utilisateur = '$_SESSION[ID_utilis
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
-    $_SESSION['admin'] = 'admin';
+    $_SESSION['role'] = 'admin';
+    $_SESSION['ID_admin'] = $row['ID_admin'];
 }
 
 //Etudiant ?
@@ -18,7 +19,8 @@ $sql = "SELECT ID_etudiant FROM `etudiant` WHERE ID_utilisateur = '$_SESSION[ID_
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
-    $_SESSION['etudiant'] = 'etudiant';
+    $_SESSION['role'] = 'etudiant';
+    $_SESSION['ID_etudiant'] = $row['ID_etudiant'];
 }
 
 //Pilote ?
@@ -26,7 +28,8 @@ $sql = "SELECT ID_pilote FROM `pilote` WHERE ID_utilisateur = '$_SESSION[ID_util
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
-    $_SESSION['pilote'] = 'pilote';
+    $_SESSION['role'] = 'pilote';
+    $_SESSION['ID_pilote'] = $row['ID_pilote'];
 }
 
 //Recruteur ?
@@ -35,6 +38,7 @@ $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
     $_SESSION['role'] = 'recruteur';
+    $_SESSION['recruteur'] = $row['ID_recruteur'];
 }
 
 

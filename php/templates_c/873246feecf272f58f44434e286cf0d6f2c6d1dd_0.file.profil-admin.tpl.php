@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 15:24:28
+/* Smarty version 4.3.0, created on 2023-03-25 15:53:55
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f041caf2b60_54627557',
+  'unifunc' => 'content_641f0b034a3c65_18086025',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873246feecf272f58f44434e286cf0d6f2c6d1dd' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil-admin.tpl',
-      1 => 1679754267,
+      1 => 1679756033,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f041caf2b60_54627557 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641f0b034a3c65_18086025 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 
 <body>
@@ -30,6 +30,7 @@ function content_641f041caf2b60_54627557 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
+                Vous êtes Administrateur<br><br>
                 Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 <br>
                 Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
