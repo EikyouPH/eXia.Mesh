@@ -1,6 +1,7 @@
 <?php
 
 require 'base.php';
+$role = $_SESSION['role'];
 
 $sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
@@ -11,6 +12,20 @@ $lien_indeed = $row['lien_indeed'];
 $lien_linkedin = $row['lien_linkedin'];
 $lien_perso = $row['lien_perso'];
 
+if ($role == 'pilote') {
+    $sql = "SELECT nom_promo FROM promo WHERE ID_pilote = '$_SESSION[ID_pilote]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_promo = $row['nom_promo'];
+    $smarty->assign('nom_promo', $nom_promo);
+    
+}
+if ($role == 'etudiant') {
+    $smarty->display('profil-etudiant.tpl');
+}
+if ($role == 'recruteur') {
+    $smarty->display('profil-recruteur.tpl');
+}
 
 
 // Assigner les variables reseaux Smarty au template
@@ -55,18 +70,21 @@ $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Profil');
 $smarty->assign('titre_page', 'Profil');
 
-$role = $_SESSION['role'];
+
 
 // Afficher les templates
 $smarty->display('header.tpl');
 
 if ($role == 'admin') {
     $smarty->display('profil-admin.tpl');
-} else if ($role == 'pilote') {
+}
+if ($role == 'pilote') {
     $smarty->display('profil-pilote.tpl');
-} else if ($role == 'etudiant') {
+}
+if ($role == 'etudiant') {
     $smarty->display('profil-etudiant.tpl');
-} else if ($role == 'recruteur') {
+}
+if ($role == 'recruteur') {
     $smarty->display('profil-recruteur.tpl');
 }
 $smarty->display('footer.tpl');
