@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-edit.css">
+<link rel="stylesheet" href="/css/edit.css">
 
 <body>
     <table class="page-profil">
@@ -34,7 +34,17 @@
                     <input type="text" name="region" id="region" value="{$region}" required><br>
                     <label for="nom_pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="nom_pays" value="{$pays}" required><br>
-                    <button href='profil.tpl'type="submit" name="submit" class="a">Enregistrer</button>
+                    <div class="boutons">
+                        <button href='profil.tpl' type="submit" name="submit"
+                            class="a">Enregistrer</button>
+                        <table class="lien">
+                            <tr>
+                                <td>
+                                    <a target="_blank" href="./profil.php">Annuler</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </form>
             </td>
             <td id="td-reseaux">
@@ -102,9 +112,6 @@
                 </table>
             </td>
         </tr>
-    </table>
-    </td>
-    </tr>
     </table>
 
     <p>

@@ -81,16 +81,20 @@ form input {
 }
 
 button {
-    position: absolute;
-    padding: 1% 2%;
-    font-size: 125%;
-    font-family: 'Montserrat', sans-serif;
-    left: 70%;
-    bottom: 5%;
     background-color: #ffffff;
     border: 2px solid #0E8388;
     border-radius: 5px;
-    margin: 0 auto 5% auto;
+    bottom: 5%;
+}
+
+.boutons{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 70%;
+    padding: 1% 2%;
+    font-size: 125%;
+    margin: 0 auto 0% auto;
+
 }
 
 .a:hover {

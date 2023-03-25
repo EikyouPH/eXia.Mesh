@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 11:44:38
+/* Smarty version 4.3.0, created on 2023-03-24 17:07:41
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641d7f16a31861_37685720',
+  'unifunc' => 'content_641dcacd85f2d3_68477212',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '314e5ac3625b1ca3c6f28f9d073d01b3f22fa282' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\profil.tpl',
-      1 => 1679654120,
+      1 => 1679674027,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641d7f16a31861_37685720 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641dcacd85f2d3_68477212 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 
 <body>
@@ -35,8 +35,6 @@ function content_641d7f16a31861_37685720 (Smarty_Internal_Template $_smarty_tpl)
                 Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 <br>
                 Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
-<br>
-                Password : <?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 <br>
                 Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 <br>
@@ -61,7 +59,8 @@ function content_641d7f16a31861_37685720 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                        <a id="linkedin" href="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
+"> LinkedIn</a>
                                     </td>
                                 </tr>
                             </table>
@@ -73,7 +72,8 @@ function content_641d7f16a31861_37685720 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                        <a id="indeed" href="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
+"> Indeed</a>
                                     </td>
                                 </tr>
                             </table>
@@ -87,7 +87,8 @@ function content_641d7f16a31861_37685720 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                        <a id="facebook" href="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
+"> Facebook</a>
                                     </td>
                                 </tr>
                             </table>
@@ -99,7 +100,8 @@ function content_641d7f16a31861_37685720 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
+                                        <a id="site-perso" href="<?php echo $_smarty_tpl->tpl_vars['lien_perso']->value;?>
+"> Site
                                             personnel</a>
                                     </td>
                                 </tr>
