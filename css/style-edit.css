@@ -1,5 +1,6 @@
 .page-profil {
-    position: relative; /* Ajoutez ceci pour définir la position de référence */
+    position: relative;
+    /* Ajoutez ceci pour définir la position de référence */
     display: flex;
     width: 80%;
     align-items: center;
@@ -8,6 +9,7 @@
     border-spacing: 2em;
     border: 2px solid #0E8388;
     border-radius: 10px;
+    transform: scale(0.95);
 }
 
 
@@ -22,12 +24,14 @@
     font-size: 0.7em;
     border-spacing: none;
     padding: none;
-    display: inline-block; /* Ajoutez cette ligne */
+    display: inline-block;
+    /* Ajoutez cette ligne */
 }
 
 .reseaux img {
     width: 3em;
-    vertical-align: middle; /* Ajoutez cette ligne pour centrer les images */
+    vertical-align: middle;
+    /* Ajoutez cette ligne pour centrer les images */
 }
 
 .reseaux a {
@@ -48,21 +52,46 @@
     width: 100%;
 }
 
-.a {
-    position: absolute; /* Ajoutez ceci pour définir la position absolue */
-    bottom: 30px; /* Ajustez la valeur de 'bottom' pour définir la distance entre l'encadré et le bas de la page */
-    right: 40px; /* Ajustez la valeur de 'right' pour définir la distance entre l'encadré et le bord droit de la page */
-    transition-duration: 0.4s;
-    color: #000000;
+form input {
+    width: 60%;
+    margin: 1%;
+    font-size: 5%;
+    padding: 2% 1%;
+    border: none;
+    border-bottom: 1px solid #645979;
+    outline: none;
+    border-radius: 5px;
     background-color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+}
+
+.reseaux input {
+    width: 60%;
+    margin: 1%;
+    font-size: 5%;
+    padding: 2% 1%;
+    border: none;
+    border-bottom: 1px solid #645979;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+button {
+    position: absolute;
+    padding: 1% 2%;
+    font-size: 125%;
+    font-family: 'Montserrat', sans-serif;
+    left: 70%;
+    bottom: 5%;
+    background-color: #ffffff;
+    border: 2px solid #0E8388;
+    border-radius: 5px;
+    margin: 0 auto 5% auto;
 }
 
 .a:hover {
-    transition-duration: 0.4s;
-    background-color: #555555;
-    color: #ffffff;
+    background-color: #a5d4d1;
+    transition-duration: 0.3s;
 }

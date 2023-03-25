@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 15:26:45
+/* Smarty version 4.3.0, created on 2023-03-25 11:35:35
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641db3253c0300_06426602',
+  'unifunc' => 'content_641ece778db794_35758013',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a81c667bda3c203e7cfa2c8ea2f123d00ee754ed' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\profil.tpl',
-      1 => 1679667980,
+      1 => 1679679451,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641db3253c0300_06426602 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641ece778db794_35758013 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
 
 <body>
@@ -59,7 +59,8 @@ function content_641db3253c0300_06426602 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                        <a id="linkedin" href="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
+"> LinkedIn</a>
                                     </td>
                                 </tr>
                             </table>
@@ -71,7 +72,8 @@ function content_641db3253c0300_06426602 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                        <a id="indeed" href="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
+"> Indeed</a>
                                     </td>
                                 </tr>
                             </table>
@@ -85,7 +87,8 @@ function content_641db3253c0300_06426602 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                        <a id="facebook" href="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
+"> Facebook</a>
                                     </td>
                                 </tr>
                             </table>
@@ -97,7 +100,8 @@ function content_641db3253c0300_06426602 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
+                                        <a id="site-perso" href="<?php echo $_smarty_tpl->tpl_vars['lien_perso']->value;?>
+"> Site
                                             personnel</a>
                                     </td>
                                 </tr>
