@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="titre">{$titre_onglet}</title>
 
-  <link rel="stylesheet" href="/css/style-global.css">
+  <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <header>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-profil.css">
+<link rel="stylesheet" href="/css/profil.css">
 
 <body>
     <table class="page-profil">

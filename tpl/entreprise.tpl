@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-entreprise.css">
+<link rel="stylesheet" href="/css/entreprise.css">
 
 <body>
     <div>

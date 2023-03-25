@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-stage.css">
+<link rel="stylesheet" href="/css/stage.css">
 
 <body>
     <table class="table_stage">

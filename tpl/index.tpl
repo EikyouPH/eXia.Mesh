@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/css/style-connexion.css">
-<link rel="stylesheet" href="/css/style-footer.css">
+<link rel="stylesheet" href="/css/connexion.css">
+<link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <body>
    <div class="connexion">

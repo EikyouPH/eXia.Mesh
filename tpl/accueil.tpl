@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-accueil.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/accueil.css" type="text/css" media="screen" />
 <body>
   <table class="page-accueil">
     <thead>

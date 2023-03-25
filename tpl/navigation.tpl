@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-navigation.css">
+<link rel="stylesheet" href="/css/navigation.css">
 
 <body>
     <h3>Index des pages</h3>
