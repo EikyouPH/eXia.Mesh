@@ -17,7 +17,6 @@ $smarty->assign('lien_indeed', $lien_indeed);
 $smarty->assign('lien_linkedin', $lien_linkedin);
 $smarty->assign('lien_perso', $lien_perso);
 
-
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
 
 //recherches des infos utilisateur
@@ -55,7 +54,7 @@ $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Edition du profil');
 $smarty->assign('titre_page', 'Edition du profil');
 
-
+$role = $_SESSION['role'];
 
 
 
@@ -185,14 +184,12 @@ if (isset($_POST['submit'])) {
     $lien_indeed = $_POST['lien_indeed'];
     $lien_perso = $_POST['lien_perso'];
 
-    $sql = "UPDATE reseaux SET lien_reseau = ? WHERE ID_reseau = ?";
+    $sql = "UPDATE reseaux SET lien_facebook = ?, lien_indeed = ?, lien_linkedin = ?, lien_perso = ? WHERE ID_reseau = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$lien_facebook, $ID_reseau_facebook]);
-    $stmt->execute([$lien_indeed, $ID_reseau_indeed]); 
-    $stmt->execute([$lien_linkedin, $ID_reseau_linkedin]); 
-    $stmt->execute([$lien_perso, $ID_reseau_perso]); 
+    $stmt->execute([$lien_facebook, $lien_indeed, $lien_linkedin, $lien_perso, $ID_reseau]);
 
-    
+
+
 
     //------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
     $nom_utilisateur = $_POST['nom_utilisateur'];
@@ -205,11 +202,31 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
 
-    header("Location: profil.php");
+
+    if ($role == 'admin') {
+        header("Location: profil-admin.php");
+    } else if ($role == 'pilote') {
+        header("Location: profil-pilote.php");
+    } else if ($role == 'etudiant') {
+        header("Location: profil-etudiant.php");
+    } else if ($role == 'recruteur') {
+        header("Location: profil-recruteur.php");
+    }
     exit();
 }
 
 // Afficher les templates
-$smarty->display('header.tpl');
-$smarty->display('edit-profil.tpl');
+$smarty->display('header.tpl'); //affiche le Header
+
+
+if ($role == 'admin') {
+    $smarty->display('edit-profil-admin.tpl');
+} else if ($role == 'pilote') {
+    $smarty->display('edit-profil-pilote.tpl');
+} else if ($role == 'etudiant') {
+    $smarty->display('edit-profil-etudiant.tpl');
+} else if ($role == 'recruteur') {
+    $smarty->display('edit-profil-recruteur.tpl');
+}
+
 $smarty->display('footer.tpl');

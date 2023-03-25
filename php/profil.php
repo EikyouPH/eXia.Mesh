@@ -55,7 +55,18 @@ $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Profil');
 $smarty->assign('titre_page', 'Profil');
 
+$role = $_SESSION['role'];
+
 // Afficher les templates
 $smarty->display('header.tpl');
-$smarty->display('profil.tpl');
+
+if ($role == 'admin') {
+    $smarty->display('profil-admin.tpl');
+} else if ($role == 'pilote') {
+    $smarty->display('profil-pilote.tpl');
+} else if ($role == 'etudiant') {
+    $smarty->display('profil-etudiant.tpl');
+} else if ($role == 'recruteur') {
+    $smarty->display('profil-recruteur.tpl');
+}
 $smarty->display('footer.tpl');

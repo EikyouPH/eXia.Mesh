@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 14:21:29
-  from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil.tpl' */
+/* Smarty version 4.3.0, created on 2023-03-25 15:21:38
+  from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641ef559ea3826_68378175',
+  'unifunc' => 'content_641f0372845246_51568474',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8b8c3b4fb325de443607a58d960a270728e360ee' => 
+    'b0b9560a959e2b74e564ab9fefe04ecb1a1b1540' => 
     array (
-      0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679750370,
+      0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-pilote.tpl',
+      1 => 1679751473,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641ef559ea3826_68378175 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641f0372845246_51568474 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
@@ -141,10 +141,9 @@ function content_641ef559ea3826_68378175 (Smarty_Internal_Template $_smarty_tpl)
                         </td>
                     </tr>
                 </table>
-                <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
-                </form>
             </td>
-            
+            <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
+                </form>
         </tr>
     </table>
 
