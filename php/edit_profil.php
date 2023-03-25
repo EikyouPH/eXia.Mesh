@@ -1,6 +1,55 @@
 <?php
 require 'base.php';
 
+//---------------------------------------------------------------RESEAUX-------------------------------------------------------------------------------------------------------
+//recherches du liens facebook
+$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Facebook'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+$ID_reseau = $row['ID_reseau'];
+$lien_faceebook = $row['lien_reseau'];
+$smarty->assign('lien_facebook', $lien_faceebook);
+
+//recherches du liens Linkedin
+$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Linkedin'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+$ID_reseau = $row['ID_reseau'];
+$lien_linkedin = $row['lien_reseau'];
+$smarty->assign('lien_linkedin', $lien_linkedin);
+
+//recherches du liens Indeed
+$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Indeed'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+$ID_reseau = $row['ID_reseau'];
+$lien_indeed = $row['lien_reseau'];
+$smarty->assign('lien_indeed', $lien_indeed);
+
+//recherches du liens perso
+$sql = "SELECT `ID_reseau`, `lien_reseau` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]' AND nom_reseau = 'Autres Sites'";
+$result = $conn->query($sql);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+$ID_reseau = $row['ID_reseau'];
+$lien_perso = $row['lien_reseau'];
+$smarty->assign('lien_perso', $lien_perso);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
 
 //recherches des infos utilisateur
@@ -48,15 +97,15 @@ if (isset($_POST['submit'])) {
     //---------------------------------------------------INFO TABLE PAYS ------------------------------------------------------------------------------
     $pays = $_POST['nom_pays'];
 
-    $sql ="SELECT ID_pays FROM `pays` WHERE nom_pays = ?";
+    $sql = "SELECT ID_pays FROM `pays` WHERE nom_pays = ?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$pays]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
-    
+
     if ($row) {
         // Le pays existe déjà dans la base de données, effectuer une mise à jour
         $ID_pays = $row['ID_pays'];
-        } else {
+    } else {
         // Le pays n'existe pas encore dans la base de données, effectuer une insertion
         $sql = "INSERT INTO pays (nom_pays) VALUES (?)";
         $stmt = $conn->prepare($sql);
@@ -67,117 +116,117 @@ if (isset($_POST['submit'])) {
         $stmt->execute([$pays]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         $ID_pays = $row['ID_pays'];
-        }
+    }
     //-------------------------------------------------INFO TABLE REGIONS---------------------------------------------------------------------
     $region = $_POST['region'];
 
-    $sql ="SELECT ID_region FROM `region` WHERE region = ?";
-    $stmt= $conn->prepare($sql);
+    $sql = "SELECT ID_region FROM `region` WHERE region = ?";
+    $stmt = $conn->prepare($sql);
     $stmt->execute([$region]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
-if ($row) {
-    // La région existe déjà dans la base de données, effectuer une mise à jour
-    $ID_region = $row['ID_region'];
-} else {
-     // La region n'existe pas encore dans la base de données, effectuer une insertion
-     $sql = "INSERT INTO region (region) VALUES (?)";
-     $stmt = $conn->prepare($sql);
-     $stmt->execute([$region]);
-     //La région vient s'être créé
-     $sql = "SELECT ID_region FROM region WHERE region = ?";
-     $stmt = $conn->prepare($sql);
-     $stmt->execute([$region]);
-     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-     $ID_region = $row['ID_region'];
-}
+    if ($row) {
+        // La région existe déjà dans la base de données, effectuer une mise à jour
+        $ID_region = $row['ID_region'];
+    } else {
+        // La region n'existe pas encore dans la base de données, effectuer une insertion
+        $sql = "INSERT INTO region (region) VALUES (?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$region]);
+        //La région vient s'être créé
+        $sql = "SELECT ID_region FROM region WHERE region = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$region]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $ID_region = $row['ID_region'];
+    }
     //-------------------------------------------INFO TABLE VILLE -----------------------------------------------------------------------
 
     $ville = $_POST['ville'];
     $code_postal = $_POST['code_postal'];
-    
-    $sql ="SELECT * FROM `ville` WHERE nom_ville = ? AND code_postal = ?";
-    $stmt= $conn->prepare($sql);
+
+    $sql = "SELECT * FROM `ville` WHERE nom_ville = ? AND code_postal = ?";
+    $stmt = $conn->prepare($sql);
     $stmt->execute([$ville, $code_postal]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
-if ($row) {
-    // La ville existe déjà dans la base de données, effectuer une mise à jour
-    $ID_ville = $row['ID_ville'];
-} else {
-     // La vile n'existe pas encore dans la base de données, effectuer une insertion
-     $sql = "INSERT INTO ville (nom_ville, code_postal) VALUES (?, ?)";
-     $stmt = $conn->prepare($sql);
-     $stmt->execute([$ville, $code_postal]);
-     //La ville vient d'être créé
-     $sql = "SELECT ID_ville FROM ville WHERE nom_ville = ? AND code_postal = ?";
-     $stmt = $conn->prepare($sql);
-     $stmt->execute([$ville, $code_postal]);
-     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-     $ID_ville = $row['ID_ville'];
-}
+    if ($row) {
+        // La ville existe déjà dans la base de données, effectuer une mise à jour
+        $ID_ville = $row['ID_ville'];
+    } else {
+        // La vile n'existe pas encore dans la base de données, effectuer une insertion
+        $sql = "INSERT INTO ville (nom_ville, code_postal) VALUES (?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ville, $code_postal]);
+        //La ville vient d'être créé
+        $sql = "SELECT ID_ville FROM ville WHERE nom_ville = ? AND code_postal = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ville, $code_postal]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $ID_ville = $row['ID_ville'];
+    }
 
-//------------------------------------------------------INFO TABLE ADRESSE-------------------------------------------------------------------
-$numero = $_POST['numero'];
-$complement = $_POST['complement'];
-$rue = $_POST['rue'];
+    //------------------------------------------------------INFO TABLE ADRESSE-------------------------------------------------------------------
+    $numero = $_POST['numero'];
+    $complement = $_POST['complement'];
+    $rue = $_POST['rue'];
 
-// Vérifier si l'adresse existe déjà dans la base de données
-$sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$numero, $complement, $rue]);
-$row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
+    // Vérifier si l'adresse existe déjà dans la base de données
+    $sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$numero, $complement, $rue]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
-if ($row) {
-// L'adresse existe déjà dans la base de données, effectuer une mise à jour
-$id_adresse = $row['ID_adresse'];
-} else {
-// L'adresse n'existe pas encore dans la base de données, effectuer une insertion
-$sql = "INSERT INTO adresse (numero, complement, rue) VALUES (?, ?, ?)";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$numero, $complement, $rue]);
+    if ($row) {
+        // L'adresse existe déjà dans la base de données, effectuer une mise à jour
+        $id_adresse = $row['ID_adresse'];
+    } else {
+        // L'adresse n'existe pas encore dans la base de données, effectuer une insertion
+        $sql = "INSERT INTO adresse (numero, complement, rue) VALUES (?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$numero, $complement, $rue]);
 
-$sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$numero, $complement, $rue]);
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
-$id_adresse = $row['ID_adresse'];
-}
+        $sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$numero, $complement, $rue]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        $id_adresse = $row['ID_adresse'];
+    }
 
-//-----------------------------------------------UPDATE ADRESSE----------------------------------------------------------------------------------
+    //-----------------------------------------------UPDATE ADRESSE----------------------------------------------------------------------------------
 
-$sql = "UPDATE region SET ID_pays = ? Where ID_region =?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$ID_pays, $ID_region]);
+    $sql = "UPDATE region SET ID_pays = ? Where ID_region =?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$ID_pays, $ID_region]);
 
-$sql = "UPDATE ville SET ID_region = ? Where ID_ville =?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$ID_region, $ID_ville]);
+    $sql = "UPDATE ville SET ID_region = ? Where ID_ville =?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$ID_region, $ID_ville]);
 
-$sql = "UPDATE adresse SET ID_ville = ? Where ID_adresse =?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$ID_ville, $id_adresse]);
+    $sql = "UPDATE adresse SET ID_ville = ? Where ID_adresse =?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$ID_ville, $id_adresse]);
 
-$sql = "UPDATE utilisateur SET ID_adresse = ? Where ID_utilisateur =?";
-$stmt = $conn->prepare($sql);
-$stmt->execute([$id_adresse, $id_utilisateur]);
+    $sql = "UPDATE utilisateur SET ID_adresse = ? Where ID_utilisateur =?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$id_adresse, $id_utilisateur]);
 
 
 
-//------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
-$nom_utilisateur = $_POST['nom_utilisateur'];
-$password = $_POST['password'];
-$prenom = $_POST['prenom'];
-$mail = $_POST['mail'];
-$date_naissance = $_POST['date_naissance'];
+    //------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
+    $nom_utilisateur = $_POST['nom_utilisateur'];
+    $password = $_POST['password'];
+    $prenom = $_POST['prenom'];
+    $mail = $_POST['mail'];
+    $date_naissance = $_POST['date_naissance'];
 
-$sql = "UPDATE utilisateur SET nom_utilisateur=?, password=?, prenom=?,mail=?, date_naissance=? WHERE ID_utilisateur = ?";
-$stmt= $conn->prepare($sql);
-$stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
+    $sql = "UPDATE utilisateur SET nom_utilisateur=?, password=?, prenom=?,mail=?, date_naissance=? WHERE ID_utilisateur = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
 
     header("Location: profil.php");
-exit();
-    }
+    exit();
+}
 
 // Afficher les templates
 $smarty->display('header.tpl');
