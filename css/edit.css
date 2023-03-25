@@ -2,11 +2,15 @@
     border: 2px solid #0E8388;
 }   
 
+#td-reseaux {
+    border: 2px solid #0E8388;
+    width: 40%;
+}
+
 #personne {
     justify-content: center;
     width: 10%;
 }
-
 #personne img {
     width: 100%;
 }
