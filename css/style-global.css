@@ -95,6 +95,8 @@ a {
 .cadre {
     display: border-box;
     width: 80%;
+    margin: auto;
+    padding: 1%;
     align-items: center;
     justify-content: center;
     text-align: justify;
