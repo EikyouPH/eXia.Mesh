@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-edit.css">
+<link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
     <table class="page-profil">

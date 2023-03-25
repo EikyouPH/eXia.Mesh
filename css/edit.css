@@ -1,93 +1,55 @@
-.page-profil {
-    position: relative;
-    /* Ajoutez ceci pour définir la position de référence */
-    display: flex;
-    width: 80%;
-    align-items: center;
-    text-align: justify;
-    margin: 5em 10% 5em 10%;
-    border-spacing: 2em;
+.grand td {
     border: 2px solid #0E8388;
-    border-radius: 10px;
-    transform: scale(0.95);
+}   
+
+#td-reseaux {
+    border: 2px solid #0E8388;
+    width: 40%;
 }
 
-
-
-.page-profil td {
-    width: 30em;
-    align-items: center;
-}
-
-
-.reseaux {
-    font-size: 0.7em;
-    border-spacing: none;
-    padding: none;
-    display: inline-block;
-    /* Ajoutez cette ligne */
-}
-
-.reseaux img {
-    width: 3em;
-    vertical-align: middle;
-    /* Ajoutez cette ligne pour centrer les images */
-}
-
-.reseaux a {
-    text-decoration: none;
-}
-
-.reseaux .icone {
-    width: 0;
-}
-
-.page-profil .personne {
+#personne {
     justify-content: center;
-    width: 30%;
-    min-width: 5em;
+    width: 10%;
 }
-
-.personne img {
+#personne img {
     width: 100%;
 }
 
-form input {
-    width: 60%;
+table{
+    width: 100%;
+}
+
+input {
     margin: 1%;
-    font-size: 5%;
-    padding: 2% 1%;
-    border: none;
-    border-bottom: 1px solid #645979;
+    font-size: 90%;
+    padding: 2%;
+    border: 0.5px solid #a4c4bc;
     outline: none;
     border-radius: 5px;
-    background-color: #ffffff;
-    font-size: 16px;
+    background-color: #e1f0ed;
     font-family: 'Montserrat', sans-serif;
+    width: 98%;
+}
+.reseaux input{
+    height: 10%;
 }
 
-.reseaux input {
-    width: 60%;
-    margin: 1%;
-    font-size: 5%;
-    padding: 2% 1%;
-    border: none;
-    border-bottom: 1px solid #645979;
-    outline: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+.reseaux
+{
+    width: 100%;
+}
+ 
+
+.icone{
+    width: 12%;
 }
 
-button {
-    background-color: #ffffff;
-    border: 2px solid #0E8388;
-    border-radius: 5px;
-    bottom: 5%;
+.reseaux img {
+    width: 50%;
+    vertical-align: middle;
 }
 
-.boutons{
+.boutons {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     left: 70%;

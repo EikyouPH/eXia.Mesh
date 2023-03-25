@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 16:09:45
+/* Smarty version 4.3.0, created on 2023-03-25 18:43:50
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\stage.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dbd390ce719_51718690',
+  'unifunc' => 'content_641f32d606ffc7_85305617',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78a17e5ef851a306e16093e81be9c5620b8148e3' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\stage.tpl',
-      1 => 1679670582,
+      1 => 1679765228,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dbd390ce719_51718690 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-stage.css">
+function content_641f32d606ffc7_85305617 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/stage.css">
 
 <body>
     <table class="table_stage">

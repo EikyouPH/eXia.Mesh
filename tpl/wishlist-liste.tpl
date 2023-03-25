@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/style-wishlist.css">
+<link rel="stylesheet" href="/css/wishlist.css">
 
 <body>
 
