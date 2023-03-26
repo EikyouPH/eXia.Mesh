@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/css/connexion.css">
 <link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="manifest" href="../manifest.json">
 <body>
    <div class="connexion">
       <div>
