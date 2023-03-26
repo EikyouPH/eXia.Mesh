@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-23 11:34:08
+/* Smarty version 4.3.0, created on 2023-03-26 12:45:49
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641c2b20756317_58723825',
+  'unifunc' => 'content_6420225dabce41_01903210',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '80373b6d070587ad2ae07e4d78e1d45477a9d71a' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\header.tpl',
-      1 => 1679567643,
+      1 => 1679766612,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641c2b20756317_58723825 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6420225dabce41_01903210 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -29,7 +29,7 @@ function content_641c2b20756317_58723825 (Smarty_Internal_Template $_smarty_tpl)
   <title id="titre"><?php echo $_smarty_tpl->tpl_vars['titre_onglet']->value;?>
 </title>
 
-  <link rel="stylesheet" href="/css/style-global.css">
+  <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <header>

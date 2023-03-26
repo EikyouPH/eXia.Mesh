@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 11:45:28
+/* Smarty version 4.3.0, created on 2023-03-26 12:45:55
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641ed0c8369b30_62036501',
+  'unifunc' => 'content_64202263cdbb68_09353193',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f1cdabe9a8c7db24dbb947a729c9d4e075f3c6d8' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\navigation.tpl',
-      1 => 1679671621,
+      1 => 1679766612,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641ed0c8369b30_62036501 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-navigation.css">
+function content_64202263cdbb68_09353193 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/navigation.css">
 
 <body>
     <h3>Index des pages</h3>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 18:32:24
+/* Smarty version 4.3.0, created on 2023-03-26 12:53:39
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f3028d84f64_46273786',
+  'unifunc' => 'content_64202433d2e336_23709230',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '26b0b92c00b4c4e69ba06cd0ea5d5c1b0080ac28' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\edit-profil.tpl',
-      1 => 1679765040,
+      1 => 1679828015,
       2 => 'file',
     ),
   ),
@@ -20,18 +20,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f3028d84f64_46273786 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64202433d2e336_23709230 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
 <body>
     <div class="en cadre">
-        <table class = "grand">
+        <table class="grand">
             <tr>
                 <td id="personne">
                     <img src="/img/personne.png" alt="Image du compte">
                 </td>
-                <td class = "infos">
+                <td class="infos">
                     <form method="post" autocomplete="off">
                         <label for="nom_utilisateur">Nom</label><br>
                         <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
@@ -50,33 +50,33 @@ function content_641f3028d84f64_46273786 (Smarty_Internal_Template $_smarty_tpl)
                         <input type="date" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 "
                             required><br>
-                    </td>
-                    <td class="adresse">  
-                        <label for="numero">N°</label><br>
-                        <input type="text" name="numero" id="numero" value="<?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
+                </td>
+                <td class="adresse">
+                    <label for="numero">N°</label><br>
+                    <input type="text" name="numero" id="numero" value="<?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
 " required><br>
-                        <label for="complement">Complément</label><br>
-                        <input type="text" name="complement" id="complement" value="<?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
+                    <label for="complement">Complément</label><br>
+                    <input type="text" name="complement" id="complement" value="<?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
 "><br>
-                        <label for="rue">Rue</label><br>
-                        <input type="text" name="rue" id="rue" value="<?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
+                    <label for="rue">Rue</label><br>
+                    <input type="text" name="rue" id="rue" value="<?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
 " required><br>
-                        <label for="code_postal">Code postal</label><br>
-                        <input type="number" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+                    <label for="code_postal">Code postal</label><br>
+                    <input type="number" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
 " required><br>
-                        <label for="ville">Ville</label><br>
-                        <input type="text" name="ville" id="ville" value="<?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
+                    <label for="ville">Ville</label><br>
+                    <input type="text" name="ville" id="ville" value="<?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
 " required><br>
-                        <label for="region">Région</label><br>
-                        <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
+                    <label for="region">Région</label><br>
+                    <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 " required><br>
-                        <label for="pays">Pays</label><br>
-                        <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+                    <label for="pays">Pays</label><br>
+                    <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 "><br>
-                        <div>
-                            <input type="text" id="pays" placeholder="Votre pays">
-                        </div>
-                        <ul class="list"></ul>
+                    <div>
+                        <input type="text" id="pays" placeholder="Votre pays">
+                    </div>
+                    <ul class="list"></ul>
                 </td>
                 <td id="td-reseaux">
                     <table class="reseaux">
@@ -93,7 +93,7 @@ function content_641f3028d84f64_46273786 (Smarty_Internal_Template $_smarty_tpl)
                                                 value="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
 "><br>
                                         </td>
-                                        
+
                                     </tr>
                                 </table>
                             </td>
@@ -151,7 +151,16 @@ function content_641f3028d84f64_46273786 (Smarty_Internal_Template $_smarty_tpl)
                         </tr>
                     </table>
                 </td>
-                <button href='profil.tpl' type="submit" name="submit" class = "ok">Enregistrer</button>
+                <table class=lien>
+                    <tr>
+                        <td class="ok">
+                            <button href='profil.php' type="submit" name="submit" >Enregistrer</button>
+                        </td>
+                        <td class="annuler">
+                            <a href='profil.php'>Annuler</a>
+                        </td>
+                    </tr>
+                </table>
                 </form>
             </tr>
         </table>

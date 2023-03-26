@@ -115,10 +115,10 @@
                 <table class=lien>
                     <tr>
                         <td class="ok">
-                            <button href='profil.tpl' type="submit" name="submit" >Enregistrer</button>
+                            <button href='profil.php' type="submit" name="submit" >Enregistrer</button>
                         </td>
-                        <td>
-                            <a href='profil.tpl'>Annuler</a>
+                        <td class="annuler">
+                            <a href='profil.php'>Annuler</a>
                         </td>
                     </tr>
                 </table>

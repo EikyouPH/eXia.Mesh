@@ -112,10 +112,28 @@ a {
 
 /* Bouton confirmation */
 .ok {
-    background-color: #ffffff;
+    width: 30%;
+    background-color: #cbe4de;
     border: 2px solid #0E8388;
     border-radius: 5px;
     bottom: 5%;
 }
 
+.ok button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    font-size: 100%;
+    background-color: #cbe4de;
+    color: #0E8388;
+    text-decoration: none;
+}
+
 /* Bouton retour */
+
+.annuler {
+    width: 30%;
+    background-color: #cbe4de;
+    border: 2px solid #0E8388;
+    border-radius: 5px;
+    bottom: 5%;
+}
