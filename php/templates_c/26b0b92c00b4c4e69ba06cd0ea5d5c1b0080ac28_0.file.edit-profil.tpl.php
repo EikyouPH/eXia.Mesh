@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-26 12:53:39
+/* Smarty version 4.3.0, created on 2023-03-26 13:24:10
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64202433d2e336_23709230',
+  'unifunc' => 'content_64202b5ab64b31_29040384',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '26b0b92c00b4c4e69ba06cd0ea5d5c1b0080ac28' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\edit-profil.tpl',
-      1 => 1679828015,
+      1 => 1679829768,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64202433d2e336_23709230 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64202b5ab64b31_29040384 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
-
+<?php echo '<script'; ?>
+ src="/app.js"><?php echo '</script'; ?>
+>
 <body>
     <div class="en cadre">
         <table class="grand">

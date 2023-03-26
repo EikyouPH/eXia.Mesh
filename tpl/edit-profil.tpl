@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
-
+<script src="/app.js"></script>
 <body>
     <div class="en cadre">
         <table class="grand">
