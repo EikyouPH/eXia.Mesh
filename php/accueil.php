@@ -24,12 +24,13 @@ if ($row) {
 }
 
 //Pilote ?
-$sql = "SELECT ID_pilote FROM `pilote` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$sql = "SELECT ID_pilote,ID_centre FROM `pilote` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
     $_SESSION['role'] = 'pilote';
     $_SESSION['ID_pilote'] = $row['ID_pilote'];
+    $_SESSION['ID_centre'] = $row['ID_centre'];
 }
 
 //Recruteur ?

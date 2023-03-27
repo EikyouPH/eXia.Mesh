@@ -12,6 +12,25 @@ $lien_indeed = $row['lien_indeed'];
 $lien_linkedin = $row['lien_linkedin'];
 $lien_perso = $row['lien_perso'];
 
+if ($role == 'pilote') {
+    //On cherche la promo
+    $sql = "SELECT nom_promo FROM promo WHERE ID_pilote = '$_SESSION[ID_pilote]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_promo = $row['nom_promo'];
+    $smarty->assign('nom_promo', $nom_promo);
+    //On cherche le centre
+    $sql = "SELECT nom_centre FROM centre WHERE ID_centre = '$_SESSION[ID_centre]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_centre = $row['nom_centre'];
+    $smarty->assign('nom_centre', $nom_centre);
+    
+}
+if ($role == 'etudiant') {
+}
+if ($role == 'recruteur') {
+}
 
 
 // Assigner les variables reseaux Smarty au template
