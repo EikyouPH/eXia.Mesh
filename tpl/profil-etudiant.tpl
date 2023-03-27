@@ -7,7 +7,7 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-            Vous êtes Etudiant<br><br>
+                Vous êtes Etudiant<br><br>
 
                 Nom : {$nom_utilisateur}<br>
                 Prenom : {$prenom}<br>
@@ -77,6 +77,11 @@
                 </table>
             </td>
         </tr>
+        <td class="cadre" colspan="3">
+            Lettre de motivation :<br>
+            {$lettre_motivation}<br>
+        </td>
+
     </table>
     <p>
         Expériences passées
