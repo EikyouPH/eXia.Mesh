@@ -246,15 +246,8 @@ if (isset($_POST['submit'])) {
     $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $id_utilisateur]);
 
 
-    if ($role == 'admin') {
-        header("Location: profil-admin.php");
-    } else if ($role == 'pilote') {
-        header("Location: profil-pilote.php");
-    } else if ($role == 'etudiant') {
-        header("Location: profil-etudiant.php");
-    } else if ($role == 'recruteur') {
-        header("Location: profil-recruteur.php");
-    }
+    
+    header("Location: profil.php");
     exit();
 }
 

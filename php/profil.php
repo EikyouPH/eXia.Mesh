@@ -40,6 +40,13 @@ if ($role == 'etudiant') {
     $row = $result->fetch(PDO::FETCH_ASSOC);
     $nom_centre = $row['nom_centre'];
     $smarty->assign('nom_centre', $nom_centre);
+    //On cherche les infos d'étudiant
+    $sql = "SELECT lettre_motivation FROM etudiant WHERE ID_etudiant = '$_SESSION[ID_etudiant]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $lettre_motivation = $row['lettre_motivation'];
+    $smarty->assign('lettre_motivation', $lettre_motivation);
+    
 
 }
 if ($role == 'recruteur') {

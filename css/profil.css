@@ -1,6 +1,6 @@
 :root {
     --tresclair: #CBE4DE;
-    --clair: #0E8388;
+    --clair: #669ea0;
     --fonce: #2E4F4F;
     --tresfonce: #2C3333;
 }
@@ -54,4 +54,7 @@
     position: absolute;
     top: 4%;
     right: 2%;
+}
+table td{
+    border: 2px solid var(--clair);
 }
