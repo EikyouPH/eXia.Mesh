@@ -11,6 +11,8 @@
 
                 Nom : {$nom_utilisateur}<br>
                 Prenom : {$prenom}<br>
+                Promotion : {$nom_promo}<br>
+                Etudie à : {$nom_centre}<br>
                 Adresse mail : {$mail}<br>
                 Date de naissance : {$date_naissance}<br>
                 Adresse : {$numero} {$complement} {$rue},<br>

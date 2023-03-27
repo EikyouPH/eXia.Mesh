@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-27 09:57:52
+/* Smarty version 4.3.0, created on 2023-03-27 11:18:13
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64214c802c0822_40659242',
+  'unifunc' => 'content_64215f55c79b20_54378446',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '255be1e9055fc6a5e194a515caa2c44ed7a557f1' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil-etudiant.tpl',
-      1 => 1679783044,
+      1 => 1679908692,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64214c802c0822_40659242 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64215f55c79b20_54378446 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -35,6 +35,10 @@ function content_64214c802c0822_40659242 (Smarty_Internal_Template $_smarty_tpl)
                 Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 <br>
                 Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
+<br>
+                Promotion : <?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
+<br>
+                Etudie à : <?php echo $_smarty_tpl->tpl_vars['nom_centre']->value;?>
 <br>
                 Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
 <br>

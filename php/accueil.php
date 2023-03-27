@@ -15,12 +15,14 @@ if ($row) {
 }
 
 //Etudiant ?
-$sql = "SELECT ID_etudiant FROM `etudiant` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$sql = "SELECT ID_etudiant, ID_promo, ID_centre FROM `etudiant` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
     $_SESSION['role'] = 'etudiant';
     $_SESSION['ID_etudiant'] = $row['ID_etudiant'];
+    $_SESSION['ID_promo']= $row['ID_promo'];
+    $_SESSION['ID_centre'] = $row['ID_centre'];
 }
 
 //Pilote ?
@@ -34,12 +36,13 @@ if ($row) {
 }
 
 //Recruteur ?
-$sql = "SELECT ID_recruteur FROM `recruteur` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
+$sql = "SELECT ID_recruteur, ID_entreprise FROM `recruteur` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result = $conn->query($sql);
 $row = $result->fetch(PDO::FETCH_ASSOC);
 if ($row) {
     $_SESSION['role'] = 'recruteur';
-    $_SESSION['recruteur'] = $row['ID_recruteur'];
+    $_SESSION['ID_recruteur'] = $row['ID_recruteur'];
+    $_SESSION['ID_entreprise']= $row['ID_entreprise'];
 }
 
 
