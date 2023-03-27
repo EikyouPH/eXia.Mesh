@@ -1,6 +1,49 @@
 <?php
 require 'base.php';
 
+//---------------------------------------------------------- INFOS DIFFERENCIEES --------------------------------------------------------------------------------------------------
+$role = $_SESSION['role'];
+
+if ($role == 'pilote') {
+    //On cherche la promo
+    $sql = "SELECT nom_promo FROM promo WHERE ID_pilote = '$_SESSION[ID_pilote]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_promo = $row['nom_promo'];
+    $smarty->assign('nom_promo', $nom_promo);
+    //On cherche le centre
+    $sql = "SELECT nom_centre FROM centre WHERE ID_centre = '$_SESSION[ID_centre]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_centre = $row['nom_centre'];
+    $smarty->assign('nom_centre', $nom_centre);
+    
+}
+
+if ($role == 'etudiant') {
+    //On cherche la promo
+    $sql = "SELECT nom_promo FROM promo WHERE ID_pilote = '$_SESSION[ID_etudiant]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_promo = $row['nom_promo'];
+    $smarty->assign('nom_promo', $nom_promo);
+    //On cherche le centre
+    $sql = "SELECT nom_centre FROM centre WHERE ID_centre = '$_SESSION[ID_centre]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_centre = $row['nom_centre'];
+    $smarty->assign('nom_centre', $nom_centre);
+}
+
+if ($role == 'recruteur') {
+    $sql = "SELECT nom_entreprise FROM entreprise WHERE ID_entreprise = '$_SESSION[ID_entreprise]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $nom_entreprise = $row['nom_entreprise'];
+    $smarty->assign('nom_entreprise', $nom_entreprise);
+}
+
+
 //---------------------------------------------------------------RESEAUX-------------------------------------------------------------------------------------------------------
 //recherches du liens facebook
 $sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-27 15:04:37
-  from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\profil-pilote.tpl' */
+/* Smarty version 4.3.0, created on 2023-03-27 13:06:51
+  from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64219465d71ca2_16127880',
+  'unifunc' => 'content_642178cb2c1905_44675206',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '533d72da1a44bfdab67f056a4ed73b79e6f766ad' => 
+    '99c96203fefd2853e52a45ce8175fa06fabed016' => 
     array (
-      0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\profil-pilote.tpl',
-      1 => 1679922269,
+      0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\profil-admin.tpl',
+      1 => 1679836168,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64219465d71ca2_16127880 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642178cb2c1905_44675206 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -30,17 +30,12 @@ function content_64219465d71ca2_16127880 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-            Vous êtes Pilote<br><br>
-
+                Vous êtes Administrateur<br><br>
                 Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 <br>
                 Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 <br>
                 Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
-<br>
-                Pilote de promotion : <?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
- <br>
-                Centre : <?php echo $_smarty_tpl->tpl_vars['nom_centre']->value;?>
 <br>
                 Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 <br>
