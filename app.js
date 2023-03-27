@@ -9,23 +9,18 @@ const connection = mysql.createConnection({
     database: 'projet_web'
 });
 
-connection.connect()
-
-function getPays(callback) {
-    connection.query('SELECT nom_pays FROM pays', (error, results) => {
-        if (error) {
-            callback(error, null);
-        } else {
-            const pays = results.map(result => result.nom_pays);
-            callback(null, pays);
-        }
-    });
-}
-  
-  module.exports = {
-    getPays: getPays
-  };
-
-app.listen(3000, () => {
-    console.log('Server started on port 3000')
+connection.connect((err) => {
+    if (err) throw err;
+    console.log('Connecté à la base de données MySQL !');
+    app.get('/pays', (req, res) => {
+        connection.query('SELECT * FROM pays', (err, resultats) => {
+          if (err) throw err;
+          res.send(resultats);
+        });
+      });
 });
+  
+app.listen(3000, () => {
+    console.log('Serveur démarré sur le port 3000');
+    }
+);

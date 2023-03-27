@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-26 12:45:16
+/* Smarty version 4.3.0, created on 2023-03-27 09:34:50
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6420223c1f04a5_61672070',
+  'unifunc' => 'content_6421471a365324_32910303',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '583da2ac62ad63ec3015205fb97c46e8357ae3b3' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\index.tpl',
-      1 => 1679766612,
+      1 => 1679901877,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6420223c1f04a5_61672070 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6421471a365324_32910303 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/connexion.css">
 <link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="manifest" href="../manifest.json">
 <body>
    <div class="connexion">
       <div>
