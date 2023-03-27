@@ -37,10 +37,7 @@
                     <label for="region">Région</label><br>
                     <input type="text" name="region" id="region" value="{$region}" required><br>
                     <label for="pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="{$pays}"><br>
-                    <div>
-                        <input type="text" id="pays" placeholder="Votre pays">
-                    </div>
+                    <input type="text" name="nom_pays" id="pays" value="{$pays}" placeholder="Votre pays..."><br>
                     <ul class="list"></ul>
                 </td>
                 <td id="td-reseaux">

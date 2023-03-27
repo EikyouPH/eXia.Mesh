@@ -27,6 +27,7 @@ ul {
 
 .list-items {
     padding: 12px 5px;
+    font-style: 0.5em;
 }
 
 .list-items:hover {
