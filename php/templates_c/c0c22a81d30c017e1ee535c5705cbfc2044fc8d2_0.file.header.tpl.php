@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 11:00:56
+/* Smarty version 4.3.0, created on 2023-03-27 09:54:56
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641d74d81aa636_02086889',
+  'unifunc' => 'content_64214bd0879c94_91580997',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0c22a81d30c017e1ee535c5705cbfc2044fc8d2' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679597264,
+      1 => 1679903693,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641d74d81aa636_02086889 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64214bd0879c94_91580997 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -29,8 +29,9 @@ function content_641d74d81aa636_02086889 (Smarty_Internal_Template $_smarty_tpl)
   <title id="titre"><?php echo $_smarty_tpl->tpl_vars['titre_onglet']->value;?>
 </title>
 
-  <link rel="stylesheet" href="/css/style-global.css">
+  <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="manifest" href="../manifest.json">
 </head>
 <header>
   <nav>

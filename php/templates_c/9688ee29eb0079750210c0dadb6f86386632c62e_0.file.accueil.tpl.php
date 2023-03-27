@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 15:41:29
+/* Smarty version 4.3.0, created on 2023-03-25 23:38:47
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\accueil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641db6994230c3_60736837',
+  'unifunc' => 'content_641f77f72a20f1_48513999',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9688ee29eb0079750210c0dadb6f86386632c62e' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\accueil.tpl',
-      1 => 1679662998,
+      1 => 1679783044,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641db6994230c3_60736837 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-accueil.css" type="text/css" media="screen" />
+function content_641f77f72a20f1_48513999 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/accueil.css" type="text/css" media="screen" />
 <body>
   <table class="page-accueil">
     <thead>

@@ -12,20 +12,6 @@ $lien_indeed = $row['lien_indeed'];
 $lien_linkedin = $row['lien_linkedin'];
 $lien_perso = $row['lien_perso'];
 
-if ($role == 'pilote') {
-    $sql = "SELECT nom_promo FROM promo WHERE ID_pilote = '$_SESSION[ID_pilote]'";
-    $result = $conn->query($sql);
-    $row = $result->fetch(PDO::FETCH_ASSOC);
-    $nom_promo = $row['nom_promo'];
-    $smarty->assign('nom_promo', $nom_promo);
-    
-}
-if ($role == 'etudiant') {
-    $smarty->display('profil-etudiant.tpl');
-}
-if ($role == 'recruteur') {
-    $smarty->display('profil-recruteur.tpl');
-}
 
 
 // Assigner les variables reseaux Smarty au template

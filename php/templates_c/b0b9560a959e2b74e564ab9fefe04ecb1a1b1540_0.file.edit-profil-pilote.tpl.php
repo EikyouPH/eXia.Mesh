@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 15:21:38
+/* Smarty version 4.3.0, created on 2023-03-25 23:39:11
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f0372845246_51568474',
+  'unifunc' => 'content_641f780f737b01_11701777',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b0b9560a959e2b74e564ab9fefe04ecb1a1b1540' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-pilote.tpl',
-      1 => 1679751473,
+      1 => 1679783044,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f0372845246_51568474 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-edit.css">
+function content_641f780f737b01_11701777 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
     <table class="page-profil">

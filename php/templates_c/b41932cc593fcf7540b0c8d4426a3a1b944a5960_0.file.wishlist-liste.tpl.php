@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 23:19:28
+/* Smarty version 4.3.0, created on 2023-03-26 16:52:05
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\wishlist-liste.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f737047b6c9_85510672',
+  'unifunc' => 'content_64205c1581ca13_51513709',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b41932cc593fcf7540b0c8d4426a3a1b944a5960' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\wishlist-liste.tpl',
-      1 => 1679596747,
+      1 => 1679783044,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f737047b6c9_85510672 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-wishlist.css">
+function content_64205c1581ca13_51513709 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/wishlist.css">
 
 <body>
 
