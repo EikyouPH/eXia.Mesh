@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-27 11:18:13
+/* Smarty version 4.3.0, created on 2023-03-27 16:32:11
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64215f55c79b20_54378446',
+  'unifunc' => 'content_6421a8eb4e9f53_43863194',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '255be1e9055fc6a5e194a515caa2c44ed7a557f1' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil-etudiant.tpl',
-      1 => 1679908692,
+      1 => 1679911239,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64215f55c79b20_54378446 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6421a8eb4e9f53_43863194 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -30,7 +30,7 @@ function content_64215f55c79b20_54378446 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-            Vous êtes Etudiant<br><br>
+                Vous êtes Etudiant<br><br>
 
                 Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 <br>
@@ -117,6 +117,12 @@ function content_64215f55c79b20_54378446 (Smarty_Internal_Template $_smarty_tpl)
                 </table>
             </td>
         </tr>
+        <td class="cadre" colspan="3">
+            Lettre de motivation :<br>
+            <?php echo $_smarty_tpl->tpl_vars['lettre_motivation']->value;?>
+<br>
+        </td>
+
     </table>
     <p>
         Expériences passées
