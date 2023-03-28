@@ -35,8 +35,6 @@ function content_642373540f7875_91521241 (Smarty_Internal_Template $_smarty_tpl)
   <link rel="manifest" href="../manifest.json">
   <link rel="apple-touch-icon" href="/img/logo152x152.png">
   <meta name="theme-color" content="#0E8388" >
-  <meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['description']->value;?>
-">
 </head>
 <header>
   <nav>

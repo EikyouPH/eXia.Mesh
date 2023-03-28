@@ -206,40 +206,28 @@ if (isset($_POST['submit'])) {
         $nom_promo = $_POST['nom_promo'];
         $sql = "SELECT ID_promo FROM promo WHERE nom_promo = ?";
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$numero, $complement, $rue]);
+        $stmt->execute([$nom_promo]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
 
         if ($row) {
             // La promo existe déjà dans la base de données, effectuer une mise à jour
-            $id_adresse = $row['ID_adresse'];
+            $ID_promo = $row['ID_promo'];
         } else {
             // La promo n'existe pas encore dans la base de données, effectuer une insertion
-            $sql = "INSERT INTO adresse (numero, complement, rue) VALUES (?, ?, ?)";
+            $sql = "INSERT INTO promo (nom-promo) VALUES (?)";
             $stmt = $conn->prepare($sql);
-            $stmt->execute([$numero, $complement, $rue]);
+            $stmt->execute([$nom_promo]);
 
-            $sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
+            $sql = "SELECT ID_promo FROM promo WHERE nom_promo = $nom_promo";
             $stmt = $conn->prepare($sql);
-            $stmt->execute([$numero, $complement, $rue]);
+            $stmt->execute();
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            $id_adresse = $row['ID_adresse'];
+            $ID_promo = $row['ID_promo'];
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        $sql = "INSERT INTO `etudiant` (`ID_utilisateur`) VALUES (?)";
+        $sql = "INSERT INTO `etudiant` (`ID_utilisateur`, `ID_centre`, Id_promo) VALUES (?,?,?)";
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$ID_utilisateur_new]);
+        $stmt->execute([$ID_utilisateur_new, $Id_centre, $ID_promo]);
     }
 
 
