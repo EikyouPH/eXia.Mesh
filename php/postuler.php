@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$nom_utilisateur, $prenom, $mail, $date_naissance, $id_utilisateur]);
 
-    header("Location: confirmation.php");
+    header("Location:/php/confirmation.php");
     exit();
 }
 
