@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-23 14:38:11
+/* Smarty version 4.3.0, created on 2023-03-27 09:09:55
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\notifications.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641c5643ebaa26_37998373',
+  'unifunc' => 'content_6421414321c916_48372276',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '688f3afc0962918cb06fd35fceaf4fe3cd55da3b' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\notifications.tpl',
-      1 => 1679500153,
+      1 => 1679765196,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641c5643ebaa26_37998373 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-notifications.css">
+function content_6421414321c916_48372276 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/notifications.css">
 
 <body>
 

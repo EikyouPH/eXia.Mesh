@@ -1,5 +1,28 @@
-.recherche{
-    margin: auto;
+#recherche {
+    justify-content: center;
+    margin: 1% auto 0 auto;
+    width: 80%;
+}
+
+#barre {
+    margin: 1% auto 0 auto;
+    width: 100%;
+}
+
+input[type="search"] {
+    margin: 1%;
+    font-size: 125%;
+    padding: 1%;
+    border: 0.5px solid #a4c4bc;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e1f0ed;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+
+#choix {
+    font-size: 125%;
 }
 
 h2 {
@@ -21,6 +44,12 @@ h2 {
 .wishlist a {
     text-decoration: none;
     color: black;
+}
+
+.resultat {
+    margin: 2% 5% 2% 5%;
+    border: 2px solid var(--clair);
+    border-radius: 10px;
 }
 
 .header {

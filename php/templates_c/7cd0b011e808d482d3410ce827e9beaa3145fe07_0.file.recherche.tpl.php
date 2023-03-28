@@ -1,4 +1,27 @@
-<link rel="stylesheet" href="/css/recherche.css">
+<?php
+/* Smarty version 4.3.0, created on 2023-03-27 22:28:16
+  from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\recherche.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_6421fc6010f886_08372094',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7cd0b011e808d482d3410ce827e9beaa3145fe07' => 
+    array (
+      0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\recherche.tpl',
+      1 => 1679948887,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6421fc6010f886_08372094 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/recherche.css">
 
 <body>
     <div class="cadre">
@@ -51,4 +74,5 @@
         </table>
 
     </div>
-</body>
+</body><?php }
+}
