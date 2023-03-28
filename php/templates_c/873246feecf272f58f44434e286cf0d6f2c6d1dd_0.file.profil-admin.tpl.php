@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 23:24:18
+/* Smarty version 4.3.0, created on 2023-03-28 15:06:24
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f7492367ef0_98955058',
+  'unifunc' => 'content_6422e650bed823_22609733',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '873246feecf272f58f44434e286cf0d6f2c6d1dd' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil-admin.tpl',
-      1 => 1679783044,
+      1 => 1680008782,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f7492367ef0_98955058 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422e650bed823_22609733 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -113,8 +113,5 @@ function content_641f7492367ef0_98955058 (Smarty_Internal_Template $_smarty_tpl)
             </td>
         </tr>
     </table>
-    <p>
-        Expériences passées
-    </p>
 </body><?php }
 }
