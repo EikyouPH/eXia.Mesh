@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 01:31:12
+/* Smarty version 4.3.0, created on 2023-03-28 15:39:56
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642227401d10b5_48631308',
+  'unifunc' => 'content_6422ee2c3f55f5_63431987',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8b5b30591bbfa28afe78f0e71233c609f4c7465' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\header.tpl',
-      1 => 1679954191,
+      1 => 1680010653,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642227401d10b5_48631308 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422ee2c3f55f5_63431987 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -32,6 +32,9 @@ function content_642227401d10b5_48631308 (Smarty_Internal_Template $_smarty_tpl)
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="/img/logo152x152.png">
+  <meta name="theme-color" content="#0E8388" >
+  
 </head>
 <header>
   <nav>
