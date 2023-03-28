@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 16:03:17
+/* Smarty version 4.3.0, created on 2023-03-28 22:48:27
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\candidature.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dbbb595ca37_51991776',
+  'unifunc' => 'content_6423529bae1d25_85137647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7d45b3c13c9dcaf9882a7099f5370862855a6d6' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\candidature.tpl',
-      1 => 1679670195,
+      1 => 1680036496,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dbbb595ca37_51991776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423529bae1d25_85137647 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/candidature.css">
 
 <body>
     <div>
-        <table class="table_stage">
+        <table class="en cadre table_stage">
             <tr>
                 <td colspan="3">
                     <h3><?php echo $_smarty_tpl->tpl_vars['nom_stage']->value;?>

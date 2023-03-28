@@ -94,12 +94,12 @@ a {
 /* Encadré */
 .en {
     width: 90%;
-    margin: 1%;
+    margin: 1% auto 1% auto;
 }
 
 .cadre {
     border: 2px solid var(--clair);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 

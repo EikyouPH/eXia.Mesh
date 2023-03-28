@@ -1,22 +1,16 @@
 .table_stage {
-    display: flex;
-    width: 50%;
-    align-items: center;
+    width: 70%;
+    align-items:center;
     justify-content: center;
-    text-align: justify;
-    margin: 5% auto 1% auto;
-    border-spacing: 2em;
-    border: 2px solid #0E8388;
-    border-radius: 10px;
+    border-spacing: auto;
+    padding: 2%;
 }
-
 
 #description {
     margin: 0% 5% 0% 5%;
 }
 
 .table_candidature {
-    display: flex;
     width: 70%;
     align-items: center;
     text-align: justify;
