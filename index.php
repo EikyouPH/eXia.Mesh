@@ -45,6 +45,7 @@ require 'vendor/autoload.php';
 $smarty = new Smarty();
 // Definir les chemins des templates
 $smarty->setTemplateDir('tpl/');
+$smarty->assign('description', 'Page de connexion du site eXia.Mesh');
 // Afficher les templates
 $smarty->display('index.tpl');
 $smarty->display('footer.tpl');

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-27 16:49:10
+/* Smarty version 4.3.0, created on 2023-03-28 23:07:37
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6421ace6cf9c69_91533367',
+  'unifunc' => 'content_642357193d3e52_44528490',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2337f2136faff5080cba0633464daf2330e295ff' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\profil-etudiant.tpl',
-      1 => 1679922269,
+      1 => 1679996671,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6421ace6cf9c69_91533367 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642357193d3e52_44528490 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -117,12 +117,6 @@ function content_6421ace6cf9c69_91533367 (Smarty_Internal_Template $_smarty_tpl)
                 </table>
             </td>
         </tr>
-        <td class="cadre" colspan="3">
-            Lettre de motivation :<br>
-            <?php echo $_smarty_tpl->tpl_vars['lettre_motivation']->value;?>
-<br>
-        </td>
-
     </table>
     <p>
         Expériences passées

@@ -27,6 +27,7 @@ if ($role == 'etudiant') {
     $row = $result->fetch(PDO::FETCH_ASSOC);
     $nom_promo = $row['nom_promo'];
     $smarty->assign('nom_promo', $nom_promo);
+
     //On cherche le centre
     $sql = "SELECT nom_centre FROM centre WHERE ID_centre = '$_SESSION[ID_centre]'";
     $result = $conn->query($sql);
@@ -96,6 +97,7 @@ $smarty->assign('region', $region);
 $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Edition du profil');
 $smarty->assign('titre_page', 'Edition du profil');
+$smarty->assign('description','Edition du profil');
 
 $role = $_SESSION['role'];
 
@@ -263,9 +265,6 @@ if ($role == 'admin') {
     $smarty->display('edit-profil-etudiant.tpl');
 } else if ($role == 'recruteur') {
     $smarty->display('edit-profil-recruteur.tpl');
-}
-else {
-    $smarty->display('edit-profil.tpl');
 }
 
 $smarty->display('footer.tpl');

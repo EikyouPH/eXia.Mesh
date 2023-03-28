@@ -2,7 +2,7 @@
 
 <body>
     <div>
-        <table class="table_stage">
+        <table class="en cadre table_stage">
             <tr>
                 <td colspan="3">
                     <h3>{$nom_stage}<h3>

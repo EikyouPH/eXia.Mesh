@@ -10,10 +10,6 @@
     width: 100%;
 }
 
-table{
-    width: 100%;
-}
-
 input {
     margin: 1%;
     font-size: 90%;
@@ -25,16 +21,15 @@ input {
     font-family: 'Montserrat', sans-serif;
     width: 98%;
 }
+
 .reseaux input{
     height: 10%;
 }
 
 .reseaux
 {
-    width: 100%;
     position: relative;
 }
- 
 
 .icone{
     width: 12%;
@@ -55,10 +50,6 @@ input {
 
 }
 
-input[type="submit"] {
-    color: blue;
-    position: relative;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
+  button {
+    position: absolute;
   }

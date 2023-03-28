@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-26 12:45:55
+/* Smarty version 4.3.0, created on 2023-03-29 00:41:15
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64202263cdbb68_09353193',
+  'unifunc' => 'content_64236d0b099fa9_78844450',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f1cdabe9a8c7db24dbb947a729c9d4e075f3c6d8' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\navigation.tpl',
-      1 => 1679766612,
+      1 => 1680041648,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64202263cdbb68_09353193 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/navigation.css">
-
-<body>
+function content_64236d0b099fa9_78844450 (Smarty_Internal_Template $_smarty_tpl) {
+?><body>
     <h3>Index des pages</h3>
 
     <h4>--- Page de login ---</h4>

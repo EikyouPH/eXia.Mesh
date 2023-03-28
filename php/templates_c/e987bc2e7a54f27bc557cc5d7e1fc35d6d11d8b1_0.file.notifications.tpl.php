@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 10:45:47
+/* Smarty version 4.3.0, created on 2023-03-29 00:17:44
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\notifications.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641d714bb54460_95510056',
+  'unifunc' => 'content_64236788d673c8_41897302',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e987bc2e7a54f27bc557cc5d7e1fc35d6d11d8b1' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\notifications.tpl',
-      1 => 1679565942,
+      1 => 1679766612,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641d714bb54460_95510056 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-notifications.css">
+function content_64236788d673c8_41897302 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/notifications.css">
 
 <body>
 

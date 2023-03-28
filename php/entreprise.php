@@ -39,6 +39,7 @@ $smarty->assign('commentaire', $commentaire);
 
 $smarty->assign('titre_onglet', 'Entreprise');
 $smarty->assign('titre_page', $nom_entreprise);
+$smarty->assign('description', 'Page de l\'entreprise '.$nom_entreprise.' sur le site eXia.Mesh');
 
 // Afficher les templates
 $smarty->display('header.tpl');

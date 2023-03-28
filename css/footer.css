@@ -15,11 +15,11 @@ footer {
 
 .footer a {
     font-size: 0.9em;
-    color: #0E8388;
+    color: #09494b;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #09494b;
+    color: #0E8388;
     transition-duration: 0.3s;
 }

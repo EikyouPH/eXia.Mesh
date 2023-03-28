@@ -49,7 +49,7 @@ if ($row) {
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Accueil');
 $smarty->assign('titre_page', 'Accueil');
-
+$smarty->assign('description', 'Page d\'accueil du site eXia.Mesh');
 // Afficher les templates
 $smarty->display('header.tpl');
 $smarty->display('accueil.tpl');

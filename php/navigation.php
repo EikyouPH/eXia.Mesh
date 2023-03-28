@@ -14,6 +14,7 @@ $smarty->setTemplateDir('../tpl/');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Navigation');
 $smarty->assign('titre_page', 'Navigation');
+$smarty->assign('description', 'Page de navigation');
 
 // Afficher les templates
 $smarty->display('header.tpl');

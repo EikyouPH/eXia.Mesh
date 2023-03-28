@@ -71,7 +71,7 @@ body {
 /* Lien sous forme de bouton */
 .lien td {
     text-align: center;
-    border: 2px solid #0E8388;
+    border: 2px solid var(--clair);
     padding: 1em;
 }
 
@@ -87,39 +87,37 @@ body {
 
 /* Liens */
 a {
-    color: #0E8388;
+    color: var(--fonce);
     text-decoration: none;
 }
 
 /* Encadré */
 .en {
     width: 90%;
-    margin: 1%;
+    margin: 1% auto 1% auto;
+}
+
+.cadre {
+    border: 2px solid var(--clair);
+    border-radius: 10px;
 }
 
 
 /* Bouton confirmation */
 button {
-    background-color: #ffffff;
-}
-
-#ok {
-    bottom: -30%;
-    right: 10%;
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
-    border: none;
-    padding: 1% 2%;
-    font-size: 100%;
-    background-color: #cbe4de;
+    width: 7%;
     border: 2px solid #0E8388;
-    margin: 0 auto 5% auto;
-    width: 15%;
-    padding: 10px;
+    padding: 0.8% 1%;
     font-size: 16px;
     border-radius: 5px;
-    text-decoration: none;
 }
+
+/*button
+bottom: 30%;
+right: 10%;
+margin: 0 auto 5% auto;
+*/
 
 #cancel {
     bottom: -30%;
