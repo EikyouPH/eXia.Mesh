@@ -21,10 +21,10 @@
         <table class="lien">
             <tr>
                 <td>
-                    <a target="_blank" href="./postuler.php">Envoyer</a>
+                    <a href='/php/confirmation.php' type="submit" name="submit">Envoyer</a>
                 </td>
                 <td>
-                    <a target="_blank" href="./postuler.php">Annuler</a>
+                    <a href="./postuler.php" type="submit" name="submit">Annuler</a>
                 </td>
             </tr>
         </table>

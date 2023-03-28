@@ -23,11 +23,16 @@ if (isset($_POST['submit'])) {
     $prenom = $_POST['prenom'];
     $mail = $_POST['mail'];
     $date_naissance = $_POST['date_naissance'];
-    $lettre_motivation = $_POST['lettre_motivation'];
+    $lettre_motivation = $_POST['lettre-motivation'];
 
-    $sql = "UPDATE etudiant SET nom_utilisateur=?, prenom=?,mail=?, date_naissance=?, lettre_motivation=? WHERE ID_utilisateur = ?";
+    $sql = "SELECT CV FROM etudiant WHERE ID_etudiant= '$_SESSION[ID_etudiant]'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $CV = $row['CV'];
+
+    $sql = "INSERT INTO `candidatures`(`ID_candidature`, `ID_etudiant`, `lettre_motivation`, `CV`) VALUES (ID_etudiant=?, lettre_motivation=?, CV)  WHERE ID_etudiant = $_SESSION[ID_etudiant]";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$nom_utilisateur, $prenom, $mail, $date_naissance, $id_utilisateur]);
+    $stmt->execute([$_SESSION['ID_etudiant'], $lettre_motivation, $CV]);
 
     header("Location:/php/confirmation.php");
     exit();

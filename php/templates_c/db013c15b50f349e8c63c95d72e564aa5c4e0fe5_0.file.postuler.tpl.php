@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 11:51:13
+/* Smarty version 4.3.0, created on 2023-03-29 01:04:15
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\postuler.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6422b891a512b7_78332073',
+  'unifunc' => 'content_6423726f01d765_60922765',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'db013c15b50f349e8c63c95d72e564aa5c4e0fe5' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\postuler.tpl',
-      1 => 1679997072,
+      1 => 1680044651,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6422b891a512b7_78332073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423726f01d765_60922765 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/postuler.css">
 
 <body>
@@ -50,10 +50,10 @@ function content_6422b891a512b7_78332073 (Smarty_Internal_Template $_smarty_tpl)
         <table class="lien">
             <tr>
                 <td>
-                    <a target="_blank" href="./postuler.php">Envoyer</a>
+                    <a href='/php/confirmation.php' type="submit" name="submit">Envoyer</a>
                 </td>
                 <td>
-                    <a target="_blank" href="./postuler.php">Annuler</a>
+                    <a href="./postuler.php" type="submit" name="submit">Annuler</a>
                 </td>
             </tr>
         </table>
