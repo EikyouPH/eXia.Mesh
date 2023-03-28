@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="/img/logo">
+  
 </head>
 <header>
   <nav>
