@@ -98,29 +98,17 @@ a {
 }
 
 /* Bouton confirmation */
-.ok {
-    width: 30%;
-    background-color: #cbe4de;
+button {
+    background-color: #ffffff;
     border: 2px solid #0E8388;
-    border-radius: 5px;
-    bottom: 5%;
-}
-
-.ok button {
+    margin: 0 auto 5% auto;
+    width: 10%;
+    padding: 10px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    border: none;
-    font-size: 100%;
-    background-color: #cbe4de;
-    color: #0E8388;
-    text-decoration: none;
 }
 
-/* Bouton retour */
-
-.annuler {
-    width: 30%;
-    background-color: #cbe4de;
-    border: 2px solid #0E8388;
-    border-radius: 5px;
-    bottom: 5%;
+button:hover {
+    background-color: #a5d4d1;
+    transition-duration: 0.3s;
 }
