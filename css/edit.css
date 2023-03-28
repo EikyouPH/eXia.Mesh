@@ -32,6 +32,7 @@ input {
 .reseaux
 {
     width: 100%;
+    position: relative;
 }
  
 
@@ -54,7 +55,10 @@ input {
 
 }
 
-.a:hover {
-    background-color: #a5d4d1;
-    transition-duration: 0.3s;
-}
+input[type="submit"] {
+    color: blue;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+  }

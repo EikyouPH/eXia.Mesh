@@ -97,18 +97,44 @@ a {
     margin: 1%;
 }
 
+
 /* Bouton confirmation */
 button {
     background-color: #ffffff;
+
+#ok {
+    bottom: -30%;
+    right: 10%;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 1% 2%;
+    font-size: 100%;
+    background-color: #cbe4de;
     border: 2px solid #0E8388;
     margin: 0 auto 5% auto;
     width: 10%;
     padding: 10px;
     font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#cancel {
+    bottom: -30%;
+    right: 27%;
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
 }
 
 button:hover {
     background-color: #a5d4d1;
     transition-duration: 0.3s;
+    border: none;
+    padding: 1% 2%;
+    font-size: 100%;
+    background-color: #cbe4de;
+    border: 2px solid #0E8388;
+    border-radius: 5px;
+    text-decoration: none;
 }
