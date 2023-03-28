@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 18:28:50
+/* Smarty version 4.3.0, created on 2023-03-28 21:20:00
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f2f522a4b26_77473354',
+  'unifunc' => 'content_64233de05c4522_69175362',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '584175c29ec39e1efc682d50b16e5ba9582d7c85' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\navigation.tpl',
-      1 => 1679765192,
+      1 => 1680030014,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f2f522a4b26_77473354 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/navigation.css">
-
-<body>
+function content_64233de05c4522_69175362 (Smarty_Internal_Template $_smarty_tpl) {
+?><body>
     <h3>Index des pages</h3>
 
     <h4>--- Page de login ---</h4>

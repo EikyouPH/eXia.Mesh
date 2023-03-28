@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="/css/navigation.css">
-
 <body>
     <h3>Index des pages</h3>
 
