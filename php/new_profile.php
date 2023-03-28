@@ -176,21 +176,17 @@ if (isset($_POST['submit'])) {
         $stmt->execute([$ID_utilisateur_new]);
     }
     if ($role == 'pilote') {
-        
+
         $nom_centre = $_POST['nom_centre'];
         $sql = "SELECT ID_centre FROM `centre` WHERE `nom_centre` = '$nom_centre'";
         $result = $conn->query($sql);
         $row = $result->fetch(PDO::FETCH_ASSOC);
         $Id_centre = $row['ID_centre'];
-    
-
 
         $sql = "INSERT INTO `pilote` (`ID_utilisateur`, `ID_centre`) VALUES (?,?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$ID_utilisateur_new, $Id_centre]);
 
-        $nom_centre = $_POST['nom_centre'];
-        
 
 
     }
@@ -200,6 +196,47 @@ if (isset($_POST['submit'])) {
         $stmt->execute([$ID_utilisateur_new]);
     }
     if ($role == 'etudiant') {
+        $nom_centre = $_POST['nom_centre'];
+        $sql = "SELECT ID_centre FROM `centre` WHERE `nom_centre` = '$nom_centre'";
+        $result = $conn->query($sql);
+        $row = $result->fetch(PDO::FETCH_ASSOC);
+        $Id_centre = $row['ID_centre'];
+
+        // Vérifier si la promo existe déjà dans la base de données
+        $nom_promo = $_POST['nom_promo'];
+        $sql = "SELECT ID_promo FROM promo WHERE nom_promo = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$numero, $complement, $rue]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
+
+        if ($row) {
+            // La promo existe déjà dans la base de données, effectuer une mise à jour
+            $id_adresse = $row['ID_adresse'];
+        } else {
+            // La promo n'existe pas encore dans la base de données, effectuer une insertion
+            $sql = "INSERT INTO adresse (numero, complement, rue) VALUES (?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$numero, $complement, $rue]);
+
+            $sql = "SELECT ID_adresse FROM adresse WHERE numero = ? AND complement = ? AND rue = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$numero, $complement, $rue]);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            $id_adresse = $row['ID_adresse'];
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
         $sql = "INSERT INTO `etudiant` (`ID_utilisateur`) VALUES (?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$ID_utilisateur_new]);

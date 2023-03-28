@@ -24,9 +24,40 @@
                     <label for="nom_promo">Promotion</label><br>
                     <input type="text" name="nom_promo" id="nom_promo" required><br>
 
-                    <label for="nom_centre">Centre</label><br>
-                    <input type="text" name="nom_centre" id="nom_centre" required><br>
 
+                    <label for="nom_centre">Centre</label><br>
+                    <table><br>
+                        <tr>
+                            <select name="nom_centre" id="nom_centre">
+                                <option>Strasbourg</option>
+                                <option>Dijon</option>
+                                <option>Nancy</option>
+                                <option>Reims</option>
+                                <option>Châteauroux</option>
+                                <option>Orléans</option>
+                                <option>Nanterre</option>
+                                <option>La Défense</option>
+                                <option>Arras</option>
+                                <option>Lille</option>
+                                <option>Caen</option>
+                                <option>Rouen</option>
+                                <option>Angoulême</option>
+                                <option>Brest</option>
+                                <option>La Rochelle</option>
+                                <option>Le Mans</option>
+                                <option>Nantes</option>
+                                <option>Saint Nazaire</option>
+                                <option>Aix-en-Provence</option>
+                                <option>Grenoble</option>
+                                <option>Lyon</option>
+                                <option>Nice</option>
+                                <option>Bordeaux</option>
+                                <option>Montpellier</option>
+                                <option>PAU</option>
+                                <option>Toulouse</option>
+                            </select>
+                        </tr>
+                    </table>
                     <label for="date_naissance">Date de naissance</label><br>
                     <input type="date" name="date_naissance" id="date_naissance" required><br>
 
