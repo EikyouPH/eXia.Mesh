@@ -49,6 +49,7 @@ $smarty->assign('domaine2', $domaine2);
 $smarty->assign('entreprise', $entreprise);
 $smarty->assign('titre_onglet', 'Stage');
 $smarty->assign('titre_page', 'Stage');
+$smarty->assign('description', 'Page de stage');
 
 // Afficher les templates
 $smarty->display('header.tpl');

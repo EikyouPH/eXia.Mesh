@@ -99,6 +99,7 @@ $smarty->assign('pays', $pays);
 
 $smarty->assign('titre_onglet', 'Profil');
 $smarty->assign('titre_page', 'Profil');
+$smarty->assign('description', 'Page de votre profil');
 
 
 // Afficher les templates

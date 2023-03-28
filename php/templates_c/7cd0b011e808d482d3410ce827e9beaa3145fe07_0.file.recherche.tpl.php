@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-27 22:28:16
+/* Smarty version 4.3.0, created on 2023-03-28 21:54:38
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\recherche.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6421fc6010f886_08372094',
+  'unifunc' => 'content_642345fe777447_73997613',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7cd0b011e808d482d3410ce827e9beaa3145fe07' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\recherche.tpl',
-      1 => 1679948887,
+      1 => 1680033277,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6421fc6010f886_08372094 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642345fe777447_73997613 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/recherche.css">
 
 <body>
@@ -35,9 +35,12 @@ function content_6421fc6010f886_08372094 (Smarty_Internal_Template $_smarty_tpl)
                     </tr>
                     <tr>
                         <td id="choix">
-                            <input type="radio" name="sat" value="Oui" checked="checked">Stage
-                            <input type="radio" name="sat" value="Non">Personne
-                            <input type="radio" name="sat" value="Non">Entreprise
+                            <input type="radio" name="sat" id="stage" value="Oui" checked="checked">
+                            <label for="stage">Stage</label>
+                            <input type="radio" name="sat" id="personne" value="Non">
+                            <label for="personne">Personne</label>
+                            <input type="radio" name="sat" id="entreprise" value="Non">
+                            <label for="entreprise">Entreprise</label>
                         </td>
                     </tr>
                 </form>
@@ -51,7 +54,7 @@ function content_6421fc6010f886_08372094 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="entreprise">PSG</div>
                     </div>
                     <div class="contenu">
-                        <a href="wishlist.php" target="_blank">
+                        <a href="wishlist.php" target="_blank" aria-label="voir la wishlist">
                             <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Sed
                                 euismod,

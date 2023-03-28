@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 15:04:02
+/* Smarty version 4.3.0, created on 2023-03-28 21:34:06
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6422e5c2510e87_95015272',
+  'unifunc' => 'content_6423412eca2403_25266665',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '80373b6d070587ad2ae07e4d78e1d45477a9d71a' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\header.tpl',
-      1 => 1680008628,
+      1 => 1680032044,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6422e5c2510e87_95015272 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423412eca2403_25266665 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +35,8 @@ function content_6422e5c2510e87_95015272 (Smarty_Internal_Template $_smarty_tpl)
   <link rel="manifest" href="../manifest.json">
   <link rel="apple-touch-icon" href="/img/logo152x152.png">
   <meta name="theme-color" content="#0E8388" >
-  
+  <meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['description']->value;?>
+">
 </head>
 <header>
   <nav>

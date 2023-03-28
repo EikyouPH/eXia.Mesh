@@ -53,6 +53,7 @@ $smarty->assign('titre_onglet', 'Votre');
 $smarty->assign('titre_page', 'Stage');
 $smarty->assign('titre_onglet', 'Votre candidature');
 $smarty->assign('titre_page', 'Votre candidature');
+$smarty->assign('description', 'Page de candidature');
 
 $sql = "SELECT nom_utilisateur, prenom, password, mail, date_naissance, numero, complement, rue, nom_ville, code_postal, region, nom_pays FROM utilisateur JOIN adresse ON utilisateur.ID_adresse = adresse.ID_adresse JOIN ville ON adresse.ID_ville = ville.ID_ville JOIN region ON ville.ID_region = region.ID_region JOIN pays ON pays.ID_pays = region.ID_pays WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
 $result2 = $conn->query($sql);

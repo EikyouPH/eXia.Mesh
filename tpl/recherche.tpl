@@ -12,9 +12,12 @@
                     </tr>
                     <tr>
                         <td id="choix">
-                            <input type="radio" name="sat" value="Oui" checked="checked">Stage
-                            <input type="radio" name="sat" value="Non">Personne
-                            <input type="radio" name="sat" value="Non">Entreprise
+                            <input type="radio" name="sat" id="stage" value="Oui" checked="checked">
+                            <label for="stage">Stage</label>
+                            <input type="radio" name="sat" id="personne" value="Non">
+                            <label for="personne">Personne</label>
+                            <input type="radio" name="sat" id="entreprise" value="Non">
+                            <label for="entreprise">Entreprise</label>
                         </td>
                     </tr>
                 </form>
@@ -28,7 +31,7 @@
                         <div class="entreprise">PSG</div>
                     </div>
                     <div class="contenu">
-                        <a href="wishlist.php" target="_blank">
+                        <a href="wishlist.php" target="_blank" aria-label="voir la wishlist">
                             <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Sed
                                 euismod,

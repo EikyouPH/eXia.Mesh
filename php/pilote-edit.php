@@ -29,6 +29,7 @@ $smarty->assign('lien_facebook', $lien_facebook);
 $smarty->assign('lien_indeed', $lien_indeed);
 $smarty->assign('lien_linkedin', $lien_linkedin);
 $smarty->assign('lien_perso', $lien_perso);
+$smarty->assign('description', 'Edition d\'un pilote');
 
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
 

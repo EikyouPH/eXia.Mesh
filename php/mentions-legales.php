@@ -11,6 +11,7 @@ $smarty->setTemplateDir('../tpl/');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Mentions légales');
 $smarty->assign('titre_page', 'Mentions légales');
+$smarty->assign('description', 'Page d\'accueil du site eXia.Mesh');
 
 // Afficher les templates
 $smarty->display('header.tpl');

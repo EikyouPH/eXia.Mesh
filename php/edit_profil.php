@@ -96,6 +96,7 @@ $smarty->assign('region', $region);
 $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Edition du profil');
 $smarty->assign('titre_page', 'Edition du profil');
+$smarty->assign('description','Edition du profil');
 
 $role = $_SESSION['role'];
 
