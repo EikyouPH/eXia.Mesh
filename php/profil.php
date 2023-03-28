@@ -99,6 +99,7 @@ $smarty->assign('pays', $pays);
 
 $smarty->assign('titre_onglet', 'Profil');
 $smarty->assign('titre_page', 'Profil');
+$smarty->assign('description', 'Page de votre profil');
 
 
 // Afficher les templates
@@ -154,7 +155,7 @@ foreach ($result as $row) {
             echo "Nom : $nom_utilisateur<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
-            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_admin&role=pilote'>Modifier</a>";
+            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_pilote&role=pilote'>Modifier</a>";
             echo "</div>";
             }
         } 
@@ -166,11 +167,12 @@ foreach ($result as $row) {
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo "Recruteur<br>";
 echo "<div class='row'>";
-$sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM recruteur JOIN utilisateur ON recruteur.ID_utilisateur = utilisateur.ID_utilisateur";
+$sql = "SELECT ID_recruteur, utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM recruteur JOIN utilisateur ON recruteur.ID_utilisateur = utilisateur.ID_utilisateur";
 $result = $conn->query($sql);
 // Assigner les données SQL aux variables Smarty
 
 foreach ($result as $row) {
+            $ID_recruteur = $row['ID_recruteur'];
             $ID_utilisateur_mod = $row['ID_utilisateur'];
             $nom_utilisateur = $row['nom_utilisateur'];
             $prenom = $row['prenom'];
@@ -182,7 +184,7 @@ foreach ($result as $row) {
             echo "Nom : $nom_utilisateur<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
-            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_recruteur&role=recruteur'>Modifier</a>";
             echo "</div>";
             }
         } 
@@ -195,11 +197,12 @@ foreach ($result as $row) {
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo "Etudiants<br>";
 echo "<div class='row'>";
-$sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM etudiant JOIN utilisateur ON etudiant.ID_utilisateur = utilisateur.ID_utilisateur";
+$sql = "SELECT etudiant.ID_etudiant, utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM etudiant JOIN utilisateur ON etudiant.ID_utilisateur = utilisateur.ID_utilisateur";
 $result = $conn->query($sql);
 // Assigner les données SQL aux variables Smarty
 
 foreach ($result as $row) {
+            $ID_etudiant = $row['ID_etudiant'];
             $ID_utilisateur_mod = $row['ID_utilisateur'];
             $nom_utilisateur = $row['nom_utilisateur'];
             $prenom = $row['prenom'];
@@ -211,7 +214,7 @@ foreach ($result as $row) {
             echo "Nom : $nom_utilisateur<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
-            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_recruteur&role=etudiant'>Modifier</a>";
             echo "</div>";
             }
         } 

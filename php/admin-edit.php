@@ -29,7 +29,7 @@ if ($role == 'etudiant') {
 }
 
 if ($role == 'recruteur') {
-    $sql = "SELECT nom_entreprise FROM entreprise WHERE ID_entreprise = '$_SESSION[ID_entreprise]'";
+    $sql = "SELECT nom_entreprise FROM entreprise JOIN recruteur ON entreprise.ID_entreprise = recruteur.ID_entreprise WHERE recruteur.ID_recruteur = $ID_role";
     $result = $conn->query($sql);
     $row = $result->fetch(PDO::FETCH_ASSOC);
     $nom_entreprise = $row['nom_entreprise'];
@@ -52,6 +52,7 @@ $smarty->assign('lien_facebook', $lien_facebook);
 $smarty->assign('lien_indeed', $lien_indeed);
 $smarty->assign('lien_linkedin', $lien_linkedin);
 $smarty->assign('lien_perso', $lien_perso);
+$smarty->assign('description', 'Edition du profil administrateur');
 
 //---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
 
@@ -89,10 +90,6 @@ $smarty->assign('region', $region);
 $smarty->assign('pays', $pays);
 $smarty->assign('titre_onglet', 'Edition du profil');
 $smarty->assign('titre_page', 'Edition du profil');
-
-$role = $_SESSION['role'];
-
-
 
 if (isset($_POST['submit'])) {
 

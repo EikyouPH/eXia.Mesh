@@ -10,6 +10,8 @@ $smarty->setTemplateDir('../tpl/');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Vos notifications');
 $smarty->assign('titre_page', 'Vos notifications');
+$smarty->assign('description', 'Page de vos notifications');
+
 // Afficher les templates
 $smarty->display('header.tpl');
 $smarty->display('notifications.tpl');

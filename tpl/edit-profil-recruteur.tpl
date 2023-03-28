@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
+
 <body>
     <table class="page-profil">
         <tr>
@@ -9,14 +10,15 @@
             <td>
                 <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
-                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}" required><br>
+                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
+                        required><br>
 
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
 
                     <label for="nom_entreprise">Entreprise</label><br>
                     <input type="text" name="nom_entreprise" id="nom_entreprise" value="{$nom_entreprise}" required><br>
-                    
+
                     <label for="mail">Adresse mail</label><br>
                     <input type="mail" name="mail" id="mail" value="{$mail}" required><br>
 
@@ -58,8 +60,9 @@
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="Linkedin">Lien Linkedin</label><br>
-                                        <input type="text" name="lien_linkedin" id="lien_linkedin" value="{$lien_linkedin}"><br>
+                                        <label for="lien_linkedin">Lien Linkedin</label><br>
+                                        <input type="text" name="lien_linkedin" id="lien_linkedin"
+                                            value="{$lien_linkedin}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -73,8 +76,9 @@
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="Indeed">Lien Indeed</label><br>
-                                        <input type="text" name="lien_indeed" id="lien_indeed" value="{$lien_indeed}"><br>
+                                    <label for="lien_indeed">Lien Indeed</label><br>
+                                        <input type="text" name="lien_indeed" id="lien_indeed"
+                                            value="{$lien_indeed}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -88,8 +92,9 @@
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="Facebook">Lien Facebook</label><br>
-                                        <input type="text" name="lien_facebook" id="lien_facebook" value="{$lien_facebook}"><br>
+                                    <label for="lien_facebook">Lien Facebook</label><br>
+                                        <input type="text" name="lien_facebook" id="lien_facebook"
+                                            value="{$lien_facebook}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -103,7 +108,7 @@
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="perso">Lien Site Personnel</label><br>
+                                    <label for="lien_perso">Lien Site Personnel</label><br>
                                         <input type="text" name="lien_perso" id="lien_perso" value="{$lien_perso}"><br>
                                     </td>
                                 </tr>
@@ -113,7 +118,7 @@
                 </table>
             </td>
             <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
-                </form>
+            </form>
         </tr>
     </table>
 

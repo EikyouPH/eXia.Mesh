@@ -28,6 +28,7 @@ $smarty->assign('titre_page', 'Edition du profil');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Postuler');
 $smarty->assign('titre_page', 'Postuler');
+$smarty->assign('description', 'Page de candidature');
 
 // Afficher les templates
 $smarty->display('header.tpl');

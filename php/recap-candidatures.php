@@ -10,6 +10,7 @@ $smarty->setTemplateDir('../tpl/');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Vos candidatures');
 $smarty->assign('titre_page', 'Vos candidatures');
+$smarty->assign('description', 'Page de vos candidatures');
 // Afficher les templates
 $smarty->display('header.tpl');
 $smarty->display('recap-candidature.tpl');

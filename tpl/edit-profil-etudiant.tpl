@@ -64,7 +64,7 @@
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="Linkedin">Lien Linkedin</label><br>
+                                    <label for="lien_linkedin">Lien Linkedin</label><br>
                                         <input type="text" name="lien_linkedin" id="lien_linkedin"
                                             value="{$lien_linkedin}"><br>
                                     </td>
@@ -80,7 +80,7 @@
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="Indeed">Lien Indeed</label><br>
+                                    <label for="lien_indeed">Lien Indeed</label><br>
                                         <input type="text" name="lien_indeed" id="lien_indeed"
                                             value="{$lien_indeed}"><br>
                                     </td>
@@ -96,7 +96,7 @@
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="Facebook">Lien Facebook</label><br>
+                                    <label for="lien_facebook">Lien Facebook</label><br>
                                         <input type="text" name="lien_facebook" id="lien_facebook"
                                             value="{$lien_facebook}"><br>
                                     </td>
@@ -112,7 +112,7 @@
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <label for="perso">Lien Site Personnel</label><br>
+                                    <label for="lien_perso">Lien Site Personnel</label><br>
                                         <input type="text" name="lien_perso" id="lien_perso" value="{$lien_perso}"><br>
                                     </td>
                                 </tr>

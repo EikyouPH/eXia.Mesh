@@ -10,6 +10,7 @@ $smarty->setTemplateDir('../tpl/');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Wishlist');
 $smarty->assign('titre_page', 'Wishlist');
+$smarty->assign('description', 'Page de votre wishlist');
 // Afficher les templates
 $smarty->display('header.tpl');
 $smarty->display('wishlist.tpl');
