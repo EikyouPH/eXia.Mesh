@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 21:40:07
+/* Smarty version 4.3.0, created on 2023-03-29 01:07:28
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\new-profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64234297245c27_25104244',
+  'unifunc' => 'content_64237330578574_66039629',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '61460dac56398e7b333a86e705983c132d57c0f0' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\new-profil-etudiant.tpl',
-      1 => 1680032399,
+      1 => 1680044846,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64234297245c27_25104244 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64237330578574_66039629 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/listes-deroulantes.css">
 <link rel="stylesheet" href="/css/edit.css">
 
@@ -46,10 +46,51 @@ function content_64234297245c27_25104244 (Smarty_Internal_Template $_smarty_tpl)
                     <input type="password" name="password" id="password" required><br>
 
                     <label for="nom_promo">Promotion</label><br>
-                    <input type="text" name="nom_promo" id="nom_promo" required><br>
+                    <table><br>
+                        <tr>
+                            <select name="nom_promo" id="nom_promo">
+                                <option>A1</option>
+                                <option>A2</option>
+                                <option>A3</option>
+                                <option>A4</option>
+                                <option>A5</option>
+                            </select>
+                        </tr>
+                    </table>
 
-                    <label for="nom_centre">Nom du centre</label><br>
-                    <input type="text" name="nom_centre" id="nom_centre" required><br>
+                    <label for="nom_centre">Centre</label><br>
+                    <table><br>
+                        <tr>
+                            <select name="nom_centre" id="nom_centre">
+                                <option>Strasbourg</option>
+                                <option>Dijon</option>
+                                <option>Nancy</option>
+                                <option>Reims</option>
+                                <option>Châteauroux</option>
+                                <option>Orléans</option>
+                                <option>Nanterre</option>
+                                <option>La Défense</option>
+                                <option>Arras</option>
+                                <option>Lille</option>
+                                <option>Caen</option>
+                                <option>Rouen</option>
+                                <option>Angoulême</option>
+                                <option>Brest</option>
+                                <option>La Rochelle</option>
+                                <option>Le Mans</option>
+                                <option>Nantes</option>
+                                <option>Saint Nazaire</option>
+                                <option>Aix-en-Provence</option>
+                                <option>Grenoble</option>
+                                <option>Lyon</option>
+                                <option>Nice</option>
+                                <option>Bordeaux</option>
+                                <option>Montpellier</option>
+                                <option>PAU</option>
+                                <option>Toulouse</option>
+                            </select>
+                        </tr>
+                    </table>
 
                     <label for="date_naissance">Date de naissance</label><br>
                     <input type="date" name="date_naissance" id="date_naissance" required><br>
@@ -136,7 +177,7 @@ function content_64234297245c27_25104244 (Smarty_Internal_Template $_smarty_tpl)
                                     </td>
                                 </tr>
                                 <div>
-                                    <button href='profil.php' type="submit" name="submit" id="ok">Enregistrer</button>
+                                    <button href='profil.php' type="submit" name="submit" id="ok">Créer</button>
                                     <button href='profil.php' type="submit" name="submit" id="cancel">Annuler</button>
                                 </div>
                             </table>
