@@ -106,14 +106,123 @@ $smarty->display('header.tpl');
 
 if ($role == 'admin') {
     $smarty->display('profil-admin.tpl');
-}
+    //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    echo "Administrateur<br>";
+    echo "<div class='row'>";
+    $sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM admin JOIN utilisateur ON admin.ID_utilisateur = utilisateur.ID_utilisateur";
+    $result = $conn->query($sql);
+    // Assigner les données SQL aux variables Smarty
+    foreach ($result as $row) {
+                $ID_utilisateur_mod = $row['ID_utilisateur'];
+                $nom_utilisateur = $row['nom_utilisateur'];
+                $prenom = $row['prenom'];
+                $mail = $row['mail'];
+                $date_naissance = $row['date_naissance'];
+                if($ID_utilisateur_mod != $_SESSION['ID_utilisateur']){
+                echo "<div class='column'>";
+                echo "Prénom : $prenom<br>";
+                echo "Nom : $nom_utilisateur<br>";
+                echo "Mail : $mail<br>";
+                echo "Date de naissance : $date_naissance<br>";
+                echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+                echo "</div>";
+                }
+                }
+        echo "<div class='column' style='text-align: center; font-size: 5rem'>";
+        echo "<a href='newprofile.php' style='text-decoration: none; color: #669ea0'>+</a>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo "Pilote<br>";
+echo "<div class='row'>";
+$sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM pilote JOIN utilisateur ON pilote.ID_utilisateur = utilisateur.ID_utilisateur";
+$result = $conn->query($sql);
+// Assigner les données SQL aux variables Smarty
+
+foreach ($result as $row) {
+            $ID_utilisateur_mod = $row['ID_utilisateur'];
+            $nom_utilisateur = $row['nom_utilisateur'];
+            $prenom = $row['prenom'];
+            $mail = $row['mail'];
+            $date_naissance = $row['date_naissance'];
+            if($ID_utilisateur_mod != $_SESSION['ID_utilisateur']){
+            echo "<div class='column'>";
+            echo "Prénom : $prenom<br>";
+            echo "Nom : $nom_utilisateur<br>";
+            echo "Mail : $mail<br>";
+            echo "Date de naissance : $date_naissance<br>";
+            echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "</div>";
+            }
+        } 
+    echo "<div class='column' style='text-align: center; font-size: 5rem'>";
+    echo "<a href='newprofile.php' style='text-decoration: none; color: #669ea0'>+</a>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo "Recruteur<br>";
+echo "<div class='row'>";
+$sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM recruteur JOIN utilisateur ON recruteur.ID_utilisateur = utilisateur.ID_utilisateur";
+$result = $conn->query($sql);
+// Assigner les données SQL aux variables Smarty
+
+foreach ($result as $row) {
+            $ID_utilisateur_mod = $row['ID_utilisateur'];
+            $nom_utilisateur = $row['nom_utilisateur'];
+            $prenom = $row['prenom'];
+            $mail = $row['mail'];
+            $date_naissance = $row['date_naissance'];
+            if($ID_utilisateur_mod != $_SESSION['ID_utilisateur']){
+            echo "<div class='column'>";
+            echo "Prénom : $prenom<br>";
+            echo "Nom : $nom_utilisateur<br>";
+            echo "Mail : $mail<br>";
+            echo "Date de naissance : $date_naissance<br>";
+            echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "</div>";
+            }
+        } 
+    echo "<div class='column' style='text-align: center; font-size: 5rem'>";
+    echo "<a href='newprofile.php' style='text-decoration: none; color: #669ea0'>+</a>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+
+    //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo "Etudiants<br>";
+echo "<div class='row'>";
+$sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM etudiant JOIN utilisateur ON etudiant.ID_utilisateur = utilisateur.ID_utilisateur";
+$result = $conn->query($sql);
+// Assigner les données SQL aux variables Smarty
+
+foreach ($result as $row) {
+            $ID_utilisateur_mod = $row['ID_utilisateur'];
+            $nom_utilisateur = $row['nom_utilisateur'];
+            $prenom = $row['prenom'];
+            $mail = $row['mail'];
+            $date_naissance = $row['date_naissance'];
+            if($ID_utilisateur_mod != $_SESSION['ID_utilisateur']){
+            echo "<div class='column'>";
+            echo "Prénom : $prenom<br>";
+            echo "Nom : $nom_utilisateur<br>";
+            echo "Mail : $mail<br>";
+            echo "Date de naissance : $date_naissance<br>";
+            echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "</div>";
+            }
+        } 
+    echo "<div class='column' style='text-align: center; font-size: 5rem'>";
+    echo "<a href='newprofile.php' style='text-decoration: none; color: #669ea0'>+</a>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    }
 if ($role == 'pilote') {
     $smarty->display('profil-pilote.tpl');
-    
     echo "<div class='row'>";
-
-
-    $sql = "SELECT utilisateur.ID_utilisateur, ID_etudiant, nom_utilisateur, prenom, mail FROM etudiant JOIN utilisateur ON etudiant.ID_utilisateur = utilisateur.ID_utilisateur";
+    $sql = "SELECT utilisateur.ID_utilisateur,date_naissance, ID_etudiant, nom_utilisateur, prenom, mail FROM etudiant JOIN utilisateur ON etudiant.ID_utilisateur = utilisateur.ID_utilisateur";
     $result = $conn->query($sql);
     // Assigner les données SQL aux variables Smarty
     foreach ($result as $row) {
@@ -122,10 +231,12 @@ if ($role == 'pilote') {
                 $nom_utilisateur = $row['nom_utilisateur'];
                 $prenom = $row['prenom'];
                 $mail = $row['mail'];
+                $date_naissance = $row['date_naissance'];
                 echo "<div class='column'>";
                 echo "Prénom : $prenom<br>";
                 echo "Nom : $nom_utilisateur<br>";
                 echo "Mail : $mail<br>";
+                echo "Date de naissance : $date_naissance<br>";
                 echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_etudiant&ID_etudiant=$ID_etudiant'>Modifier</a>";
                 echo "</div>";
             } 

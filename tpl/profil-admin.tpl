@@ -75,7 +75,4 @@
             </td>
         </tr>
     </table>
-    <p>
-        Expériences passées
-    </p>
 </body>
