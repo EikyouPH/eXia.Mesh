@@ -6,6 +6,7 @@
     justify-content: center;
     width: 10%;
 }
+
 #personne img {
     width: 100%;
 }
@@ -22,16 +23,15 @@ input {
     width: 98%;
 }
 
-.reseaux input{
+.reseaux{
+    margin: 0 auto 0 auto;
+}
+
+.reseaux input {
     height: 10%;
 }
 
-.reseaux
-{
-    position: relative;
-}
-
-.icone{
+.icone {
     width: 12%;
 }
 
@@ -40,16 +40,8 @@ input {
     vertical-align: middle;
 }
 
-.boutons {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    left: 70%;
-    padding: 1% 2%;
-    font-size: 125%;
-    margin: 0 auto 0% auto;
-
+.boutons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 20% 0% 20%;
 }
-
-  button {
-    position: absolute;
-  }

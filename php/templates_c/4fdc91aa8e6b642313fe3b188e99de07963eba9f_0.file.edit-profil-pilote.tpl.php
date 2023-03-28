@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 00:34:59
+/* Smarty version 4.3.0, created on 2023-03-29 01:33:35
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\edit-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64236b93c65ea9_44620085',
+  'unifunc' => 'content_6423794f183f27_42016680',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4fdc91aa8e6b642313fe3b188e99de07963eba9f' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\edit-profil-pilote.tpl',
-      1 => 1680042761,
+      1 => 1680046386,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64236b93c65ea9_44620085 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423794f183f27_42016680 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -195,10 +195,15 @@ function content_64236b93c65ea9_44620085 (Smarty_Internal_Template $_smarty_tpl)
                                     </table>
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="boutons">
+                                    <button href='profil.php' type="submit" name="submit"
+                                        id="confirmer">Enregistrer</button>
+                                    <button href='profil.php' id="annuler">Annuler</button>
+                                </td>
+                            </tr>
                         </table>
                     </td>
-                    <button href='profil.php' type="submit" name="submit" class="ok">Enregistrer</button>
-                    <button href='profil.php' class="ok"> Annuler</button>
                 </form>
             </tr>
         </table>
