@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 <script src="/app.js"></script>
+
 <body>
     <div class="en cadre">
         <table class="grand">
@@ -11,7 +12,8 @@
                 <td class="infos">
                     <form method="post" autocomplete="off">
                         <label for="nom_utilisateur">Nom</label><br>
-                        <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}" required><br>
+                        <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
+                            required><br>
 
                         <label for="prenom">Prénom</label><br>
                         <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
@@ -23,7 +25,8 @@
                         <input type="password" name="password" id="password" value="{$password}" required><br>
 
                         <label for="date_naissance">Date de naissance</label><br>
-                        <input type="date" name="date_naissance" id="date_naissance" value="{$date_naissance}" required><br>
+                        <input type="date" name="date_naissance" id="date_naissance" value="{$date_naissance}"
+                            required><br>
                 </td>
                 <td class="adresse">
                     <label for="numero">N°</label><br>
@@ -43,7 +46,7 @@
 
                     <label for="region">Région</label><br>
                     <input type="text" name="region" id="region" value="{$region}" required><br>
-                    
+
                     <label for="pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="pays" value="{$pays}" placeholder="Votre pays..."><br>
                     <ul class="list"></ul>
@@ -119,8 +122,8 @@
                 </td>
                 <table class=lien>
                     <tr>
-                        <td class="ok">
-                            <button href='profil.php' type="submit" name="submit" >Enregistrer</button>
+                        <td class="lien">
+                            <button href='profil.php' type="submit" name="submit">Enregistrer</button>
                         </td>
                         <td class="annuler">
                             <a href='profil.php'>Annuler</a>
