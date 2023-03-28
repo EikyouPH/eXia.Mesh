@@ -109,10 +109,11 @@ if ($role == 'admin') {
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     echo "Administrateur<br>";
     echo "<div class='row'>";
-    $sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM admin JOIN utilisateur ON admin.ID_utilisateur = utilisateur.ID_utilisateur";
+    $sql = "SELECT utilisateur.ID_utilisateur, ID_admin,date_naissance,nom_utilisateur,prenom,mail FROM admin JOIN utilisateur ON admin.ID_utilisateur = utilisateur.ID_utilisateur";
     $result = $conn->query($sql);
     // Assigner les données SQL aux variables Smarty
     foreach ($result as $row) {
+                $ID_admin = $row['ID_admin'];
                 $ID_utilisateur_mod = $row['ID_utilisateur'];
                 $nom_utilisateur = $row['nom_utilisateur'];
                 $prenom = $row['prenom'];
@@ -124,7 +125,7 @@ if ($role == 'admin') {
                 echo "Nom : $nom_utilisateur<br>";
                 echo "Mail : $mail<br>";
                 echo "Date de naissance : $date_naissance<br>";
-                echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+                echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_admin&role=admin'>Modifier</a>";
                 echo "</div>";
                 }
                 }
@@ -136,11 +137,12 @@ if ($role == 'admin') {
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo "Pilote<br>";
 echo "<div class='row'>";
-$sql = "SELECT utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM pilote JOIN utilisateur ON pilote.ID_utilisateur = utilisateur.ID_utilisateur";
+$sql = "SELECT utilisateur.ID_utilisateur,ID_pilote,date_naissance,nom_utilisateur,prenom,mail FROM pilote JOIN utilisateur ON pilote.ID_utilisateur = utilisateur.ID_utilisateur";
 $result = $conn->query($sql);
 // Assigner les données SQL aux variables Smarty
 
 foreach ($result as $row) {
+            $ID_pilote = $row['ID_pilote'];
             $ID_utilisateur_mod = $row['ID_utilisateur'];
             $nom_utilisateur = $row['nom_utilisateur'];
             $prenom = $row['prenom'];
@@ -152,7 +154,7 @@ foreach ($result as $row) {
             echo "Nom : $nom_utilisateur<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
-            echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_admin&role=pilote'>Modifier</a>";
             echo "</div>";
             }
         } 
@@ -180,7 +182,7 @@ foreach ($result as $row) {
             echo "Nom : $nom_utilisateur<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
-            echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
             echo "</div>";
             }
         } 
@@ -209,7 +211,7 @@ foreach ($result as $row) {
             echo "Nom : $nom_utilisateur<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
-            echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
+            echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod'>Modifier</a>";
             echo "</div>";
             }
         } 

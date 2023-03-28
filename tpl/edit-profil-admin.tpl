@@ -108,15 +108,12 @@
                         </tr>
                     </table>
                 </td>
-                <button href='profil.tpl' type="submit" name="submit" class = "ok">Enregistrer</button>
+                <button href='profil.php' type="submit" name="submit" class = "ok">Enregistrer</button>
+                <button href='profil.php' class= "ok"> Annuler</button>
                 </form>
             </tr>
         </table>
     </div>
-
-    <p>
-        Expériences passées
-    </p>
     <!-- Script -->
     <script src="/scripts/liste-pays.js"></script>
 </body>

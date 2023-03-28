@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 15:01:17
+/* Smarty version 4.3.0, created on 2023-03-28 16:11:57
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6422e51dc56967_66994645',
+  'unifunc' => 'content_6422f5ad989bf4_97875382',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0c22a81d30c017e1ee535c5705cbfc2044fc8d2' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\header.tpl',
-      1 => 1680008455,
+      1 => 1680012643,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6422e51dc56967_66994645 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422f5ad989bf4_97875382 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -33,6 +33,7 @@ function content_6422e51dc56967_66994645 (Smarty_Internal_Template $_smarty_tpl)
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="manifest" href="../manifest.json">
   <link rel="apple-touch-icon" href="/img/logo152x152.png">
+  <meta name="theme-color" content="#0E8388" >
   
 </head>
 <header>

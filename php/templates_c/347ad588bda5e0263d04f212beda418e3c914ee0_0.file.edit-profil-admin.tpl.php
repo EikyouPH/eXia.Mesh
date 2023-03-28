@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 23:24:19
+/* Smarty version 4.3.0, created on 2023-03-28 16:51:45
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f74932d70a8_10071211',
+  'unifunc' => 'content_6422ff01304099_79830350',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '347ad588bda5e0263d04f212beda418e3c914ee0' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-admin.tpl',
-      1 => 1679783044,
+      1 => 1680015103,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f74932d70a8_10071211 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422ff01304099_79830350 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -71,11 +71,8 @@ function content_641f74932d70a8_10071211 (Smarty_Internal_Template $_smarty_tpl)
                         <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 " required><br>
                         <label for="pays">Pays</label><br>
-                        <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
-"><br>
-                        <div>
-                            <input type="text" id="pays" placeholder="Votre pays">
-                        </div>
+                        <input type="text" name="nom_pays" id="pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+" placeholder="Votre pays..."><br>
                         <ul class="list"></ul>
                 </td>
                 <td id="td-reseaux">
@@ -150,15 +147,12 @@ function content_641f74932d70a8_10071211 (Smarty_Internal_Template $_smarty_tpl)
                         </tr>
                     </table>
                 </td>
-                <button href='profil.tpl' type="submit" name="submit" class = "ok">Enregistrer</button>
+                <button href='profil.php' type="submit" name="submit" class = "ok">Enregistrer</button>
+                <button href='profil.php' class= "ok"> Annuler</button>
                 </form>
             </tr>
         </table>
     </div>
-
-    <p>
-        Expériences passées
-    </p>
     <!-- Script -->
     <?php echo '<script'; ?>
  src="/scripts/liste-pays.js"><?php echo '</script'; ?>
