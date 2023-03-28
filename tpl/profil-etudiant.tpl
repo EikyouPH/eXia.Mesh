@@ -77,11 +77,6 @@
                 </table>
             </td>
         </tr>
-        <td class="cadre" colspan="3">
-            Lettre de motivation :<br>
-            {$lettre_motivation}<br>
-        </td>
-
     </table>
     <p>
         Expériences passées

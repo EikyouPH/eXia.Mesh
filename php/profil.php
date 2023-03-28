@@ -47,7 +47,6 @@ if ($role == 'etudiant') {
     $lettre_motivation = $row['lettre_motivation'];
     $smarty->assign('lettre_motivation', $lettre_motivation);
     
-
 }
 if ($role == 'recruteur') {
     $sql = "SELECT nom_entreprise FROM entreprise WHERE ID_entreprise = '$_SESSION[ID_entreprise]'";

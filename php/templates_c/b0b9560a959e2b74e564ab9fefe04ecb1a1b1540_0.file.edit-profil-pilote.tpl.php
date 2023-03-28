@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 23:39:11
+/* Smarty version 4.3.0, created on 2023-03-28 09:19:36
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641f780f737b01_11701777',
+  'unifunc' => 'content_64229508277d04_66663537',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b0b9560a959e2b74e564ab9fefe04ecb1a1b1540' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-pilote.tpl',
-      1 => 1679783044,
+      1 => 1679911241,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641f780f737b01_11701777 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64229508277d04_66663537 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
@@ -67,11 +67,8 @@ function content_641f780f737b01_11701777 (Smarty_Internal_Template $_smarty_tpl)
                     <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 " required><br>'
                     <label for="pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
-"><br>
-                    <div>
-                        <input type="text" id="pays" placeholder="Votre pays">
-                    </div>
+                    <input type="text" name="nom_pays" id="pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+" placeholder="Votre pays..."><br>
                     <ul class="list"></ul>
             </td>
             <td id="td-reseaux">

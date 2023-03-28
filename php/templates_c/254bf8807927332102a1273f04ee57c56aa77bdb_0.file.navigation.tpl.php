@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-25 09:55:07
+/* Smarty version 4.3.0, created on 2023-03-28 09:19:52
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641eb6eb5b86e1_41492990',
+  'unifunc' => 'content_642295187c6bf2_25059849',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '254bf8807927332102a1273f04ee57c56aa77bdb' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\navigation.tpl',
-      1 => 1679673247,
+      1 => 1679783044,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641eb6eb5b86e1_41492990 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-navigation.css">
+function content_642295187c6bf2_25059849 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/navigation.css">
 
 <body>
     <h3>Index des pages</h3>
