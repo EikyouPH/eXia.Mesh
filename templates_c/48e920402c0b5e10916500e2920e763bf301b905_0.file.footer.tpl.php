@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-26 12:45:16
+/* Smarty version 4.3.0, created on 2023-03-28 15:21:04
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6420223c2083b7_51513602',
+  'unifunc' => 'content_6422e9c0619d40_38203506',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '48e920402c0b5e10916500e2920e763bf301b905' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\footer.tpl',
-      1 => 1679766612,
+      1 => 1680009627,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6420223c2083b7_51513602 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422e9c0619d40_38203506 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/footer.css">
 <footer>
   <table class="footer">
@@ -35,5 +35,8 @@ function content_6420223c2083b7_51513602 (Smarty_Internal_Template $_smarty_tpl)
     </td>
     </tr>
   </table>
-</footer><?php }
+</footer>
+<?php echo '<script'; ?>
+ src="/serviceworker.js"><?php echo '</script'; ?>
+><?php }
 }
