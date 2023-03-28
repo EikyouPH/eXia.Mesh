@@ -168,7 +168,7 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$lien_facebook, $lien_indeed, $lien_linkedin, $lien_perso, $ID_utilisateur_new]);
 
-    //---------------------------------------------INSERT ROLE -----------------------------------------------------------
+    //---------------------------------------------INSERT PAR RAPPORT AU ROLE -----------------------------------------------------------
 
     if ($role == 'admin') {
         $sql = "INSERT INTO `admin` (`ID_utilisateur`) VALUES (?)";
@@ -179,6 +179,34 @@ if (isset($_POST['submit'])) {
         $sql = "INSERT INTO `pilote` (`ID_utilisateur`) VALUES (?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$ID_utilisateur_new]);
+
+        // Vérifier si le centre existe déjà dans la base de données
+        $sql = "SELECT ID_centre FROM centre WHERE nom_centre = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$nom_centre]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC); // Récupérer la ligne de résultat de la requête
+
+        if ($row) {
+            // Le centre existe déjà dans la base de données, effectuer une mise à jour
+            $ID_centre = $row['ID_centre'];
+        } else {
+            // Le centre n'existe pas encore dans la base de données, effectuer une insertion
+            $sql = "INSERT INTO centre (nom_centre) VALUES (?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$nom_centre]);
+
+            $sql = "SELECT ID_centre FROM centre WHERE nom_centre = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$nom_centre]);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            $ID_centre = $row['ID_centre'];
+
+            $sql = "UPDATE centre SET ID_centre = ? Where ID_utilisateur =?";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$id_adresse, $ID_utilisateur_new]);
+        }
+
+
     }
     if ($role == 'recruteur') {
         $sql = "INSERT INTO `recruteur` (`ID_utilisateur`) VALUES (?)";
