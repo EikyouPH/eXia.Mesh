@@ -55,7 +55,8 @@ input {
 }
 
 input[type="submit"] {
-    position: fixed;
+    color: blue;
+    position: relative;
     bottom: 0;
     right: 0;
     margin: 20px;
