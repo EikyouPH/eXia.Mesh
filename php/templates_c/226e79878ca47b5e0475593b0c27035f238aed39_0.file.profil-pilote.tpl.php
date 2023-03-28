@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 13:50:50
+/* Smarty version 4.3.0, created on 2023-03-28 14:04:18
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6422d49a7acee4_01047523',
+  'unifunc' => 'content_6422d7c2393b00_78139733',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '226e79878ca47b5e0475593b0c27035f238aed39' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil-pilote.tpl',
-      1 => 1680004248,
+      1 => 1680005055,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6422d49a7acee4_01047523 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422d7c2393b00_78139733 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -118,24 +118,5 @@ function content_6422d49a7acee4_01047523 (Smarty_Internal_Template $_smarty_tpl)
             </td>
         </tr>
     </table>
-    <p>
-    <div class="back">
-        <span class="cat" style="text-decoration: underline;">Profil</span>
-
-
-        <div class='column'>
-            <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
-<br>
-            <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
-<br>
-            <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
-<br>
-            <a class='d' href='profiledit.php?Id=$Id'>Modifier</a>
-        </div>
-        <div class='column' style='text-align: center; font-size: 5rem'>
-            <a href='newprofile.php' style='text-decoration: none; color: #ffffff'>+</a>
-        </div>
-    </div>
-    </p>
 </body><?php }
 }

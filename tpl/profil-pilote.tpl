@@ -78,20 +78,4 @@
             </td>
         </tr>
     </table>
-    <p>
-    <div class="back">
-        <span class="cat" style="text-decoration: underline;">Profil</span>
-
-
-        <div class='column'>
-            {$nom_utilisateur}<br>
-            {$prenom}<br>
-            {$mail}<br>
-            <a class='d' href='profiledit.php?Id=$Id'>Modifier</a>
-        </div>
-        <div class='column' style='text-align: center; font-size: 5rem'>
-            <a href='newprofile.php' style='text-decoration: none; color: #ffffff'>+</a>
-        </div>
-    </div>
-    </p>
 </body>

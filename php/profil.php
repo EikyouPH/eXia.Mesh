@@ -109,16 +109,29 @@ if ($role == 'admin') {
 }
 if ($role == 'pilote') {
     $smarty->display('profil-pilote.tpl');
+    
+    echo "<div class='row'>";
     $sql = "SELECT ID_utilisateur,nom_utilisateur, prenom, mail FROM utilisateur";
-$result = $conn->query($sql);
-// Assigner les données SQL aux variables Smarty
-foreach ($result as $row) {
-    $ID_utilisateur_etudiant = $row['ID_utilisateur'];
+    $result = $conn->query($sql);
+    // Assigner les données SQL aux variables Smarty
+    foreach ($result as $row) {
+                $ID_utilisateur_etudiant = $row['ID_utilisateur'];
                 $nom_utilisateur = $row['nom_utilisateur'];
                 $prenom = $row['prenom'];
                 $mail = $row['mail'];
-            }
-}
+                echo "<div class='column'>";
+                echo "Prénom : $prenom<br>";
+                echo "Nom : $nom_utilisateur<br>";
+                echo "Mail : $mail<br>";
+                echo "<a class='d' href='profiledit.php?Id=$ID_utilisateur_etudiant'>Modifier</a>";
+                echo "</div>";
+            } 
+        echo "<div class='column' style='text-align: center; font-size: 5rem'>";
+        echo "<a href='newprofile.php' style='text-decoration: none; color: #ffffff'>+</a>";
+        echo "</div>";
+        echo "</div>";
+        }
+        echo "</div>";
 if ($role == 'etudiant') {
     $smarty->display('profil-etudiant.tpl');
 }
