@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 21:20:06
+/* Smarty version 4.3.0, created on 2023-03-29 00:17:07
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\accueil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64233de6cbf227_53841818',
+  'unifunc' => 'content_6423676386a9d3_98496054',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '14cd97f1239c682d7354629f2bb1b33924473a09' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\accueil.tpl',
-      1 => 1680031114,
+      1 => 1680041648,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64233de6cbf227_53841818 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423676386a9d3_98496054 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/accueil.css" type="text/css" media="screen" />
+
 <body>
   <table class="page-accueil">
     <thead>
       <tr>
-        <th class="dern-annonce" left>
+        <th left>
           <h2>Les dernières annonces</h2>
         </th>
-        <th class="res-notif" right>
+        <th right colspan="2">
           <h2>Vos dernières notifications</h2>
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td id="dern-annonce" rowspan="3">
+        <td class="cadre" rowspan="3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, molestias aperiam tempore, unde
           recusandae similique earum nihil, nobis accusantium quis error soluta! Qui quis dolores est magnam officiis
           deserunt quod!
@@ -67,7 +68,7 @@ function content_64233de6cbf227_53841818 (Smarty_Internal_Template $_smarty_tpl)
           voluptatum illum reiciendis dolore, minus fugit laborum repudiandae. Possimus veniam nulla quod velit
           fugiat.
         </td>
-        <td id="res-notif" colspan="2">
+        <td class="cadre" colspan="2">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, sed numquam? Praesentium culpa enim porro
           odio doloribus mollitia. Quam voluptates optio tenetur incidunt perferendis doloribus quasi, dignissimos
           facilis enim ratione.
@@ -82,8 +83,9 @@ function content_64233de6cbf227_53841818 (Smarty_Internal_Template $_smarty_tpl)
           incidunt fugiat maiores iste harum veritatis unde adipisci? Esse voluptas voluptatum asperiores temporibus
           maxime repellat eos?
         </td>
+      </tr>
       <tr>
-        <td id="jsp" colspan="2">
+        <td class="cadre" colspan="2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, molestiae? Et aut suscipit optio minus
           tempora fuga autem quisquam cupiditate, magnam aspernatur laudantium. Quas in repudiandae, quos nisi iusto
           unde.
@@ -94,7 +96,7 @@ function content_64233de6cbf227_53841818 (Smarty_Internal_Template $_smarty_tpl)
           obcaecati, magni illum nisi consequuntur.
         </td>
       </tr>
-      <tr class="bouton-accueil">
+      <tr class="lien">
         <td>
           <a href="/php/wishlist-liste.php">Voir wishlist</a>
         </td>
@@ -102,10 +104,7 @@ function content_64233de6cbf227_53841818 (Smarty_Internal_Template $_smarty_tpl)
           <a href="/php/recap-candidatures.php">Voir candidatures</a>
         </td>
       </tr>
-      </tr>
     </tbody>
   </table>
-</body>
-
-<?php }
+</body><?php }
 }
