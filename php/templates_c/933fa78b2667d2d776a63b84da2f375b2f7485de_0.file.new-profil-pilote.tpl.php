@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 21:53:37
+/* Smarty version 4.3.0, created on 2023-03-29 01:09:31
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\new-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642345c12eddb7_23351328',
+  'unifunc' => 'content_642373ab7fc2f6_62651497',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '933fa78b2667d2d776a63b84da2f375b2f7485de' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\new-profil-pilote.tpl',
-      1 => 1680032497,
+      1 => 1680044867,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642345c12eddb7_23351328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642373ab7fc2f6_62651497 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -47,9 +47,40 @@ function content_642345c12eddb7_23351328 (Smarty_Internal_Template $_smarty_tpl)
                     <label for="nom_promo">Promotion</label><br>
                     <input type="text" name="nom_promo" id="nom_promo" required><br>
 
-                    <label for="nom_centre">Centre</label><br>
-                    <input type="text" name="nom_centre" id="nom_centre" required><br>
 
+                    <label for="nom_centre">Centre</label><br>
+                    <table><br>
+                        <tr>
+                            <select name="nom_centre" id="nom_centre">
+                                <option>Strasbourg</option>
+                                <option>Dijon</option>
+                                <option>Nancy</option>
+                                <option>Reims</option>
+                                <option>Châteauroux</option>
+                                <option>Orléans</option>
+                                <option>Nanterre</option>
+                                <option>La Défense</option>
+                                <option>Arras</option>
+                                <option>Lille</option>
+                                <option>Caen</option>
+                                <option>Rouen</option>
+                                <option>Angoulême</option>
+                                <option>Brest</option>
+                                <option>La Rochelle</option>
+                                <option>Le Mans</option>
+                                <option>Nantes</option>
+                                <option>Saint Nazaire</option>
+                                <option>Aix-en-Provence</option>
+                                <option>Grenoble</option>
+                                <option>Lyon</option>
+                                <option>Nice</option>
+                                <option>Bordeaux</option>
+                                <option>Montpellier</option>
+                                <option>PAU</option>
+                                <option>Toulouse</option>
+                            </select>
+                        </tr>
+                    </table>
                     <label for="date_naissance">Date de naissance</label><br>
                     <input type="date" name="date_naissance" id="date_naissance" required><br>
 
@@ -139,7 +170,7 @@ function content_642345c12eddb7_23351328 (Smarty_Internal_Template $_smarty_tpl)
                     </tr>
                 </table>
             </td>
-            <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
+            <button href='profil.tpl' type="submit" name="submit" class="a">Créer</button>
             </form>
         </tr>
     </table>
