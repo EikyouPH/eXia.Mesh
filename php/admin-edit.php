@@ -234,7 +234,7 @@ if (isset($_POST['submit'])) {
     $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $ID_utilisateur_mod]);
 
 
-    
+
     header("Location: profil.php");
     exit();
 }
@@ -251,8 +251,7 @@ if ($role == 'admin') {
     $smarty->display('edit-profil-etudiant.tpl');
 } else if ($role == 'recruteur') {
     $smarty->display('edit-profil-recruteur.tpl');
-}
-else {
+} else {
     $smarty->display('edit-profil.tpl');
 }
 
