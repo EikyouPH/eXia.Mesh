@@ -112,12 +112,13 @@ if ($role == 'pilote') {
     
     echo "<div class='row'>";
 
-    
-    $sql = "SELECT ID_utilisateur,nom_utilisateur, prenom, mail FROM utilisateur";
+
+    $sql = "SELECT utilisateur.ID_utilisateur, ID_etudiant, nom_utilisateur, prenom, mail FROM etudiant JOIN utilisateur ON etudiant.ID_utilisateur = utilisateur.ID_utilisateur";
     $result = $conn->query($sql);
     // Assigner les données SQL aux variables Smarty
     foreach ($result as $row) {
                 $ID_utilisateur_etudiant = $row['ID_utilisateur'];
+                $ID_etudiant = $row['ID_etudiant'];
                 $nom_utilisateur = $row['nom_utilisateur'];
                 $prenom = $row['prenom'];
                 $mail = $row['mail'];
@@ -125,7 +126,7 @@ if ($role == 'pilote') {
                 echo "Prénom : $prenom<br>";
                 echo "Nom : $nom_utilisateur<br>";
                 echo "Mail : $mail<br>";
-                echo "<a class='d' href='profiledit.php?Id=$ID_utilisateur_etudiant'>Modifier</a>";
+                echo "<a class='d' href='pilote-edit.php?ID=$ID_utilisateur_etudiant&ID_etudiant=$ID_etudiant'>Modifier</a>";
                 echo "</div>";
             } 
         echo "<div class='column' style='text-align: center; font-size: 5rem'>";

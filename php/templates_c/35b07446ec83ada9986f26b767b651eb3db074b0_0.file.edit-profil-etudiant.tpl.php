@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 11:47:48
+/* Smarty version 4.3.0, created on 2023-03-28 14:28:24
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6422b7c4351f83_27258928',
+  'unifunc' => 'content_6422dd6871ea09_25701969',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35b07446ec83ada9986f26b767b651eb3db074b0' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-etudiant.tpl',
-      1 => 1679996866,
+      1 => 1680006502,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6422b7c4351f83_27258928 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422dd6871ea09_25701969 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/listes-deroulantes.css">
 <link rel="stylesheet" href="/css/edit.css">
 
@@ -157,19 +157,18 @@ function content_6422b7c4351f83_27258928 (Smarty_Internal_Template $_smarty_tpl)
 "><br>
                                     </td>
                                 </tr>
+                                <div>
+                                    <button href='profil.php' type="submit" name="submit" id="ok">Enregistrer</button>
+                                    <button href='profil.php' type="submit" name="submit" id="cancel">Annuler</button>
+                                </div>
                             </table>
                         </td>
                     </tr>
                 </table>
             </td>
-            <button href='profil.php' type="submit" name="submit" class="a">Enregistrer</button>
             </form>
         </tr>
     </table>
-
-    <p>
-        Expériences passées
-    </p>
     <!-- Script -->
     <?php echo '<script'; ?>
  src="/scripts/liste-pays.js"><?php echo '</script'; ?>

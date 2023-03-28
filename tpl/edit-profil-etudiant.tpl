@@ -128,10 +128,6 @@
             </form>
         </tr>
     </table>
-
-    <p>
-        Expériences passées
-    </p>
     <!-- Script -->
     <script src="/scripts/liste-pays.js"></script>
 </body>
