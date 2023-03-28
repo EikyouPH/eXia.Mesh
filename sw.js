@@ -2,21 +2,22 @@ const StaticCacheName = 'site-static'
 const assets = [
     '/',
     '/index.php',
-    '/js/serviceworker.js'
+    '/serviceworker.js',
+    '/css/global.css',
+    '/css/acceuil.css',
+    '/css/connexion.css',
+    '/css/footer.css',
+    '/css/stage.css',
+    '/css/recap-candidature.css',
 ];
 
 // installe le service worker
 self.addEventListener('install', evt =>  {
     console.log('Service worker installé !')
-    caches.open(StaticCacheName).then(cache => {
-        cache.addAll([
-            '/',
-            '/index.html',
-            '/js/app.js',
-            '/css/style.css',
-            '/img/dish.png'
-        ])
-    }
+    evt.waitUntil(
+        caches.open(StaticCacheName).then(cache => {
+        cache.addAll(assets)
+    }))
 })
 
 // active le service worker
