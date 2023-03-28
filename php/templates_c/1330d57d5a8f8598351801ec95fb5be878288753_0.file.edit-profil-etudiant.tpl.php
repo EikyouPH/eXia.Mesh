@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 11:52:46
+/* Smarty version 4.3.0, created on 2023-03-28 13:27:43
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\edit-profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6422b8ee4f4673_92066776',
+  'unifunc' => 'content_6422cf2fc9a7a9_61591882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1330d57d5a8f8598351801ec95fb5be878288753' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\edit-profil-etudiant.tpl',
-      1 => 1679948973,
+      1 => 1680002847,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/edit.css">
-<link rel="stylesheet" href="/css/listes-deroulantes.css">
+function content_6422cf2fc9a7a9_61591882 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/listes-deroulantes.css">
+<link rel="stylesheet" href="/css/edit.css">
+
+
 <body>
     <table class="page-profil">
         <tr>
@@ -33,7 +35,8 @@ function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl)
                 <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
-" required><br>
+"
+                        required><br>
 
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
@@ -46,7 +49,7 @@ function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl)
                     <label for="password">Mot de passe</label><br>
                     <input type="password" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 " required><br>
-                    
+
                     <label for="nom_promo">Promotion</label><br>
                     <input type="text" name="nom_promo" id="nom_promo" value="<?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
 " required><br>
@@ -99,7 +102,8 @@ function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl)
                                     </td>
                                     <td>
                                         <label for="Linkedin">Lien Linkedin</label><br>
-                                        <input type="text" name="lien_linkedin" id="lien_linkedin" value="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
+                                        <input type="text" name="lien_linkedin" id="lien_linkedin"
+                                            value="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
 "><br>
                                     </td>
                                 </tr>
@@ -115,7 +119,8 @@ function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl)
                                     </td>
                                     <td>
                                         <label for="Indeed">Lien Indeed</label><br>
-                                        <input type="text" name="lien_indeed" id="lien_indeed" value="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
+                                        <input type="text" name="lien_indeed" id="lien_indeed"
+                                            value="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
 "><br>
                                     </td>
                                 </tr>
@@ -131,7 +136,8 @@ function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl)
                                     </td>
                                     <td>
                                         <label for="Facebook">Lien Facebook</label><br>
-                                        <input type="text" name="lien_facebook" id="lien_facebook" value="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
+                                        <input type="text" name="lien_facebook" id="lien_facebook"
+                                            value="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
 "><br>
                                     </td>
                                 </tr>
@@ -151,13 +157,16 @@ function content_6422b8ee4f4673_92066776 (Smarty_Internal_Template $_smarty_tpl)
 "><br>
                                     </td>
                                 </tr>
+                                <div>
+                                    <button href='profil.php' type="submit" name="submit" id="ok">Enregistrer</button>
+                                    <button href='profil.php' type="submit" name="submit" id="cancel">Annuler</button>
+                                </div>
                             </table>
                         </td>
                     </tr>
                 </table>
             </td>
-            <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
-                </form>
+            </form>
         </tr>
     </table>
 

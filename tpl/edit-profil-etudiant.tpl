@@ -116,12 +116,15 @@
                                         <input type="text" name="lien_perso" id="lien_perso" value="{$lien_perso}"><br>
                                     </td>
                                 </tr>
+                                <div>
+                                    <button href='profil.php' type="submit" name="submit" id="ok">Enregistrer</button>
+                                    <button href='profil.php' type="submit" name="submit" id="cancel">Annuler</button>
+                                </div>
                             </table>
                         </td>
                     </tr>
                 </table>
             </td>
-            <button href='profil.php' type="submit" name="submit" class="a">Enregistrer</button>
             </form>
         </tr>
     </table>
