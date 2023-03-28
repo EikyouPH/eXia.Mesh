@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="manifest" href="../manifest.json">
-  <link rel="apple-touch-icon" href="/img/logo">
+  <link rel="apple-touch-icon" href="/img/logo152x152.png">
   
 </head>
 <header>
