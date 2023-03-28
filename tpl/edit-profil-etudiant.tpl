@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
+
 <body>
     <table class="page-profil">
         <tr>
@@ -9,7 +10,8 @@
             <td>
                 <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
-                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}" required><br>
+                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="{$nom_utilisateur}"
+                        required><br>
 
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="{$prenom}" required><br>
@@ -19,7 +21,7 @@
 
                     <label for="password">Mot de passe</label><br>
                     <input type="password" name="password" id="password" value="{$password}" required><br>
-                    
+
                     <label for="nom_promo">Promotion</label><br>
                     <input type="text" name="nom_promo" id="nom_promo" value="{$nom_promo}" required><br>
 
@@ -62,7 +64,8 @@
                                     </td>
                                     <td>
                                         <label for="Linkedin">Lien Linkedin</label><br>
-                                        <input type="text" name="lien_linkedin" id="lien_linkedin" value="{$lien_linkedin}"><br>
+                                        <input type="text" name="lien_linkedin" id="lien_linkedin"
+                                            value="{$lien_linkedin}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -77,7 +80,8 @@
                                     </td>
                                     <td>
                                         <label for="Indeed">Lien Indeed</label><br>
-                                        <input type="text" name="lien_indeed" id="lien_indeed" value="{$lien_indeed}"><br>
+                                        <input type="text" name="lien_indeed" id="lien_indeed"
+                                            value="{$lien_indeed}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -92,7 +96,8 @@
                                     </td>
                                     <td>
                                         <label for="Facebook">Lien Facebook</label><br>
-                                        <input type="text" name="lien_facebook" id="lien_facebook" value="{$lien_facebook}"><br>
+                                        <input type="text" name="lien_facebook" id="lien_facebook"
+                                            value="{$lien_facebook}"><br>
                                     </td>
                                 </tr>
                             </table>
@@ -115,8 +120,8 @@
                     </tr>
                 </table>
             </td>
-            <button href='profil.tpl' type="submit" name="submit" class="a">Enregistrer</button>
-                </form>
+            <button href='profil.php' type="submit" name="submit" class="a">Enregistrer</button>
+            </form>
         </tr>
     </table>
 

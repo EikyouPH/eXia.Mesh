@@ -54,7 +54,9 @@ input {
 
 }
 
-.a:hover {
-    background-color: #a5d4d1;
-    transition-duration: 0.3s;
-}
+input[type="submit"] {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+  }
