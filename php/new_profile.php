@@ -20,16 +20,25 @@ if ($role == 'etudiant') {
 }
 
 
-//---------------------------------------------------------------RESEAUX-------------------------------------------------------------------------------------------------------
-
-
-//---------------------------------------------------------------UTILISATEUR-------------------------------------------------------------------------------------------------------
-
-// Assigner les variables utilisateurs Smarty au template
-
-
-
 if (isset($_POST['submit'])) {
+
+    //------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
+    $nom_utilisateur = $_POST['nom_utilisateur'];
+    $password = $_POST['password'];
+    $prenom = $_POST['prenom'];
+    $mail = $_POST['mail'];
+    $date_naissance = $_POST['date_naissance'];
+
+    $sql = "INSERT INTO utilisateur SET nom_utilisateur=?, password=?, prenom=?,mail=?, date_naissance=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance,]);
+
+    $sql = "SELECT ID_utilisateur FROM utilisateur WHERE nom_utilisateur = '$nom_utilisateur'AND prenom = '$prenom'AND date_naissance = '$date_naissance'";
+    $result = $conn->query($sql);
+    $row = $result->fetch(PDO::FETCH_ASSOC);
+    $ID_utilisateur_new = $row['ID_utilisateur'];
+
+
 
     //---------------------------------------------------INFO TABLE PAYS ------------------------------------------------------------------------------
     $pays = $_POST['nom_pays'];
@@ -130,7 +139,7 @@ if (isset($_POST['submit'])) {
         $id_adresse = $row['ID_adresse'];
     }
 
-    //-----------------------------------------------UPDATE ADRESSE----------------------------------------------------------------------------------
+    //-----------------------------------------------INSERT ADRESSE----------------------------------------------------------------------------------
 
     $sql = "UPDATE region SET ID_pays = ? Where ID_region =?";
     $stmt = $conn->prepare($sql);
@@ -146,32 +155,41 @@ if (isset($_POST['submit'])) {
 
     $sql = "UPDATE utilisateur SET ID_adresse = ? Where ID_utilisateur =?";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$id_adresse, $ID_utilisateur_mod]);
+    $stmt->execute([$id_adresse, $ID_utilisateur_new]);
 
-    //---------------------------------------------UPDATE RESEAUX -----------------------------------------------------------
+
+    //---------------------------------------------INSERT RESEAUX -----------------------------------------------------------
     $lien_linkedin = $_POST['lien_linkedin'];
     $lien_facebook = $_POST['lien_facebook'];
     $lien_indeed = $_POST['lien_indeed'];
     $lien_perso = $_POST['lien_perso'];
 
-    $sql = "UPDATE reseaux SET lien_facebook = ?, lien_indeed = ?, lien_linkedin = ?, lien_perso = ? WHERE ID_reseau = ?";
+    $sql = "INSERT INTO `reseaux`(`lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso`, `ID_utilisateur`) VALUES (?,?,?,?,?)";
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$lien_facebook, $lien_indeed, $lien_linkedin, $lien_perso, $ID_reseau]);
+    $stmt->execute([$lien_facebook, $lien_indeed, $lien_linkedin, $lien_perso, $ID_utilisateur_new]);
 
+    //---------------------------------------------INSERT ROLE -----------------------------------------------------------
 
-
-
-    //------------------------------------------------------INFO TABLE UTILISATEURS-------------------------------------------------------------------
-    $nom_utilisateur = $_POST['nom_utilisateur'];
-    $password = $_POST['password'];
-    $prenom = $_POST['prenom'];
-    $mail = $_POST['mail'];
-    $date_naissance = $_POST['date_naissance'];
-
-    $sql = "UPDATE utilisateur SET nom_utilisateur=?, password=?, prenom=?,mail=?, date_naissance=? WHERE ID_utilisateur = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $ID_utilisateur_mod]);
-
+    if ($role == 'admin') {
+        $sql = "INSERT INTO `admin` (`ID_utilisateur`) VALUES (?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_new]);
+    }
+    if ($role == 'pilote') {
+        $sql = "INSERT INTO `pilote` (`ID_utilisateur`) VALUES (?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_new]);
+    }
+    if ($role == 'recruteur') {
+        $sql = "INSERT INTO `recruteur` (`ID_utilisateur`) VALUES (?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_new]);
+    }
+    if ($role == 'etudiant') {
+        $sql = "INSERT INTO `etudiant` (`ID_utilisateur`) VALUES (?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_new]);
+    }
 
 
     header("Location: profil.php");
