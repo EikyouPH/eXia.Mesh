@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 09:19:36
+/* Smarty version 4.3.0, created on 2023-03-28 11:52:58
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64229508277d04_66663537',
+  'unifunc' => 'content_6422b8fa77c1a6_19828161',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b0b9560a959e2b74e564ab9fefe04ecb1a1b1540' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-pilote.tpl',
-      1 => 1679911241,
+      1 => 1679995313,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64229508277d04_66663537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6422b8fa77c1a6_19828161 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 <body>
@@ -33,39 +33,56 @@ function content_64229508277d04_66663537 (Smarty_Internal_Template $_smarty_tpl)
                 <form method="post" autocomplete="off">
                     <label for="nom_utilisateur">Nom</label><br>
                     <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
-"
-                        required><br>
+" required><br>
 
                     <label for="prenom">Prénom</label><br>
                     <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 " required><br>
+
                     <label for="mail">Adresse mail</label><br>
                     <input type="mail" name="mail" id="mail" value="<?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
 " required><br>
+
                     <label for="password">Mot de passe</label><br>
                     <input type="password" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 " required><br>
+
+                    <label for="nom_promo">Promotion</label><br>
+                    <input type="text" name="nom_promo" id="nom_promo" value="<?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
+" required><br>
+
+                    <label for="nom_centre">Centre</label><br>
+                    <input type="text" name="nom_centre" id="nom_centre" value="<?php echo $_smarty_tpl->tpl_vars['nom_centre']->value;?>
+" required><br>
+
                     <label for="date_naissance">Date de naissance</label><br>
                     <input type="date" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 " required><br>
+
                     <label for="numero">N°</label><br>
                     <input type="text" name="numero" id="numero" value="<?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
 " required><br>
+
                     <label for="complement">Complément</label><br>
                     <input type="text" name="complement" id="complement" value="<?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
 "><br>
+
                     <label for="rue">Rue</label><br>
                     <input type="text" name="rue" id="rue" value="<?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
 " required><br>
+
                     <label for="code_postal">Code postal</label><br>
                     <input type="number" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
 " required><br>
+
                     <label for="ville">Ville</label><br>
                     <input type="text" name="ville" id="ville" value="<?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
 " required><br>
+
                     <label for="region">Région</label><br>
                     <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
-" required><br>'
+" required><br>
+
                     <label for="pays">Pays</label><br>
                     <input type="text" name="nom_pays" id="pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
 " placeholder="Votre pays..."><br>

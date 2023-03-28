@@ -7,7 +7,7 @@
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-            Vous êtes Pilote<br><br>
+                Vous êtes Pilote<br><br>
 
                 Nom : {$nom_utilisateur}<br>
                 Prenom : {$prenom}<br>
@@ -79,6 +79,19 @@
         </tr>
     </table>
     <p>
-        Expériences passées
+    <div class="back">
+        <span class="cat" style="text-decoration: underline;">Profil</span>
+
+
+        <div class='column'>
+            {$nom_utilisateur}<br>
+            {$prenom}<br>
+            {$mail}<br>
+            <a class='d' href='profiledit.php?Id=$Id'>Modifier</a>
+        </div>
+        <div class='column' style='text-align: center; font-size: 5rem'>
+            <a href='newprofile.php' style='text-decoration: none; color: #ffffff'>+</a>
+        </div>
+    </div>
     </p>
 </body>

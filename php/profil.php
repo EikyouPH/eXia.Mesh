@@ -3,9 +3,10 @@
 require 'base.php';
 $role = $_SESSION['role'];
 
-$sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = '$_SESSION[ID_utilisateur]'";
-$result = $conn->query($sql);
-$row = $result->fetch(PDO::FETCH_ASSOC);
+$sql = "SELECT `ID_reseau`, `lien_facebook`, `lien_indeed`, `lien_linkedin`, `lien_perso` FROM `reseaux` WHERE ID_utilisateur = ?";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$_SESSION['ID_utilisateur']]);
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 $ID_reseau = $row['ID_reseau'];
 $lien_facebook = $row['lien_facebook'];
 $lien_indeed = $row['lien_indeed'];
@@ -100,7 +101,6 @@ $smarty->assign('titre_onglet', 'Profil');
 $smarty->assign('titre_page', 'Profil');
 
 
-
 // Afficher les templates
 $smarty->display('header.tpl');
 
@@ -109,6 +109,15 @@ if ($role == 'admin') {
 }
 if ($role == 'pilote') {
     $smarty->display('profil-pilote.tpl');
+    $sql = "SELECT ID_utilisateur,nom_utilisateur, prenom, mail FROM utilisateur";
+$result = $conn->query($sql);
+// Assigner les données SQL aux variables Smarty
+foreach ($result as $row) {
+    $ID_utilisateur_etudiant = $row['ID_utilisateur'];
+                $nom_utilisateur = $row['nom_utilisateur'];
+                $prenom = $row['prenom'];
+                $mail = $row['mail'];
+            }
 }
 if ($role == 'etudiant') {
     $smarty->display('profil-etudiant.tpl');
@@ -116,4 +125,5 @@ if ($role == 'etudiant') {
 if ($role == 'recruteur') {
     $smarty->display('profil-recruteur.tpl');
 }
+
 $smarty->display('footer.tpl');
