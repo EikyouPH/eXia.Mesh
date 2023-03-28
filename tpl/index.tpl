@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="manifest" href="../manifest.json">
+<link rel="apple-touch-icon" href="/img/logo152x152.png">
+<meta name="theme-color" content="#0E8388" >
 <body>
    <div class="connexion">
       <div>

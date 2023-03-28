@@ -13,3 +13,4 @@
     </tr>
   </table>
 </footer>
+<script src="/serviceworker.js"></script>
