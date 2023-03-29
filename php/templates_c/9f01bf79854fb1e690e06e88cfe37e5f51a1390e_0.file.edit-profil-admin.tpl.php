@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 02:04:20
+/* Smarty version 4.3.0, created on 2023-03-29 09:09:44
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\edit-profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64238084140a18_74417304',
+  'unifunc' => 'content_6423e438a64e02_82113409',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f01bf79854fb1e690e06e88cfe37e5f51a1390e' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\edit-profil-admin.tpl',
-      1 => 1680048209,
+      1 => 1680050842,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64238084140a18_74417304 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423e438a64e02_82113409 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -160,6 +160,7 @@ function content_64238084140a18_74417304 (Smarty_Internal_Template $_smarty_tpl)
                                     <button href='profil.php' type="submit" name="submit"
                                         id="confirmer">Enregistrer</button>
                                     <button href='profil.php' id="annuler">Annuler</button>
+                                    <button href='profil.php' type="submit" name="delete">Supprimer le compte</button>
                                 </td>
                             </tr>
                         </table>

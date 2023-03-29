@@ -5,18 +5,22 @@ $role = $_GET['role'];
 if ($role == 'admin') {
     $smarty->assign('titre_onglet', 'Création du profil');
     $smarty->assign('titre_page', 'Création du profil Administrateur');
+    $smarty->assign('description', 'Création du profil Administrateur');
 }
 if ($role == 'pilote') {
     $smarty->assign('titre_onglet', 'Création du profil');
     $smarty->assign('titre_page', 'Création du profil Pilote');
+    $smarty->assign('description', 'Création du profil Pilote');
 }
 if ($role == 'recruteur') {
     $smarty->assign('titre_onglet', 'Création du profil');
     $smarty->assign('titre_page', 'Création du profil Recruteur');
+    $smarty->assign('description', 'Création du profil Recruteur');
 }
 if ($role == 'etudiant') {
     $smarty->assign('titre_onglet', 'Création du profil');
     $smarty->assign('titre_page', 'Création du profil Etudiant');
+    $smarty->assign('description', 'Création du profil Etudiant');
 }
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 09:32:43
-  from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\new-profil-etudiant.tpl' */
+/* Smarty version 4.3.0, created on 2023-03-29 09:00:56
+  from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\new-profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6423e99b643a21_72077662',
+  'unifunc' => 'content_6423e228611e07_43914003',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '68aeb5977f6523d4cf2eddda358625c97e45ff94' => 
+    '4116c6056db95cd3acd20164b8385bc8ca802bb7' => 
     array (
-      0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\new-profil-etudiant.tpl',
-      1 => 1680075019,
+      0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\new-profil-admin.tpl',
+      1 => 1680073246,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6423e99b643a21_72077662 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/listes-deroulantes.css">
-<link rel="stylesheet" href="/css/edit.css">
-
+function content_6423e228611e07_43914003 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/edit.css">
+<link rel="stylesheet" href="/css/listes-deroulantes.css">
 
 <body>
     <div class="en cadre">
@@ -45,43 +44,6 @@ function content_6423e99b643a21_72077662 (Smarty_Internal_Template $_smarty_tpl)
 
                         <label for="password">Mot de passe</label><br>
                         <input type="password" name="password" id="password" required><br>
-
-                        <label for="nom_promo">Promotion</label><br>
-                        <input type="nom_promo" name="nom_promo" id="nom_promo" required>
-
-                        <label for="nom_centre">Nom du centre</label><br>
-                        <table type="text" name="nom_centre" id="nom_centre" required><br>
-                            <tr>
-                                <select>
-                                    <option>Strasbourg</option>
-                                    <option>Dijon</option>
-                                    <option>Nancy</option>
-                                    <option>Reims</option>
-                                    <option>Châteauroux</option>
-                                    <option>Orléans</option>
-                                    <option>Nanterre</option>
-                                    <option>La Défense</option>
-                                    <option>Arras</option>
-                                    <option>Lille</option>
-                                    <option>Caen</option>
-                                    <option>Rouen</option>
-                                    <option>Angoulême</option>
-                                    <option>Brest</option>
-                                    <option>La Rochelle</option>
-                                    <option>Le Mans</option>
-                                    <option>Nantes</option>
-                                    <option>Saint Nazaire</option>
-                                    <option>Aix-en-Provence</option>
-                                    <option>Grenoble</option>
-                                    <option>Lyon</option>
-                                    <option>Nice</option>
-                                    <option>Bordeaux</option>
-                                    <option>Montpellier</option>
-                                    <option>PAU</option>
-                                    <option>Toulouse</option>
-                                </select>
-                            </tr>
-                        </table>
 
                         <label for="date_naissance">Date de naissance</label><br>
                         <input type="date" name="date_naissance" id="date_naissance" required><br>
@@ -173,8 +135,9 @@ function content_6423e99b643a21_72077662 (Smarty_Internal_Template $_smarty_tpl)
                             </tr>
                             <tr>
                                 <td class="boutons">
-                                    <button href='profil.php' type="submit" name="submit">Enregistrer</button>
-                                    <button href='profil.php'>Annuler</button>
+                                    <button href='profil.php' type="submit" name="submit"
+                                        id="confirmer">Enregistrer</button>
+                                    <button href='profil.php' id="annuler">Annuler</button>
                                     <button href='profil.php' type="submit" name="delete">Supprimer le compte</button>
                                 </td>
                             </tr>
