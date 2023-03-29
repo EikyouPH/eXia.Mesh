@@ -234,10 +234,53 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->execute([$nom_utilisateur, $password, $prenom, $mail, $date_naissance, $ID_utilisateur_mod]);
 
-
-
-    header("Location: profil.php");
+    header("Location:/php/profil.php");
     exit();
+}
+
+//------------------------------------------------------SUPPRIMER UN UTILISATEURS----------------------------------------------------------------
+
+if (isset($_POST['delete'])) {
+
+    
+    $sql = "DELETE FROM reseaux WHERE ID_utilisateur=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$ID_utilisateur_mod]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($role == 'admin') {
+
+        $sql = "DELETE FROM admin WHERE ID_utilisateur=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_mod]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    } else if ($role == 'pilote') {
+
+        $sql = "DELETE FROM pilote WHERE ID_utilisateur=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_mod]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    } else if ($role == 'etudiant') {
+
+        $sql = "DELETE FROM etudiant WHERE ID_utilisateur=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_mod]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    } else if ($role == 'recruteur') {
+
+        $sql = "DELETE FROM recruteur WHERE ID_utilisateur=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute([$ID_utilisateur_mod]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+    $sql = "DELETE FROM utilisateur WHERE ID_utilisateur=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$ID_utilisateur_mod]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    header("Location:/php/profil.php");
 }
 
 // Afficher les templates

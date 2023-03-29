@@ -113,7 +113,7 @@
                     </tr>
                 </table>
             </td>
-            <button href='profil.tpl' type="submit" name="submit" class="a">Créer</button>
+            <button href='profil.tpl' class="a">Créer</button>
             </form>
         </tr>
     </table>
