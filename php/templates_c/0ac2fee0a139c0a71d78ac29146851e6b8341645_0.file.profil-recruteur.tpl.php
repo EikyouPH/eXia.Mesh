@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-27 10:51:46
+/* Smarty version 4.3.0, created on 2023-03-29 09:48:17
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil-recruteur.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6421592202cfc2_27626800',
+  'unifunc' => 'content_6423ed41ee0046_30877486',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0ac2fee0a139c0a71d78ac29146851e6b8341645' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil-recruteur.tpl',
-      1 => 1679907104,
+      1 => 1680075348,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6421592202cfc2_27626800 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423ed41ee0046_30877486 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/profil.css">
 
 <body>
@@ -111,12 +111,16 @@ function content_6421592202cfc2_27626800 (Smarty_Internal_Template $_smarty_tpl)
                             </table>
                         </td>
                     </tr>
+                    <table class="lien">
+                        <tr>
+                            <td>
+                                <a href="/php/entreprise.php">Voir entreprise</a>
+                            </td>
+                        </tr>
+                    </table>
                 </table>
             </td>
         </tr>
     </table>
-    <p>
-        Expériences passées
-    </p>
 </body><?php }
 }

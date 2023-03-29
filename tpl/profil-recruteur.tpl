@@ -72,11 +72,15 @@
                             </table>
                         </td>
                     </tr>
+                    <table class="lien">
+                        <tr>
+                            <td>
+                                <a href="/php/entreprise.php">Voir entreprise</a>
+                            </td>
+                        </tr>
+                    </table>
                 </table>
             </td>
         </tr>
     </table>
-    <p>
-        Expériences passées
-    </p>
 </body>

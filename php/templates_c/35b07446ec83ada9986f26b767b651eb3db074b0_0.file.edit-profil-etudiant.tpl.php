@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 02:14:41
+/* Smarty version 4.3.0, created on 2023-03-29 09:06:20
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642382f1361495_72517847',
+  'unifunc' => 'content_6423e36c9d1979_32707264',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35b07446ec83ada9986f26b767b651eb3db074b0' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-etudiant.tpl',
-      1 => 1680048664,
+      1 => 1680073556,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642382f1361495_72517847 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423e36c9d1979_32707264 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -54,7 +54,6 @@ function content_642382f1361495_72517847 (Smarty_Internal_Template $_smarty_tpl)
                         <input type="text" name="nom_promo" id="nom_promo" value="<?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
 " required><br>
 
-                        <fieldset>
                             <label for="nom_centre">Centre</label><br>
                             <table type="text" name="nom_centre" id="nom_centre" required><br>
                                 <tr>
@@ -88,7 +87,6 @@ function content_642382f1361495_72517847 (Smarty_Internal_Template $_smarty_tpl)
                                     </select>
                                 </tr>
                             </table>
-                        </fieldset>
 
                         <label for="date_naissance">Date de naissance</label><br>
                         <input type="date" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
@@ -200,6 +198,7 @@ function content_642382f1361495_72517847 (Smarty_Internal_Template $_smarty_tpl)
                                     <button href='profil.php' type="submit" name="submit"
                                         id="confirmer">Enregistrer</button>
                                     <button href='profil.php' id="annuler">Annuler</button>
+                                    <button href='profil.php' type="submit" name="delete">Supprimer le compte</button>
                                 </td>
                             </tr>
                         </table>

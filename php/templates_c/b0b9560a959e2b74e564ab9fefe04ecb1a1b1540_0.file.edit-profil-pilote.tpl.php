@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 02:10:30
+/* Smarty version 4.3.0, created on 2023-03-29 09:10:31
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642381f6ac1667_49226841',
+  'unifunc' => 'content_6423e467c4fcf3_40928605',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b0b9560a959e2b74e564ab9fefe04ecb1a1b1540' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-pilote.tpl',
-      1 => 1680047439,
+      1 => 1680073556,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642381f6ac1667_49226841 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423e467c4fcf3_40928605 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -49,42 +49,39 @@ function content_642381f6ac1667_49226841 (Smarty_Internal_Template $_smarty_tpl)
                         <label for="nom_promo">Pilote de promotion</label><br>
                         <input type="text" name="nom_promo" id="nom_promo" value="<?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
 " required><br>
-
-                        <fieldset>
-                            <label for="nom_centre">Centre</label><br>
-                            <table type="text" name="nom_centre" id="nom_centre" required><br>
-                                <tr>
-                                    <select>
-                                        <option>Strasbourg</option>
-                                        <option>Dijon</option>
-                                        <option>Nancy</option>
-                                        <option>Reims</option>
-                                        <option>Châteauroux</option>
-                                        <option>Orléans</option>
-                                        <option>Nanterre</option>
-                                        <option>La Défense</option>
-                                        <option>Arras</option>
-                                        <option>Lille</option>
-                                        <option>Caen</option>
-                                        <option>Rouen</option>
-                                        <option>Angoulême</option>
-                                        <option>Brest</option>
-                                        <option>La Rochelle</option>
-                                        <option>Le Mans</option>
-                                        <option>Nantes</option>
-                                        <option>Saint Nazaire</option>
-                                        <option>Aix-en-Provence</option>
-                                        <option>Grenoble</option>
-                                        <option>Lyon</option>
-                                        <option>Nice</option>
-                                        <option>Bordeaux</option>
-                                        <option>Montpellier</option>
-                                        <option>PAU</option>
-                                        <option>Toulouse</option>
-                                    </select>
-                                </tr>
-                            </table>
-                        </fieldset>
+                        <label for="nom_centre">Centre</label><br>
+                        <table type="text" name="nom_centre" id="nom_centre" required><br>
+                            <tr>
+                                <select>
+                                    <option>Strasbourg</option>
+                                    <option>Dijon</option>
+                                    <option>Nancy</option>
+                                    <option>Reims</option>
+                                    <option>Châteauroux</option>
+                                    <option>Orléans</option>
+                                    <option>Nanterre</option>
+                                    <option>La Défense</option>
+                                    <option>Arras</option>
+                                    <option>Lille</option>
+                                    <option>Caen</option>
+                                    <option>Rouen</option>
+                                    <option>Angoulême</option>
+                                    <option>Brest</option>
+                                    <option>La Rochelle</option>
+                                    <option>Le Mans</option>
+                                    <option>Nantes</option>
+                                    <option>Saint Nazaire</option>
+                                    <option>Aix-en-Provence</option>
+                                    <option>Grenoble</option>
+                                    <option>Lyon</option>
+                                    <option>Nice</option>
+                                    <option>Bordeaux</option>
+                                    <option>Montpellier</option>
+                                    <option>PAU</option>
+                                    <option>Toulouse</option>
+                                </select>
+                            </tr>
+                        </table>
 
                         <label for="password">Mot de passe</label><br>
                         <input type="password" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
@@ -200,6 +197,7 @@ function content_642381f6ac1667_49226841 (Smarty_Internal_Template $_smarty_tpl)
                                     <button href='profil.php' type="submit" name="submit"
                                         id="confirmer">Enregistrer</button>
                                     <button href='profil.php' id="annuler">Annuler</button>
+                                    <button href='profil.php' type="submit" name="delete">Supprimer le compte</button>
                                 </td>
                             </tr>
                         </table>
