@@ -10,3 +10,10 @@
     text-align: justify;
     vertical-align: top;
 }
+
+.table_stage {
+    transform: scale(0.9);
+    border: 2px solid var(--clair);
+    border-radius: 10px;
+    padding: 1%;
+}
