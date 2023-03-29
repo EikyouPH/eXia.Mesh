@@ -124,3 +124,7 @@ button:hover {
     border-radius: 5px;
     text-decoration: none;
 }
+
+p{
+    text-align: justify;
+}
