@@ -1,0 +1,18 @@
+.table_stage {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    text-align: justify;
+    margin: 5em auto 5em auto;
+    border-spacing: 2em;
+    border: 2px solid #0E8388;
+    border-radius: 10px;
+}
+
+#description {
+    margin: 0% 5% 0% 5%;
+}
+
+.lien {
+    margin-left: 80%;
+}

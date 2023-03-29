@@ -1,0 +1,17 @@
+{
+    "name": "eXia.Mesh",
+    "short_name": "eXia.Mesh",
+    "start_url": "/index.php",
+    "display": "standalone",
+    "background_color": "#7ab0b3",
+    "theme_color": "#69bfc4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "img/logo512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

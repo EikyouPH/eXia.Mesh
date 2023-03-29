@@ -1,0 +1,19 @@
+.page-accueil {
+    margin: 1em auto 1em auto;
+    border-spacing: 2vw;
+}
+
+.cadre{
+    width: 40%;
+    padding: 1%;
+    margin: 3%;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.table_stage {
+    transform: scale(0.9);
+    border: 2px solid var(--clair);
+    border-radius: 10px;
+    padding: 1%;
+}

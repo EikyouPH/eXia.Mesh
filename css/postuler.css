@@ -1,0 +1,31 @@
+#postuler {
+    margin: 2% 5% 5% 5%;
+}
+
+#lettre-motivation {
+    width: 10ch;
+    /* Taille initiale du champ de formulaire */
+}
+
+#lettre-motivation:focus {
+    width: auto;
+    max-width: none;
+    /* Ajuste la taille du champ de formulaire en fonction de la saisie de l'utilisateur */
+}
+
+form input {
+    width: 40%;
+    margin: 1%;
+    font-size: 5%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #645979;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.lien {
+    margin: 0 auto 2% 70%;
+}

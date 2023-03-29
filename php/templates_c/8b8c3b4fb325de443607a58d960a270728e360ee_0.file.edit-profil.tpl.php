@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 16:28:51
+/* Smarty version 4.3.0, created on 2023-03-28 21:07:21
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419cd33ee47d8_20469581',
+  'unifunc' => 'content_64233ae9d20c84_60346223',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b8c3b4fb325de443607a58d960a270728e360ee' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil.tpl',
-      1 => 1679412522,
+      1 => 1680006244,
       2 => 'file',
     ),
   ),
@@ -20,122 +20,168 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419cd33ee47d8_20469581 (Smarty_Internal_Template $_smarty_tpl) {
-?><link rel="stylesheet" href="/css/style-edit.css">
+function content_64233ae9d20c84_60346223 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="/css/edit.css">
+<link rel="stylesheet" href="/css/listes-deroulantes.css">
+<?php echo '<script'; ?>
+ src="/app.js"><?php echo '</script'; ?>
+>
 
 <body>
-    <table class="page-profil">
-        <tr>
-            <td class="personne">
-                <img src="/img/personne.png" alt="Image du compte">
-            </td>
-            <td>
-                <form method="post">
-                    <label for="nom_utilisateur">Nom</label><br>
-                    <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
+    <div class="en cadre">
+        <table class="grand">
+            <tr>
+                <td id="personne">
+                    <img src="/img/personne.png" alt="Image du compte">
+                </td>
+                <td class="infos">
+                    <form method="post" autocomplete="off">
+                        <label for="nom_utilisateur">Nom</label><br>
+                        <input type="text" name="nom_utilisateur" id="nom_utilisateur" value="<?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 "
-                        required><br>
+                            required><br>
 
-                    <label for="prenom">Prénom</label><br>
-                    <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
+                        <label for="prenom">Prénom</label><br>
+                        <input type="text" name="prenom" id="prenom" value="<?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 " required><br>
-                    <label for="mail">Adresse mail</label><br>
-                    <input type="text" name="mail" id="mail" value="<?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
+
+                        <label for="mail">Adresse mail</label><br>
+                        <input type="mail" name="mail" id="mail" value="<?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
 " required><br>
-                    <label for="password">Mot de passe</label><br>
-                    <input type="text" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
+
+                        <label for="password">Mot de passe</label><br>
+                        <input type="password" name="password" id="password" value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 " required><br>
-                    <label for="date_naissance">Date de naissance</label><br>
-                    <input type="text" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
-" required><br>
+
+                        <label for="date_naissance">Date de naissance</label><br>
+                        <input type="date" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
+"
+                            required><br>
+                </td>
+                <td class="adresse">
                     <label for="numero">N°</label><br>
                     <input type="text" name="numero" id="numero" value="<?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
 " required><br>
+
                     <label for="complement">Complément</label><br>
                     <input type="text" name="complement" id="complement" value="<?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
-" required><br>
+"><br>
+
                     <label for="rue">Rue</label><br>
                     <input type="text" name="rue" id="rue" value="<?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
 " required><br>
+
                     <label for="code_postal">Code postal</label><br>
-                    <input type="text" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+                    <input type="number" name="code_postal" id="code_postal" value="<?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
 " required><br>
+
                     <label for="ville">Ville</label><br>
                     <input type="text" name="ville" id="ville" value="<?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
 " required><br>
+
                     <label for="region">Région</label><br>
                     <input type="text" name="region" id="region" value="<?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 " required><br>
-                    <label for="nom_pays">Pays</label><br>
-                    <input type="text" name="nom_pays" id="nom_pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
-" required><br>
-            </td>
-            <td id="td-reseaux">
-                <table class="reseaux">
+
+                    <label for="pays">Pays</label><br>
+                    <input type="text" name="nom_pays" id="pays" value="<?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
+" placeholder="Votre pays..."><br>
+                    <ul class="list"></ul>
+                </td>
+                <td id="td-reseaux">
+                    <table class="reseaux">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="icone">
+                                            <img src="/img/linkedin.png" alt="">
+                                        </td>
+                                        <td>
+                                            <label for="Linkedin">Lien Linkedin</label><br>
+                                            <input type="url" name="lien_linkedin" id="lien_linkedin"
+                                                value="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
+"><br>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="icone">
+                                            <img src="/img/indeed.png" alt="">
+                                        </td>
+                                        <td>
+                                            <label for="Indeed">Lien Indeed</label><br>
+                                            <input type="url" name="lien_indeed" id="lien_indeed"
+                                                value="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
+"><br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="icone">
+                                            <img src="/img/facebook.png" alt="">
+                                        </td>
+                                        <td>
+                                            <label for="Facebook">Lien Facebook</label><br>
+                                            <input type="url" name="lien_facebook" id="lien_facebook"
+                                                value="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
+"><br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td class="icone">
+                                            <img src="/img/site.png" alt="">
+                                        </td>
+                                        <td>
+                                            <label for="perso">Lien Site Personnel</label><br>
+                                            <input type="url" name="lien_perso" id="lien_perso"
+                                                value="<?php echo $_smarty_tpl->tpl_vars['lien_perso']->value;?>
+"><br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <table class=lien>
                     <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td class="icone">
-                                        <img src="/img/linkedin.png" alt="">
-                                    </td>
-                                    <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
-                                    </td>
-                                </tr>
-                            </table>
+                        <td class="lien">
+                            <button href='profil.php' type="submit" name="submit">Enregistrer</button>
                         </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td class="icone">
-                                        <img src="/img/indeed.png" alt="">
-                                    </td>
-                                    <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td class="icone">
-                                        <img src="/img/facebook.png" alt="">
-                                    </td>
-                                    <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td class="icone">
-                                        <img src="/img/site.png" alt="">
-                                    </td>
-                                    <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site
-                                            personnel</a>
-                                    </td>
-                                </tr>
-                            </table>
+                        <td class="annuler">
+                            <a href='profil.php'>Annuler</a>
                         </td>
                     </tr>
                 </table>
-                <button type="submit" name="submit"class="a">Enregistrer</button>
-            </td>
-        </tr>
-    </table>
-    </td>
-    </tr>
-    </table>
+                </form>
+            </tr>
+        </table>
+    </div>
 
     <p>
         Expériences passées
     </p>
+    <!-- Script -->
+    <?php echo '<script'; ?>
+ src="/scripts/liste-pays.js"><?php echo '</script'; ?>
+>
 </body><?php }
 }

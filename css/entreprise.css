@@ -1,0 +1,16 @@
+#image{
+    width: 100%;
+}
+
+#image img{
+    vertical-align: middle;
+}
+
+#infos{
+    display: flex;
+    padding: 0% 20% 0% 20%;
+}
+
+.cadre{
+    padding: 2%;
+}

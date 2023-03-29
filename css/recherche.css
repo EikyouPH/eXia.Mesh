@@ -1,0 +1,92 @@
+#recherche {
+    justify-content: center;
+    margin: 1% auto 0 auto;
+    width: 80%;
+}
+
+#barre {
+    margin: 1% auto 0 auto;
+    width: 100%;
+}
+
+input[type="search"] {
+    margin: 1%;
+    font-size: 125%;
+    padding: 1%;
+    border: 0.5px solid #a4c4bc;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e1f0ed;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+}
+
+#choix {
+    font-size: 125%;
+}
+
+h2 {
+    color: var(--fonce);
+    margin: 2% 10% 0 5%;
+}
+
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 10% 2% 5%;
+    background-color: #c7eeec;
+    border: solid 2px var(--fonce);
+    border-radius: 10px;
+}
+
+.wishlist a {
+    text-decoration: none;
+    color: black;
+}
+
+.resultat {
+    margin: 2% 5% 2% 5%;
+    border: 2px solid var(--clair);
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 2% 1% 2%;
+}
+
+.entreprise {
+    margin-right: 5%;
+    text-align: right;
+    font-weight: bold;
+    color: gray;
+}
+
+.contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    width: 120%;
+    padding: 0 2% 2% 2%;
+}
+
+.contenu img {
+    width: 15%;
+    margin-left: 8%;
+}
+
+.contenu img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.titre {
+    color: var(--clair);
+    font-weight: bold;
+    font-size: 130%;
+}

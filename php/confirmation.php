@@ -10,6 +10,7 @@ $smarty->setTemplateDir('../tpl/');
 // Assigner des variables
 $smarty->assign('titre_onglet', 'Confirmation');
 $smarty->assign('titre_page', 'Confirmation');
+$smarty->assign('description', 'Page de confirmation');
 // Afficher les templates
 $smarty->display('header.tpl');
 $smarty->display('confirmation.tpl');

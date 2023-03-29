@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-21 14:25:11
+/* Smarty version 4.3.0, created on 2023-03-25 09:55:21
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\profil.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6419b037d541a2_07001598',
+  'unifunc' => 'content_641eb6f930a5b4_29841046',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64dc7513743dddd17d1351347ab8e7247cc9727c' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\profil.tpl',
-      1 => 1679404897,
+      1 => 1679673247,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641eb6f930a5b4_29841046 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/style-profil.css">
+
 <body>
     <table class="page-profil">
         <tr>
@@ -29,20 +30,19 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="/img/personne.png" alt="Image du compte">
             </td>
             <td>
-            Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
+                Nom : <?php echo $_smarty_tpl->tpl_vars['nom_utilisateur']->value;?>
 <br>
-            Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
+                Prenom : <?php echo $_smarty_tpl->tpl_vars['prenom']->value;?>
 <br>
-            Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
+                Adresse mail : <?php echo $_smarty_tpl->tpl_vars['mail']->value;?>
 <br>
-            Password : <?php echo $_smarty_tpl->tpl_vars['password']->value;?>
+                Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
 <br>
-            Date de naissance : <?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
-<br>
-            Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
+                Adresse : <?php echo $_smarty_tpl->tpl_vars['numero']->value;?>
  <?php echo $_smarty_tpl->tpl_vars['complement']->value;?>
  <?php echo $_smarty_tpl->tpl_vars['rue']->value;?>
-,<br> <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
+,<br>
+                <?php echo $_smarty_tpl->tpl_vars['code_postal']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['ville']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['region']->value;?>
 , <?php echo $_smarty_tpl->tpl_vars['pays']->value;?>
@@ -50,6 +50,7 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
             </td>
             <td id="td-reseaux">
                 <table class="reseaux">
+                    <a href="edit_profil.php"><img src="/img/stylo.png" alt="editer" id="crayon" width="40"></a>
                     <tr>
                         <td>
                             <table>
@@ -58,7 +59,8 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/linkedin.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="linkedin" href="bonjourjesuisunlien.linkedin.fr"> LinkedIn</a>
+                                        <a id="linkedin" href="<?php echo $_smarty_tpl->tpl_vars['lien_linkedin']->value;?>
+"> LinkedIn</a>
                                     </td>
                                 </tr>
                             </table>
@@ -70,7 +72,8 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/indeed.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="indeed" href="bonjourjesuisunlien.indeeed.fr"> Indeed</a>
+                                        <a id="indeed" href="<?php echo $_smarty_tpl->tpl_vars['lien_indeed']->value;?>
+"> Indeed</a>
                                     </td>
                                 </tr>
                             </table>
@@ -84,7 +87,8 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/facebook.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="facebook" href="bonjourjesuisunlien.facebook.fr"> Facebook</a>
+                                        <a id="facebook" href="<?php echo $_smarty_tpl->tpl_vars['lien_facebook']->value;?>
+"> Facebook</a>
                                     </td>
                                 </tr>
                             </table>
@@ -96,7 +100,9 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
                                         <img src="/img/site.png" alt="">
                                     </td>
                                     <td>
-                                        <a id="site-perso" href="bonjourjesuisunlien.site-personnel.fr"> Site personnel</a>
+                                        <a id="site-perso" href="<?php echo $_smarty_tpl->tpl_vars['lien_perso']->value;?>
+"> Site
+                                            personnel</a>
                                     </td>
                                 </tr>
                             </table>
@@ -104,17 +110,10 @@ function content_6419b037d541a2_07001598 (Smarty_Internal_Template $_smarty_tpl)
                     </tr>
                 </table>
             </td>
-
         </tr>
-
     </table>
-    </td>
-    </tr>
-    </table>
-
     <p>
         Expériences passées
     </p>
-    <a href="edit_profil.php"><img src="/img/stylo.png" alt="editer" id="img-edit" width="40"></a>
 </body><?php }
 }

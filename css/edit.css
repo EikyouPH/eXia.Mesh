@@ -1,0 +1,66 @@
+#td-reseaux {
+    width: 40%;
+}
+
+#personne {
+    justify-content: center;
+    width: 10%;
+}
+
+#personne img {
+    width: 100%;
+}
+
+input {
+    margin: 1%;
+    font-size: 90%;
+    padding: 2%;
+    border: 0.5px solid #a4c4bc;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e1f0ed;
+    font-family: 'Montserrat', sans-serif;
+    width: 98%;
+}
+
+.infos {
+    margin: 1% 0;
+}
+
+.reseaux {
+    margin: 0 auto 0 auto;
+}
+
+.reseaux input {
+    height: 10%;
+}
+
+.icone {
+    width: 12%;
+}
+
+.reseaux img {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.boutons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 20% 0% 20%;
+}
+
+select {
+    font-size: 90%;
+    padding: 2%;
+    border: 0.5px solid #a4c4bc;
+    outline: none;
+    border-radius: 5px;
+    background-color: #e1f0ed;
+    font-family: 'Montserrat', sans-serif;
+    width: 98%;
+}
+
+option {
+    font-family: 'Montserrat', sans-serif;
+}

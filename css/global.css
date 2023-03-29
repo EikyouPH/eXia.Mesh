@@ -1,0 +1,141 @@
+/* Couleurs princiaples */
+:root {
+    --tresclair: #CBE4DE;
+    --clair: #0E8388;
+    --fonce: #2E4F4F;
+    --tresfonce: #2C3333;
+}
+
+
+/* Corps de la page */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CBE4DE;
+    min-width: 700px;
+}
+
+
+/* En-tête */
+.header-global {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.header-global h1 {
+    font-size: 2em;
+    color: #09494b;
+}
+
+.header-global img {
+    width: 100px;
+}
+
+.header-global img:hover {
+    transition-duration: 0.3s;
+    opacity: 50%;
+}
+
+
+/* Barre de navigation */
+.bandeau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E8388;
+    padding: 1em;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 3px solid #2E4F4F;
+}
+
+.bandeau a {
+    font-size: 100%;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bandeau a:hover {
+    color: black;
+    background-color: #CBE4DE;
+    transition-duration: 0.3s;
+}
+
+
+/* Lien sous forme de bouton */
+.lien td {
+    text-align: center;
+    border: 2px solid var(--clair);
+    padding: 1em;
+}
+
+.lien td:hover {
+    box-shadow: #5b838382 3px 3px 10px;
+    transition-duration: 0.3s;
+}
+
+.lien td:hover {
+    transform: scale(1.025)
+}
+
+
+/* Liens */
+a {
+    color: var(--fonce);
+    text-decoration: none;
+}
+
+/* Encadré */
+.en {
+    width: 90%;
+    margin: 1% auto 1% auto;
+}
+
+.cadre {
+    padding: 2%;
+    border: 2px solid var(--clair);
+    border-radius: 10px;
+}
+
+
+/* Bouton confirmation */
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    border: 2px solid #0E8388;
+    padding: 2% 1%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a5d4d1;
+    transition-duration: 0.3s;
+    border: none;
+    padding: 1% 2%;
+    font-size: 100%;
+    background-color: #cbe4de;
+    border: 2px solid #0E8388;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+}
+
+h2 {
+    color: var(--fonce);
+    font-weight: 800;
+}
+
+h3 {
+    color: var(--fonce);
+    font-weight: 500;
+}

@@ -1,0 +1,82 @@
+:root {
+    --tresclair: #CBE4DE;
+    --clair: #669ea0;
+    --fonce: #2E4F4F;
+    --tresfonce: #2C3333;
+}
+
+
+.page-profil {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    text-align: justify;
+    margin: 5em 10% 5em 10%;
+    border-spacing: 2em;
+    border: 2px solid var(--clair);
+    border-radius: 10px;
+    position: relative;
+}
+
+.reseaux {
+    font-size: 0.7em;
+    border-spacing: none;
+    padding: none;
+    margin-left: 30%;
+    position: relative;
+}
+
+.reseaux img {
+    width: 3em;
+}
+
+.reseaux a {
+    text-decoration: none;
+}
+
+.reseaux .icone {
+    width: 0;
+}
+
+.page-profil .personne {
+    justify-content: center;
+    width: 30%;
+    min-width: 5em;
+}
+
+
+.personne img {
+    width: 100%;
+}
+
+#crayon {
+    width: 3%;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
+
+.cat {
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .column {
+    width: 18%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid var(--clair);
+    margin-left: 17px;
+    margin-bottom: 20px;
+  }
