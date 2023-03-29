@@ -24,7 +24,17 @@
                         <input type="password" name="password" id="password" required><br>
 
                         <label for="nom_promo">Promotion</label><br>
-                        <input type="nom_promo" name="nom_promo" id="nom_promo" required>
+                        <table type="text" name="nom_centre" id="nom_centre" required><br>
+                            <tr>
+                                <select>
+                                    <option>A1</option>
+                                    <option>A2</option>
+                                    <option>A3</option>
+                                    <option>A4</option>
+                                    <option>A5</option>
+                                </select>
+                            </tr>
+                        </table>
 
                         <label for="nom_centre">Nom du centre</label><br>
                         <table type="text" name="nom_centre" id="nom_centre" required><br>

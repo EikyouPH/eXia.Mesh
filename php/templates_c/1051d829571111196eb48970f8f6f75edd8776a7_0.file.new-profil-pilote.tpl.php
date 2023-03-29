@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 09:30:59
+/* Smarty version 4.3.0, created on 2023-03-29 10:37:42
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\new-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6423e9338afc76_76608543',
+  'unifunc' => 'content_6423f8d64ba533_68647820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1051d829571111196eb48970f8f6f75edd8776a7' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\new-profil-pilote.tpl',
-      1 => 1680075037,
+      1 => 1680079037,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6423e9338afc76_76608543 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423f8d64ba533_68647820 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -46,7 +46,17 @@ function content_6423e9338afc76_76608543 (Smarty_Internal_Template $_smarty_tpl)
                 <input type="password" name="password" id="password" required><br>
 
                 <label for="nom_promo">Promotion</label><br>
-                <input type="nom_promo" name="nom_promo" id="nom_promo" required>
+                        <table type="text" name="nom_centre" id="nom_centre" required><br>
+                            <tr>
+                                <select>
+                                    <option>A1</option>
+                                    <option>A2</option>
+                                    <option>A3</option>
+                                    <option>A4</option>
+                                    <option>A5</option>
+                                </select>
+                            </tr>
+                        </table>
 
                 <label for="nom_centre">Nom du centre</label><br>
                 <table type="text" name="nom_centre" id="nom_centre" required><br>

@@ -20,8 +20,19 @@
                         <label for="mail">Adresse mail</label><br>
                         <input type="mail" name="mail" id="mail" value="{$mail}" required><br>
 
-                        <label for="nom_promo">Pilote de promotion</label><br>
-                        <input type="text" name="nom_promo" id="nom_promo" value="{$nom_promo}" required><br>
+                        <label for="nom_promo">Promotion</label><br>
+                        <table type="text" name="nom_centre" id="nom_centre" required><br>
+                            <tr>
+                                <select>
+                                    <option>A1</option>
+                                    <option>A2</option>
+                                    <option>A3</option>
+                                    <option>A4</option>
+                                    <option>A5</option>
+                                </select>
+                            </tr>
+                        </table>
+                        
                         <label for="nom_centre">Centre</label><br>
                         <table type="text" name="nom_centre" id="nom_centre" required><br>
                             <tr>
