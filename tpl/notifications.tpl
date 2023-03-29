@@ -13,19 +13,16 @@
                         </div>
                         <div class="notification-content">
                             <a href="notifications.php" target="_blank">
-                                <div class="notification-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Sed
-                                    euismod,
-                                    nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit
-                                    amet
-                                    nisl.
-                                    Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam
-                                    nisl
-                                    nisl
-                                    sit
-                                    amet nisl.</div>
+                                <div class="notification-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sit
+                                        amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet
+                                        nisl. Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget
+                                        aliquam nisl nisl sit amet nisl.
+                                    </p>
+                                </div>
                                 <div class="notification-link"><a href="#"><img src="/img/fleche-droite.svg"
-                                            alt="Fleche vers la droite"></a></div>
+                                            alt="Fleche vers la droite"></a>
+                                </div>
                         </div>
                     </div>
                 </a>
@@ -36,13 +33,13 @@
                         <div class="notification-date">Date</div>
                     </div>
                     <div class="notification-content">
-                        <div class="notification-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            euismod,
-                            nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet
-                            nisl.
-                            Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl
-                            sit
-                            amet nisl.</div>
+                        <div class="notification-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sit
+                                amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet
+                                nisl. Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget
+                                aliquam nisl nisl sit amet nisl.
+                            </p>
+                        </div>
                         <div class="notification-link"><a href="#"><a href="#"><img src="/img/fleche-droite.svg"
                                         alt="Fleche vers la droite"></a></a></div>
                     </div>
@@ -54,13 +51,13 @@
                         <div class="notification-date">Date</div>
                     </div>
                     <div class="notification-content">
-                        <div class="notification-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            euismod,
-                            nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet
-                            nisl.
-                            Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl
-                            sit
-                            amet nisl.</div>
+                        <div class="notification-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl sit
+                                amet ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet
+                                nisl. Sed euismod, nisl sit amet ultricies lacinia, nisl nisl aliquam nisl, eget
+                                aliquam nisl nisl sit amet nisl.
+                            </p>
+                        </div>
                         <div class="notification-link"><a href="#"><img src="/img/fleche-droite.svg"
                                     alt="Fleche vers la droite"></a><a href="#">
                         </div>
