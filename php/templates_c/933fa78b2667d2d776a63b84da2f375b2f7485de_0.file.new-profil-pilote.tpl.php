@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 01:09:31
+/* Smarty version 4.3.0, created on 2023-03-29 08:55:31
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\new-profil-pilote.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642373ab7fc2f6_62651497',
+  'unifunc' => 'content_6423e0e3ca8794_58129240',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '933fa78b2667d2d776a63b84da2f375b2f7485de' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\new-profil-pilote.tpl',
-      1 => 1680044867,
+      1 => 1680048985,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642373ab7fc2f6_62651497 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423e0e3ca8794_58129240 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -170,7 +170,7 @@ function content_642373ab7fc2f6_62651497 (Smarty_Internal_Template $_smarty_tpl)
                     </tr>
                 </table>
             </td>
-            <button href='profil.tpl' type="submit" name="submit" class="a">Créer</button>
+            <button href='profil.tpl' class="a">Créer</button>
             </form>
         </tr>
     </table>

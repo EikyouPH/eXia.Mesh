@@ -248,7 +248,7 @@ if ($role == 'pilote') {
         echo "</div>";
     }
     echo "<div class='column' style='text-align: center; font-size: 5rem'>";
-    echo "<a href='new_profile.php' style='text-decoration: none; color: #669ea0'>+</a>";
+    echo "<a href='new_profile.php?role=etudiant' style='text-decoration: none; color: #669ea0'>+</a>";
     echo "</div>";
     echo "</div>";
 }
