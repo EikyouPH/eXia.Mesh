@@ -1,0 +1,66 @@
+:root {
+    --tresclair: #CBE4DE;
+    --clair: #0E8388;
+    --fonce: #2E4F4F;
+    --tresfonce: #2C3333;
+}
+
+
+h2 {
+    margin: 2% 10% 0 5%;
+}
+
+#notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 2% auto 0 auto;
+    border: solid 2px var(--fonce);
+    border-radius: 10px;
+}
+
+#notification a {
+    text-decoration: none;
+    color: black;
+}
+
+#notification hr {
+    width: 70%;
+    color: lightgrey;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 2% 1% 2%;
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 2% 2%;
+}
+
+.notification-content img {
+    width: 15%;
+    margin-left: 70%;
+}
+
+.notification-content img:hover {
+    scale: 1.1;
+    transition-duration: 0.3s;
+}
+
+.notification-title {
+    color : var(--fonce);
+    font-weight: bold;
+}
+
+.notification-date {
+    font-weight: bold;
+    color: blakc;
+}
