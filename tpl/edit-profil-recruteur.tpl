@@ -119,13 +119,19 @@
                                     </table>
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="boutons">
+                                    <button href='profil.php' type="submit" name="submit"
+                                        id="confirmer">Enregistrer</button>
+                                    <button href='profil.php' id="annuler">Annuler</button>
+                                </td>
+                            </tr>
                         </table>
                     </td>
-                    <button href='profil.php' type="submit" name="submit">Enregistrer</button>
-                    <button href='profil.php'> Annuler</button>
                 </form>
             </tr>
         </table>
     </div>
     <script src="/scripts/liste-pays.js"></script>
+</body>
 </body>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-28 23:46:30
+/* Smarty version 4.3.0, created on 2023-03-29 02:03:58
   from 'C:\Users\alani\OneDrive - Association Cesi Viacesi mail\Documents\CESI\2 - Deuxièrme année\4- Web\Projet\Site web\Projet-Web\tpl\edit-profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642360367cd3d3_53926493',
+  'unifunc' => 'content_6423806e126b65_39956755',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e00063adfab766d75945a9e5e74d6c753bb997d' => 
     array (
       0 => 'C:\\Users\\alani\\OneDrive - Association Cesi Viacesi mail\\Documents\\CESI\\2 - Deuxièrme année\\4- Web\\Projet\\Site web\\Projet-Web\\tpl\\edit-profil-etudiant.tpl',
-      1 => 1680039987,
+      1 => 1680048193,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642360367cd3d3_53926493 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423806e126b65_39956755 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -54,9 +54,41 @@ function content_642360367cd3d3_53926493 (Smarty_Internal_Template $_smarty_tpl)
                         <input type="text" name="nom_promo" id="nom_promo" value="<?php echo $_smarty_tpl->tpl_vars['nom_promo']->value;?>
 " required><br>
 
-                        <label for="nom_centre">Nom du centre</label><br>
-                        <input type="text" name="nom_centre" id="nom_centre" value="<?php echo $_smarty_tpl->tpl_vars['nom_centre']->value;?>
-" required><br>
+                        <fieldset>
+                            <label for="nom_centre">Centre</label><br>
+                            <table type="text" name="nom_centre" id="nom_centre" required><br>
+                                <tr>
+                                    <select>
+                                        <option>Strasbourg</option>
+                                        <option>Dijon</option>
+                                        <option>Nancy</option>
+                                        <option>Reims</option>
+                                        <option>Châteauroux</option>
+                                        <option>Orléans</option>
+                                        <option>Nanterre</option>
+                                        <option>La Défense</option>
+                                        <option>Arras</option>
+                                        <option>Lille</option>
+                                        <option>Caen</option>
+                                        <option>Rouen</option>
+                                        <option>Angoulême</option>
+                                        <option>Brest</option>
+                                        <option>La Rochelle</option>
+                                        <option>Le Mans</option>
+                                        <option>Nantes</option>
+                                        <option>Saint Nazaire</option>
+                                        <option>Aix-en-Provence</option>
+                                        <option>Grenoble</option>
+                                        <option>Lyon</option>
+                                        <option>Nice</option>
+                                        <option>Bordeaux</option>
+                                        <option>Montpellier</option>
+                                        <option>PAU</option>
+                                        <option>Toulouse</option>
+                                    </select>
+                                </tr>
+                            </table>
+                        </fieldset>
 
                         <label for="date_naissance">Date de naissance</label><br>
                         <input type="date" name="date_naissance" id="date_naissance" value="<?php echo $_smarty_tpl->tpl_vars['date_naissance']->value;?>
@@ -163,10 +195,15 @@ function content_642360367cd3d3_53926493 (Smarty_Internal_Template $_smarty_tpl)
                                     </table>
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="boutons">
+                                    <button href='profil.php' type="submit" name="submit"
+                                        id="confirmer">Enregistrer</button>
+                                    <button href='profil.php' id="annuler">Annuler</button>
+                                </td>
+                            </tr>
                         </table>
                     </td>
-                    <button href='profil.php' type="submit" name="submit" class="ok">Enregistrer</button>
-                    <button href='profil.php' class="ok"> Annuler</button>
                 </form>
             </tr>
         </table>

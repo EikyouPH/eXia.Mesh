@@ -1,6 +1,5 @@
 .p-conf {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
     margin: 10%;
     font-size: 300%;
