@@ -187,13 +187,12 @@ if (isset($_POST['submit'])) {
         $stmt = $conn->prepare($sql);
         $stmt->execute([$ID_utilisateur_new, $Id_centre]);
 
-
-
     }
     if ($role == 'recruteur') {
         $sql = "INSERT INTO `recruteur` (`ID_utilisateur`) VALUES (?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$ID_utilisateur_new]);
+
     }
     if ($role == 'etudiant') {
         $nom_centre = $_POST['nom_centre'];

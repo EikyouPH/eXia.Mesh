@@ -167,7 +167,7 @@ if ($role == 'admin') {
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     echo "Recruteur<br>";
     echo "<div class='row'>";
-    $sql = "SELECT ID_recruteur, utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM recruteur JOIN utilisateur ON recruteur.ID_utilisateur = utilisateur.ID_utilisateur";
+    $sql = "SELECT ID_recruteur, nom_entreprise, utilisateur.ID_utilisateur,date_naissance,nom_utilisateur,prenom,mail FROM recruteur JOIN utilisateur ON recruteur.ID_utilisateur = utilisateur.ID_utilisateur JOIN entreprise ON recruteur.ID_entreprise = entreprise.ID_entreprise";
     $result = $conn->query($sql);
     // Assigner les données SQL aux variables Smarty
 
@@ -175,6 +175,7 @@ if ($role == 'admin') {
         $ID_recruteur = $row['ID_recruteur'];
         $ID_utilisateur_mod = $row['ID_utilisateur'];
         $nom_utilisateur = $row['nom_utilisateur'];
+        $nom_entreprise = $row['nom_entreprise'];
         $prenom = $row['prenom'];
         $mail = $row['mail'];
         $date_naissance = $row['date_naissance'];
@@ -182,6 +183,7 @@ if ($role == 'admin') {
             echo "<div class='column'>";
             echo "Prénom : $prenom<br>";
             echo "Nom : $nom_utilisateur<br>";
+            echo "Entreprise : $nom_entreprise<br>";
             echo "Mail : $mail<br>";
             echo "Date de naissance : $date_naissance<br>";
             echo "<a class='d' href='admin-edit.php?ID=$ID_utilisateur_mod&ID_role=$ID_recruteur&role=recruteur'>Modifier</a>";
