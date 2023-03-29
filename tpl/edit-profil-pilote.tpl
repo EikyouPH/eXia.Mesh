@@ -22,42 +22,39 @@
 
                         <label for="nom_promo">Pilote de promotion</label><br>
                         <input type="text" name="nom_promo" id="nom_promo" value="{$nom_promo}" required><br>
-
-                        <fieldset>
-                            <label for="nom_centre">Centre</label><br>
-                            <table type="text" name="nom_centre" id="nom_centre" required><br>
-                                <tr>
-                                    <select>
-                                        <option>Strasbourg</option>
-                                        <option>Dijon</option>
-                                        <option>Nancy</option>
-                                        <option>Reims</option>
-                                        <option>Châteauroux</option>
-                                        <option>Orléans</option>
-                                        <option>Nanterre</option>
-                                        <option>La Défense</option>
-                                        <option>Arras</option>
-                                        <option>Lille</option>
-                                        <option>Caen</option>
-                                        <option>Rouen</option>
-                                        <option>Angoulême</option>
-                                        <option>Brest</option>
-                                        <option>La Rochelle</option>
-                                        <option>Le Mans</option>
-                                        <option>Nantes</option>
-                                        <option>Saint Nazaire</option>
-                                        <option>Aix-en-Provence</option>
-                                        <option>Grenoble</option>
-                                        <option>Lyon</option>
-                                        <option>Nice</option>
-                                        <option>Bordeaux</option>
-                                        <option>Montpellier</option>
-                                        <option>PAU</option>
-                                        <option>Toulouse</option>
-                                    </select>
-                                </tr>
-                            </table>
-                        </fieldset>
+                        <label for="nom_centre">Centre</label><br>
+                        <table type="text" name="nom_centre" id="nom_centre" required><br>
+                            <tr>
+                                <select>
+                                    <option>Strasbourg</option>
+                                    <option>Dijon</option>
+                                    <option>Nancy</option>
+                                    <option>Reims</option>
+                                    <option>Châteauroux</option>
+                                    <option>Orléans</option>
+                                    <option>Nanterre</option>
+                                    <option>La Défense</option>
+                                    <option>Arras</option>
+                                    <option>Lille</option>
+                                    <option>Caen</option>
+                                    <option>Rouen</option>
+                                    <option>Angoulême</option>
+                                    <option>Brest</option>
+                                    <option>La Rochelle</option>
+                                    <option>Le Mans</option>
+                                    <option>Nantes</option>
+                                    <option>Saint Nazaire</option>
+                                    <option>Aix-en-Provence</option>
+                                    <option>Grenoble</option>
+                                    <option>Lyon</option>
+                                    <option>Nice</option>
+                                    <option>Bordeaux</option>
+                                    <option>Montpellier</option>
+                                    <option>PAU</option>
+                                    <option>Toulouse</option>
+                                </select>
+                            </tr>
+                        </table>
 
                         <label for="password">Mot de passe</label><br>
                         <input type="password" name="password" id="password" value="{$password}" required><br>

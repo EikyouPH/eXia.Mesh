@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 00:41:15
+/* Smarty version 4.3.0, created on 2023-03-29 02:44:13
   from 'D:\Documents\Site Projet Web\eXia.Mesh\tpl\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64236d0b099fa9_78844450',
+  'unifunc' => 'content_642389ddc8f274_44603254',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f1cdabe9a8c7db24dbb947a729c9d4e075f3c6d8' => 
     array (
       0 => 'D:\\Documents\\Site Projet Web\\eXia.Mesh\\tpl\\navigation.tpl',
-      1 => 1680041648,
+      1 => 1680050591,
       2 => 'file',
     ),
   ),
@@ -20,40 +20,43 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64236d0b099fa9_78844450 (Smarty_Internal_Template $_smarty_tpl) {
-?><body>
-    <h3>Index des pages</h3>
+function content_642389ddc8f274_44603254 (Smarty_Internal_Template $_smarty_tpl) {
+?><link rel="stylesheet" href="../css/navigation.css">
+<body>
+    <div class="en cadre">
+        <h3>Index des pages</h3>
 
-    <h4>--- Page de login ---</h4>
-    <a href="../index.php">Connexion</a><br>
-    <a href="logout.php">Déconnexion</a>
+        <h4>--- Page de login ---</h4>
+        <a href="../index.php">Connexion</a><br>
+        <a href="logout.php">Déconnexion</a>
 
-    <h4>--- Page d'accueil ---</h4>
-    <a href="accueil.php">Accueil</a>
+        <h4>--- Page d'accueil ---</h4>
+        <a href="accueil.php">Accueil</a>
 
-    <h4>--- Pages de profil ---</h4>
-    <a href="profil.php">Profil</a><br>
-    <a href="edit_profil.php">Edition de profil</a>
+        <h4>--- Pages de profil ---</h4>
+        <a href="profil.php">Profil</a><br>
+        <a href="edit_profil.php">Edition de profil</a>
 
-    <h4>--- Page de stage ---</h4>
-    <a href="stage.php">Stage</a>
+        <h4>--- Page de stage ---</h4>
+        <a href="stage.php">Stage</a>
 
-    <h4>--- Page d'entreprise ---</h4>
-    <a href="entreprise.php">Entreprise</a>
+        <h4>--- Page d'entreprise ---</h4>
+        <a href="entreprise.php">Entreprise</a>
 
-    <h4>--- Wishlist ---</h4>
-    <a href="wishlist.php">Wishlist</a><br>
-    <a href="wishlist-liste.php">Liste des Wishlists</a>
+        <h4>--- Wishlist ---</h4>
+        <a href="wishlist.php">Wishlist</a><br>
+        <a href="wishlist-liste.php">Liste des Wishlists</a>
 
-    <h4>--- Recap candidatures ---</h4>
-    <a href="postuler.php">Page postulation</a><br>
-    <a href="recap-candidatures.php">Recap candidatures</a><br>
-    <a href="candidature.php">Candidatures</a>
+        <h4>--- Recap candidatures ---</h4>
+        <a href="postuler.php">Page postulation</a><br>
+        <a href="recap-candidatures.php">Recap candidatures</a><br>
+        <a href="candidature.php">Candidatures</a>
 
-    <h4>--- Autres pages ---</h4>
-    <a href="notifications.php">Notifications</a><br>
-    <a href="confirmation.php">Confirmation</a><br>
-    <a href="mentions-legales.php">Mentions légales</a><br>
+        <h4>--- Autres pages ---</h4>
+        <a href="notifications.php">Notifications</a><br>
+        <a href="confirmation.php">Confirmation</a><br>
+        <a href="mentions-legales.php">Mentions légales</a><br>
+    </div>
 </body>
 
 <!--

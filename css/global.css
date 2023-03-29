@@ -98,6 +98,7 @@ a {
 }
 
 .cadre {
+    padding: 2%;
     border: 2px solid var(--clair);
     border-radius: 10px;
 }
@@ -123,4 +124,18 @@ button:hover {
     border: 2px solid #0E8388;
     border-radius: 5px;
     text-decoration: none;
+}
+
+p{
+    text-align: justify;
+}
+
+h2 {
+    color: var(--fonce);
+    font-weight: 800;
+}
+
+h3 {
+    color: var(--fonce);
+    font-weight: 500;
 }
