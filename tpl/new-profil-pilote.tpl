@@ -20,7 +20,7 @@
                 <input type="mail" name="mail" id="mail" required><br>
 
                 <label for="password">Mot de passe</label><br>
-                <input type="password" name="password" id="password"  required><br>
+                <input type="password" name="password" id="password" required><br>
 
                 <label for="nom_promo">Promotion</label><br>
                         <table type="text" name="nom_centre" id="nom_centre" required><br>
