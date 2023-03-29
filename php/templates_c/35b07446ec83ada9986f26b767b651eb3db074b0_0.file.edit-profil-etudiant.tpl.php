@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 02:10:37
+/* Smarty version 4.3.0, created on 2023-03-29 02:14:41
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-etudiant.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_642381fd11b567_36235807',
+  'unifunc' => 'content_642382f1361495_72517847',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35b07446ec83ada9986f26b767b651eb3db074b0' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-etudiant.tpl',
-      1 => 1680044869,
+      1 => 1680048664,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642381fd11b567_36235807 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642382f1361495_72517847 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -195,10 +195,15 @@ function content_642381fd11b567_36235807 (Smarty_Internal_Template $_smarty_tpl)
                                     </table>
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="boutons">
+                                    <button href='profil.php' type="submit" name="submit"
+                                        id="confirmer">Enregistrer</button>
+                                    <button href='profil.php' id="annuler">Annuler</button>
+                                </td>
+                            </tr>
                         </table>
                     </td>
-                    <button href='profil.php' type="submit" name="submit" class="ok">Enregistrer</button>
-                    <button href='profil.php' class="ok"> Annuler</button>
                 </form>
             </tr>
         </table>

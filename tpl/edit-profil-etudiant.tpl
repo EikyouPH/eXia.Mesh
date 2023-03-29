@@ -160,6 +160,7 @@
                                     <button href='profil.php' type="submit" name="submit"
                                         id="confirmer">Enregistrer</button>
                                     <button href='profil.php' id="annuler">Annuler</button>
+                                    <button href='profil.php' type="submit" name="delete">Supprimer le compte</button>
                                 </td>
                             </tr>
                         </table>

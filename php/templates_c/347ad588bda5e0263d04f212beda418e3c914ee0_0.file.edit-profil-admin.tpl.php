@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-29 01:51:03
+/* Smarty version 4.3.0, created on 2023-03-29 02:21:31
   from 'C:\Users\LudoK\OneDrive\CESI\A2\Web\projet\Projet-Web\tpl\edit-profil-admin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64237d67a7b654_46478156',
+  'unifunc' => 'content_6423848bcc5568_16982177',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '347ad588bda5e0263d04f212beda418e3c914ee0' => 
     array (
       0 => 'C:\\Users\\LudoK\\OneDrive\\CESI\\A2\\Web\\projet\\Projet-Web\\tpl\\edit-profil-admin.tpl',
-      1 => 1680044869,
+      1 => 1680049286,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64237d67a7b654_46478156 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6423848bcc5568_16982177 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/css/edit.css">
 <link rel="stylesheet" href="/css/listes-deroulantes.css">
 
@@ -155,10 +155,16 @@ function content_64237d67a7b654_46478156 (Smarty_Internal_Template $_smarty_tpl)
                                     </table>
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="boutons">
+                                    <button href='profil.php' type="submit" name="submit"
+                                        id="confirmer">Enregistrer</button>
+                                    <button href='profil.php' id="annuler">Annuler</button>
+                                    <button href='profil.php' type="submit" name="delete">Supprimer le compte</button>
+                                </td>
+                            </tr>
                         </table>
                     </td>
-                    <button href='profil.php' type="submit" name="submit" class="ok">Enregistrer</button>
-                    <button href='profil.php' class="ok"> Annuler</button>
                 </form>
             </tr>
         </table>
@@ -166,5 +172,6 @@ function content_64237d67a7b654_46478156 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="/scripts/liste-pays.js"><?php echo '</script'; ?>
 >
+</body>
 </body><?php }
 }

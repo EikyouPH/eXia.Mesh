@@ -155,7 +155,7 @@
                                 </tr>
                                 <div>
                                     <button href='profil.php' type="submit" name="submit" id="ok">Créer</button>
-                                    <button href='profil.php' type="submit" name="submit" id="cancel">Annuler</button>
+                                    <button href='profil.php' id="cancel">Annuler</button>
                                 </div>
                             </table>
                         </td>
